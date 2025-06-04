@@ -11,7 +11,7 @@ export default function Footer() {
         <h3 className="connect-text">Let's connect.</h3>
         <div className="social-icons">
           <a
-            href="https://www.linkedin.com/in/uttkarsh-r-293920285/"
+            href="https://www.linkedin.com/in/uttkarsh-ruparel/"
             target="_blank"
             rel="noopener noreferrer"
           >
