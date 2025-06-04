@@ -348,16 +348,9 @@
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
-.soft-skill-emoji {
-  font-size: 1.8rem;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(var(--accent-rgb), 0.1);
-  border-radius: 50%;
-  flex-shrink: 0;
+.soft-skill-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
 }
 
 .soft-skill-content {
@@ -583,11 +576,5 @@
   
   .soft-skill-item {
     padding: 0.8rem;
-  }
-  
-  .soft-skill-emoji {
-    font-size: 1.5rem;
-    width: 40px;
-    height: 40px;
   }
 }

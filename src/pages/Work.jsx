@@ -21,6 +21,13 @@ import {
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import "../styles/Work.css";
+import {
+  FaComment,
+  FaUsers,
+  FaGlobe,
+  FaPuzzlePiece,
+  FaSyncAlt,
+} from "react-icons/fa";
 
 export default function Work() {
   const { darkMode } = useTheme();
@@ -168,11 +175,11 @@ export default function Work() {
   ];
 
   const softSkills = [
-    { name: "Communication", level: 90, emoji: "💬" },
-    { name: "Teamwork", level: 90, emoji: "👥" },
-    { name: "Networking", level: 80, emoji: "🌐" },
-    { name: "Problem Solving", level: 80, emoji: "🧩" },
-    { name: "Adaptability", level: 100, emoji: "🔄" },
+    { name: "Communication", level: 90, icon: <FaComment /> },
+    { name: "Teamwork", level: 90, icon: <FaUsers /> },
+    { name: "Networking", level: 80, icon: <FaGlobe /> },
+    { name: "Problem Solving", level: 80, icon: <FaPuzzlePiece /> },
+    { name: "Adaptability", level: 100, icon: <FaSyncAlt /> },
   ];
 
   return (
@@ -293,7 +300,12 @@ export default function Work() {
                   }}
                   className="soft-skill-item"
                 >
-                  <div className="soft-skill-emoji">{skill.emoji}</div>
+                  <div
+                    className="soft-skill-icon"
+                    style={{ color: "var(--accent-color)" }}
+                  >
+                    {skill.icon}
+                  </div>
                   <div className="soft-skill-content">
                     <span className="soft-skill-name">{skill.name}</span>
                     <div className="skill-dots">

@@ -77,14 +77,13 @@
   width: 110%;
   max-width: 1200px; /* Set a max-width for better readability */
   margin: 0 auto;
-  padding-left: 2rem;
 }
 
 .interest-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem; /* Reduced gap for more balanced spacing */
-  align-items: center;
+  align-items: start;
 }
 
 .interest-item.reversed {
@@ -106,10 +105,25 @@
   font-size: 2rem;
 }
 
-.interest-title {
+.interest-title1, .interest-title2, .interest-title3, .interest-title4 {
   font-size: 1.5rem;
-  color: var(--accent-color);
   margin: 0;
+}
+
+.interest-title1{
+  color: var(--google-blue);
+}
+
+.interest-title2{
+  color: var(--google-red);
+}
+
+.interest-title3{
+  color: var(--google-green);
+}
+
+.interest-title4{
+  color: var(--google-yellow);
 }
 
 .interest-description {
@@ -253,12 +267,6 @@
 
 .interest-emoji {
   font-size: 2rem;
-}
-
-.interest-title {
-  font-size: 1.4rem;
-  color: var(--accent-color);
-  margin: 0;
 }
 
 .interest-description {

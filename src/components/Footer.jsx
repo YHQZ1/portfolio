@@ -1,6 +1,6 @@
 import { useTheme } from "../context/ThemeContext";
 import "../styles/Footer.css";
-import { FaLinkedin, FaGithub, FaEnvelope, FaReddit } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope} from "react-icons/fa";
 
 export default function Footer() {
   const { darkMode } = useTheme();
@@ -26,13 +26,6 @@ export default function Footer() {
           </a>
           <a href="mailto:rupareluttkarsh2309@gmail.com">
             <FaEnvelope className="icon" />
-          </a>
-          <a
-            href="https://reddit.com/user/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaReddit className="icon" />
           </a>
         </div>
       </div>
