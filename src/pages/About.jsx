@@ -68,182 +68,167 @@ export default function About() {
         </h2>
 
         <div className="interests-grid">
+          {/* Cooking Section */}
           <div className="interest-item">
             <div className="interest-text">
               <div className="interest-header">
                 <h3 className="interest-title1">An amateur cook</h3>
               </div>
               <p className="interest-description">
-                Cooking is one of my{" "}
-                <span className="text-emphasis">creative outlets</span>,
-                especially when preparing Italian and American dishes. I enjoy
-                experimenting with flavors and techniques to recreate
-                restaurant-quality meals at home.
+                Cooking is my{" "}
+                <span className="text-emphasis">delicious escape</span>, where I
+                blend my love for Italian, American, and Indian vegetarian
+                cuisine. I take pride in having successfully made several
+                authentic Italian dishes from scratch.
               </p>
-              <p className="interest-subheading">
-                Here are three of my recent favourite dishes:
-              </p>
+              <p className="interest-subheading">My culinary favorites:</p>
               <ul className="interest-list">
                 <li>
-                  <span className="list-highlight">Homemade pasta</span> with
-                  various sauces
+                  <span className="list-highlight">Italian:</span> Homemade
+                  pizzas, fresh pastas, and risottos
                 </li>
                 <li>
-                  <span className="list-highlight">
-                    Classic American burgers
-                  </span>{" "}
-                  with special sauce
+                  <span className="list-highlight">American:</span> Juicy
+                  cheeseburgers with all the fixings
                 </li>
                 <li>
-                  <span className="list-highlight">
-                    Authentic Italian risotto
-                  </span>
+                  <span className="list-highlight">Indian Vegetarian:</span>{" "}
+                  Paneer dishes like kadhai paneer and paneer tikka
                 </li>
                 <li>
-                  <span className="list-highlight">
-                    New York-style cheesecake
-                  </span>
+                  <span className="list-highlight">Mexican:</span> Crispy
+                  quesadillas with homemade guacamole
                 </li>
               </ul>
             </div>
             <div className="interest-image">
               <img
-                src="https://c.ndtvimg.com/2021-04/umk8i7ko_pasta_625x300_01_April_21.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886"
+                src="https://c.ndtvimg.com/2021-04/umk8i7ko_pasta_625x300_01_April_21.jpg"
                 alt="Cooking"
                 className="interest-img"
               />
             </div>
           </div>
 
-          <div className="interest-item">
+          {/* Music Section */}
+          <div className="interest-item reverse">
             <div className="interest-image">
               <img
-                src="https://cdn-9.motorsport.com/images/amp/0ZRjL9M0/s1000/red-bull-racing-2022-f1-car-1.jpg"
-                alt="Sports"
+                src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                alt="Music"
                 className="interest-img"
               />
             </div>
             <div className="interest-text">
               <div className="interest-header">
-                <h3 className="interest-title2">Sports Enthusiast</h3>
+                <h3 className="interest-title2">Musician at Heart</h3>
               </div>
               <p className="interest-description">
-                I'm passionate about both watching and playing sports. I follow{" "}
-                <span className="text-emphasis">Formula 1</span> closely and
-                enjoy casual viewing of cricket, football, and tennis. When it
-                comes to playing, I regularly enjoy badminton and pickleball,
-                along with more casual/arcade sports like pool, bowling, and
-                foosball.
+                Music isn't just something I listen to - I{" "}
+                <span className="text-emphasis">create it</span>. I play both the
+                guitar and the piano, channeling my emotions through melodies and
+                chords. Whether it's learning new songs or composing original
+                pieces, music is my creative sanctuary.
               </p>
               <p className="interest-subheading">
-                My current favorites in sports:
+                My musical journey includes:
               </p>
               <ul className="interest-list">
                 <li>
-                  <span className="list-highlight">Formula 1</span> - Following
-                  the latest season
+                  <span className="list-highlight">Guitar:</span> From strumming
+                  chords to fingerstyle patterns
                 </li>
                 <li>
-                  <span className="list-highlight">Badminton</span> - My go-to
-                  active sport
+                  <span className="list-highlight">Keyboard:</span> Exploring
+                  different genres and sounds
                 </li>
                 <li>
-                  <span className="list-highlight">Casual games</span> like pool
-                  and bowling with friends
+                  <span className="list-highlight">Music Discovery:</span>{" "}
+                  Constantly expanding my playlist with diverse genres
                 </li>
               </ul>
             </div>
           </div>
 
+          {/* Photography Section */}
           <div className="interest-item">
             <div className="interest-text">
               <div className="interest-header">
-                <h3 className="interest-title3">Media & Entertainment</h3>
-              </div>
-              <p className="interest-description">
-                I'm an avid consumer of{" "}
-                <span className="text-emphasis">
-                  movies, music, and video games
-                </span>
-                . Whether it's discovering new films, listening to different
-                music genres, or playing both casual and competitive games, I
-                enjoy how media can tell stories and create experiences.
-              </p>
-              <p className="interest-subheading">
-                My current favorites in entertainment:
-              </p>
-              <ul className="interest-list">
-                <li>
-                  <span className="list-highlight">
-                    Exploring new movie genres
-                  </span>{" "}
-                  and directors
-                </li>
-                <li>
-                  <span className="list-highlight">
-                    Building diverse music playlists
-                  </span>{" "}
-                  for every mood
-                </li>
-                <li>
-                  <span className="list-highlight">
-                    Playing both story-driven
-                  </span>{" "}
-                  and multiplayer games
-                </li>
-              </ul>
-            </div>
-            <div className="interest-image">
-              <img
-                src="https://i.pinimg.com/736x/cd/49/e4/cd49e47ae6a54d928ea0c7536f7ea61a.jpg"
-                alt="Cinema"
-                className="interest-img"
-              />
-            </div>
-          </div>
-
-          <div className="interest-item">
-            <div className="interest-image">
-              <img
-                src="https://images.pexels.com/photos/290595/pexels-photo-290595.jpeg?cs=srgb&dl=pexels-pixabay-290595.jpg&fm=jpg"
-                alt="Tinkering"
-                className="interest-img"
-              />
-            </div>
-            <div className="interest-text">
-              <div className="interest-header">
-                <h3 className="interest-title4">Photography</h3>
+                <h3 className="interest-title3">Photography</h3>
               </div>
               <p className="interest-description">
                 Photography is my way of{" "}
-                <span className="text-emphasis">
-                  capturing and appreciating
-                </span>{" "}
-                the world around me. I enjoy shooting various subjects from
-                nature and cityscapes to portraits and architectural details.
-                Each photo tells a story or captures a moment worth remembering.
+                <span className="text-emphasis">freezing time</span> - capturing
+                emotions, stories, and beauty in single frames. I don't just
+                take pictures; I preserve moments that would otherwise fade into
+                memory.
               </p>
-              <p className="interest-subheading">
-                My favorite photography subjects:
-              </p>
+              <p className="interest-subheading">What I love to capture:</p>
               <ul className="interest-list">
                 <li>
-                  <span className="list-highlight">Dramatic sunsets</span> and
-                  golden hour scenes
+                  <span className="list-highlight">Candid moments</span> that
+                  tell authentic stories
                 </li>
                 <li>
                   <span className="list-highlight">Urban landscapes</span> and
-                  skyscrapers
+                  architectural details
                 </li>
                 <li>
-                  <span className="list-highlight">
-                    Candid street photography
-                  </span>
+                  <span className="list-highlight">Nature's beauty</span> in its
+                  various forms
                 </li>
                 <li>
-                  <span className="list-highlight">
-                    Nature and macro details
-                  </span>
+                  <span className="list-highlight">Unique perspectives</span> of
+                  everyday scenes
+                </li>
+              </ul>
+            </div>
+            <div className="interest-image">
+              <img
+                src="/photography.jpg"
+                alt="Photography"
+                className="interest-img"
+              />
+            </div>
+          </div>
+
+          {/* Media & Entertainment Section */}
+          <div className="interest-item reverse">
+            <div className="interest-image">
+              <img
+                src="https://i.pinimg.com/736x/cd/49/e4/cd49e47ae6a54d928ea0c7536f7ea61a.jpg"
+                alt="Entertainment"
+                className="interest-img"
+              />
+            </div>
+            <div className="interest-text">
+              <div className="interest-header">
+                <h3 className="interest-title4">Media & Entertainment</h3>
+              </div>
+              <p className="interest-description">
+                I'm passionate about{" "}
+                <span className="text-emphasis">storytelling</span>
+                in all its forms - whether through films that transport me to
+                other worlds, music that moves my soul, or games that let me
+                live extraordinary adventures.
+              </p>
+              <p className="interest-subheading">My current favorites:</p>
+              <ul className="interest-list">
+                <li>
+                  <span className="list-highlight">Movies:</span> Exploring
+                  everything from indie gems to blockbusters
+                </li>
+                <li>
+                  <span className="list-highlight">Video Games:</span> Both
+                  story-driven single-player and competitive multiplayer
+                </li>
+                <li>
+                  <span className="list-highlight">Formula 1:</span> Recently
+                  got hooked on the speed and strategy
+                </li>
+                <li>
+                  <span className="list-highlight">Music Exploration:</span>{" "}
+                  Constantly discovering new artists and genres
                 </li>
               </ul>
             </div>

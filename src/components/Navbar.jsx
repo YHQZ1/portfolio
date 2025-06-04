@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { useTheme } from "../context/ThemeContext";
 import "../styles/Navbar.css";
+import resumePDF from '../assets/Resume.pdf';
 
 export default function Navbar() {
   const { darkMode, toggleTheme } = useTheme();
@@ -20,9 +21,7 @@ export default function Navbar() {
           About
         </Link>
         <a
-          href="/Resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
+          href={resumePDF}
           className="navbar__link"
         >
           Resume
