@@ -53,7 +53,7 @@
 
 .about-text {
   margin-bottom: 1.9rem;
-  line-height: 1.7;
+  line-height: 1.4;
   font-size: 1.2rem;
   color: var(--text-primary);
 }
@@ -67,7 +67,7 @@
 .interests-title {
   font-size: 2rem;
   color: var(--text-primary);
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .interests-grid {
