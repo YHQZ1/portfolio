@@ -1,0 +1,181 @@
+/* src/styles/Navbar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 27%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: rgba(var(--nav-bg-rgb), 0.1); /* Updated for transparency */
+  backdrop-filter: blur(10px); /* Creates the frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 100px;
+  margin: 0 auto;
+  margin-top: 35px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(var(--nav-text-rgb), 0.1); /* Subtle border */
+}
+
+/* Add these new variables to your :root or theme variables */
+:root {
+  --nav-bg-rgb: 255, 255, 255; /* Light mode RGB values */
+  --nav-text-rgb: 0, 0, 0;
+}
+
+[data-theme="dark"] {
+  --nav-bg-rgb: 30, 30, 30; /* Dark mode RGB values */
+  --nav-text-rgb: 255, 255, 255;
+}
+
+/* Rest of your existing styles... */
+.navbar__logo {
+  height: 40px; /* Increased from 30px */
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo img {
+  height: 100%;
+  width: auto;
+  max-width: none; /* Removed the 150px restriction */
+  min-width: 40px; /* Ensures minimum size */
+  transition: filter 0.3s ease;
+}
+
+.navbar__links {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.navbar__link {
+  color: var(--nav-text);
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+  padding: 0.3rem 0;
+  transition: color 0.3s ease;
+}
+
+.navbar__link:hover {
+  color: var(--accent-hover);
+}
+
+.navbar__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar__link:hover::after {
+  width: 100%;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--theme-toggle-color);
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.theme-toggle:hover {
+  background-color: var(--theme-toggle-hover);
+  transform: scale(1.1);
+}
+
+.theme-icon {
+  width: 20px;
+  height: 20px;
+  transition: color 0.3s ease;
+}
+
+/* Responsive Navbar Styles */
+.navbar {
+  width: 90%; /* Changed from fixed 27% to responsive percentage */
+  max-width: 1000px;
+  min-width: 280px; /* Minimum width for very small devices */
+  padding: 0.8rem 1.5rem; /* Adjusted padding for mobile */
+  margin-top: 20px; /* Reduced top margin for mobile */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar {
+    width: 70%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    margin-top: 25px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar {
+    width: 50%;
+    margin-top: 30px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .navbar {
+    width: 27%; /* Original width for large screens */
+    margin-top: 35px; /* Original margin */
+  }
+}
+
+/* Mobile menu adjustments */
+@media (max-width: 576px) {
+  .navbar__logo {
+    height: 45px;
+  }
+  
+  .navbar__links {
+    gap: 0.8rem;
+  }
+  
+  .navbar__link {
+    font-size: 0.9rem;
+  }
+  
+  .theme-toggle {
+    padding: 0.5rem;
+  }
+  
+  .theme-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Very small devices (phones, 360px and below) */
+@media (max-width: 360px) {
+  .navbar {
+    padding: 0.6rem 1rem;
+    border-radius: 50px;
+  }
+  
+  .navbar__links {
+    gap: 0.5rem;
+  }
+  
+  .navbar__link {
+    font-size: 0.8rem;
+  }
+}
