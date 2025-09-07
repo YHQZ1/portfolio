@@ -1,4 +1,5 @@
 import { useTheme } from "../context/ThemeContext";
+import { Link } from "react-router-dom";
 import "../styles/Footer.css";
 import { FaLinkedin, FaGithub, FaEnvelope} from "react-icons/fa";
 
@@ -24,9 +25,9 @@ export default function Footer() {
           >
             <FaGithub className="icon" />
           </a>
-          <a href="mailto:rupareluttkarsh2309@gmail.com">
+          <Link to="/contact">
             <FaEnvelope className="icon" />
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

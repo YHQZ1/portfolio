@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Work from "./pages/Work";
 import About from "./pages/About";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 import "./App.css";
 import "./index.css";
 import { ThemeProvider } from "./context/ThemeContext";
@@ -18,6 +19,7 @@ export default function App() {
               <Route path="/" element={<Work />} />
               <Route path="/work" element={<Work />} />
               <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>
           <Footer />
