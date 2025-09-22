@@ -10,6 +10,8 @@ import {
   FaCss3Alt,
   FaGithub,
   FaExternalLinkAlt,
+  FaDatabase,
+  FaAws,
 } from "react-icons/fa";
 import {
   SiCplusplus,
@@ -18,6 +20,8 @@ import {
   SiSupabase,
   SiMysql,
   SiPostgresql,
+  SiMongodb,
+  SiDocker,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import "../styles/Work.css";
@@ -36,7 +40,7 @@ export default function Work() {
     {
       title: "VerQ",
       description:
-        "A college placement automation platform that bridges the gap between students and companies. Built using the MERN stack (with Supabase instead of MongoDB), it connects students, recruiters, and the placement cell. It also features an AI-powered resume scorer (ATS Checker) to help students optimize their CVs.",
+        "College placement automation platform built using MERN stack and Supabase. Features an AI-powered resume scorer (ATS Checker) to optimize student CVs. Streamlined placement process connecting students, recruiters, and placement cells.",
       tags: ["React", "Node.js", "Supabase", "AI", "Express"],
       github: "https://github.com/About-Rudra/Verq",
       live: "https://verq-pi.vercel.app",
@@ -46,7 +50,7 @@ export default function Work() {
     {
       title: "Order Management System",
       description:
-        "A desktop-based Java application for managing orders between users and vendors. Developed using Java Swing for the frontend and JDBC for database operations, it links customers, orders, and vendors for streamlined processing and efficient order tracking.",
+        "Desktop-based Java Swing app integrated with JDBC for database operations. Enables efficient customer, order, and vendor management with real-time tracking, improving processing speed and vendor-user interactions.",
       tags: ["Java", "Swing", "JDBC", "MySQL"],
       github: "https://github.com/YHQZ1/Order-Management-System",
       live: "#",
@@ -56,7 +60,7 @@ export default function Work() {
     {
       title: "BitLink",
       description:
-        "A web app that shortens URLs and generates QR codes with a clean UI and real-time link tracking. Ideal for sharing and managing links efficiently. Built using React and Supabase with a focus on simplicity and utility.",
+        "React & Supabase web app for URL shortening and QR code generation. Offers real-time link tracking and a clean, responsive UI for efficient link sharing and management.",
       tags: ["React", "Supabase", "JavaScript", "QR Code"],
       github: "#",
       live: "#",
@@ -103,6 +107,13 @@ export default function Work() {
       color: "#f7df1e",
     },
     {
+      name: "PL/SQL",
+      level: 70,
+      icon: <FaDatabase />,
+      category: "language",
+      color: "#f29111",
+    },
+    {
       name: "React",
       level: 50,
       icon: <FaReact />,
@@ -145,6 +156,21 @@ export default function Work() {
       color: "#000000",
     },
     {
+      name: "Flask",
+      level: 40,
+      icon: <FaPython />,
+      category: "backend",
+      color: "#000000",
+    },
+    {
+      name: "SQLAlchemy",
+      level: 40,
+      icon: <FaPython />,
+      category: "backend",
+      color: "#336791",
+    },
+
+    {
       name: "MySQL",
       level: 90,
       icon: <SiMysql />,
@@ -157,6 +183,13 @@ export default function Work() {
       icon: <SiPostgresql />,
       category: "database",
       color: "#336791",
+    },
+    {
+      name: "MongoDB",
+      level: 60,
+      icon: <SiMongodb />,
+      category: "database",
+      color: "#4DB33D",
     },
     {
       name: "Supabase",
@@ -172,28 +205,45 @@ export default function Work() {
       category: "tool",
       color: "#f05032",
     },
+    {
+      name: "Docker",
+      level: 50,
+      icon: <SiDocker />,
+      category: "tool",
+      color: "#0db7ed",
+    },
+    {
+      name: "AWS",
+      level: 40,
+      icon: <FaAws />,
+      category: "tool",
+      color: "#ff9900",
+    },
   ];
 
   const softSkills = [
+    { name: "Problem Solving", level: 80, icon: <FaPuzzlePiece /> },
+    { name: "Analytical Thinking", level: 85, icon: <FaGlobe /> },
+    { name: "Adaptability", level: 100, icon: <FaSyncAlt /> },
     { name: "Communication", level: 90, icon: <FaComment /> },
     { name: "Teamwork", level: 90, icon: <FaUsers /> },
-    { name: "Networking", level: 80, icon: <FaGlobe /> },
-    { name: "Problem Solving", level: 80, icon: <FaPuzzlePiece /> },
-    { name: "Adaptability", level: 100, icon: <FaSyncAlt /> },
+    { name: "Attention to Detail", level: 80, icon: <FaComment /> },
   ];
 
   return (
     <main className={`work-container ${darkMode ? "dark" : ""}`}>
+      {/* Intro */}
       <div className="intro-content">
         <h1 className="intro-heading">Hey, I'm Uttkarsh!</h1>
         <h2 className="intro-subheading">
-          Just a <span className="highlight1">CS major</span> who enjoys
-          building <span className="highlight2">cool stuff</span> and turning{" "}
-          <span className="highlight3">random ideas</span> into working{" "}
-          <span className="highlight4">code.</span>
+          CS major passionate about building{" "}
+          <span className="highlight1">cool projects</span> and turning{" "}
+          <span className="highlight2">ideas</span> into{" "}
+          <span className="highlight3">code</span>.
         </h2>
       </div>
 
+      {/* Projects */}
       <div className="projects-section">
         <h2 className="projects-title">Projects</h2>
         <div className="projects-grid">
@@ -212,24 +262,14 @@ export default function Work() {
                   style={{ backgroundImage: `url(${project.image})` }}
                 ></div>
               </div>
-
               <div className="project-content">
                 <h3 className="project-name">{project.title}</h3>
                 <p className="project-description">{project.description}</p>
-
                 <div className="project-links">
-                  <a
-                    href={project.github}
-                    className="project-link"
-                    aria-label="GitHub repository"
-                  >
+                  <a href={project.github} className="project-link">
                     <FaGithub /> Code
                   </a>
-                  <a
-                    href={project.live}
-                    className="project-link"
-                    aria-label="Live demo"
-                  >
+                  <a href={project.live} className="project-link">
                     <FaExternalLinkAlt /> Live
                   </a>
                 </div>
@@ -239,10 +279,11 @@ export default function Work() {
         </div>
       </div>
 
+      {/* Skills */}
       <div className="skills-section">
         <h2 className="skills-title">Skills</h2>
-
         <div className="skills-categories">
+          {/* Technical Skills */}
           <div className="technical-skills">
             <h3 className="skills-subtitle">Technical Skills</h3>
             <div className="skills-grid">
@@ -285,6 +326,7 @@ export default function Work() {
             </div>
           </div>
 
+          {/* Soft Skills */}
           <div className="soft-skills">
             <h3 className="skills-subtitle">Soft Skills</h3>
             <div className="soft-skills-container">

@@ -61,6 +61,64 @@ export default function About() {
         </div>
       </section>
 
+      <section className="about-section about-roles">
+        <h2 className="interests-title">
+          Roles & Responsibilities{" "}
+          <span className="text-gradient">I’ve embraced</span>
+        </h2>
+        <ul className="roles-list">
+          <li>
+            <span className="list-highlight1">
+              Competitive Programming Co-Head
+            </span>{" "}
+            – Google Developer Students Club, SIT Pune
+            <p>
+              Passionately led coding challenges and creative problem-solving
+              sessions, inspiring students to explore new algorithms and push
+              the boundaries of their coding skills. Fostered a campus
+              environment where learning and collaboration thrived.
+            </p>
+          </li>
+          <li>
+            <span className="list-highlight2">Social Media Head</span> –
+            SymbiTech, SIT Pune
+            <p>
+              Brought events to life online through innovative digital
+              campaigns. Curated stories, visuals, and interactions that sparked
+              excitement and strengthened the tech community’s presence across
+              platforms.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section className="about-section about-achievements">
+        <h2 className="interests-title">
+          Achievements <span className="text-gradient">that define me</span>
+        </h2>
+        <ul className="achievements-list">
+          <li>
+            <span className="list-highlight1">
+              Hackathon Finalist – ACE 2.0 (2025)
+            </span>
+            <p>
+              Developed an innovative smart governance solution that stood out
+              among 400+ competing teams, demonstrating both technical skill and
+              real-world impact.
+            </p>
+          </li>
+          <li>
+            <span className="list-highlight2">Media & Documentation Lead</span> –
+            National level Hackathon by Google Developers Groups on Campus
+            <p>
+              Captured and organized event documentation with a professional
+              touch, ensuring every session, workshop, and outcome was showcased
+              effectively to participants and the wider community.
+            </p>
+          </li>
+        </ul>
+      </section>
+
       {/* <section className="about-section about-interests">
         <h2 className="interests-title">
           What am I like outside of work?{" "}
@@ -127,9 +185,34 @@ export default function About() {
           font-weight: 500;
         }
 
-        .list-highlight {
+        .list-highlight1 {
+          color: ${darkMode ? "#c58af9" : "#a142f4"};
+          font-weight: 500;
+          font-size: 1.2rem;
+        }
+
+        .list-highlight2 {
           color: ${darkMode ? "#8ab4f8" : "#4285f4"};
           font-weight: 500;
+          font-size: 1.2rem;
+        }
+
+        .roles-list,
+        .achievements-list {
+          list-style: none;
+          padding-left: 0;
+        }
+
+        .roles-list li,
+        .achievements-list li {
+          margin-bottom: 1.5rem;
+        }
+
+        .roles-list li p,
+        .achievements-list li p {
+          margin: 0.3rem 0 0 0;
+          color: ${darkMode ? "#ccc" : "#333"};
+          font-size: 1.2rem;
         }
       `}</style>
     </main>
