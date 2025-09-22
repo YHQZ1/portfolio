@@ -9,30 +9,30 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--spacing-lg) var(--spacing-lg);
-  background-color: rgba(var(--nav-bg-rgb), 0.1); 
+  background-color: rgba(var(--nav-bg-rgb), 0.1);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   border-radius: 100px;
   margin: 0 auto;
   margin-top: 35px;
   transition: all 0.3s ease;
-  border: 1px solid rgba(var(--nav-text-rgb), 0.1); 
+  border: 1px solid rgba(var(--nav-text-rgb), 0.1);
 }
 
 :root {
-  --nav-bg-rgb: 255, 255, 255; 
+  --nav-bg-rgb: 255, 255, 255;
   --nav-text-rgb: 0, 0, 0;
 }
 
 [data-theme="dark"] {
-  --nav-bg-rgb: 30, 30, 30; 
+  --nav-bg-rgb: 30, 30, 30;
   --nav-text-rgb: 255, 255, 255;
 }
 
 .navbar__logo {
-  height: 40px; 
+  height: 40px;
   display: flex;
   align-items: center;
 }
@@ -40,8 +40,8 @@
 .navbar__logo img {
   height: 100%;
   width: auto;
-  max-width: none; 
-  min-width: 40px; 
+  max-width: none;
+  min-width: 40px;
   transition: filter 0.3s ease;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .navbar__link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -104,7 +104,7 @@
 }
 
 .navbar {
-  width: 90%; 
+  width: 90%;
   max-width: 1000px;
   min-width: 280px;
   padding: 0.8rem 1.5rem;
@@ -128,7 +128,7 @@
 
 @media (min-width: 1200px) {
   .navbar {
-    width: 27%; 
+    width: 27%;
     margin-top: 35px;
   }
 }
@@ -137,19 +137,19 @@
   .navbar__logo {
     height: 45px;
   }
-  
+
   .navbar__links {
-    gap: 0.8rem;
+    gap: 1.5rem;
   }
-  
+
   .navbar__link {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
-  
+
   .theme-toggle {
     padding: 0.5rem;
   }
-  
+
   .theme-icon {
     width: 18px;
     height: 18px;
@@ -161,12 +161,12 @@
     padding: 0.6rem 1rem;
     border-radius: 50px;
   }
-  
+
   .navbar__links {
-    gap: 0.5rem;
+    gap: 1.2rem; /* keep some space even on tiny phones */
   }
-  
+
   .navbar__link {
-    font-size: 0.8rem;
+    font-size: 0.85rem; /* adjust font slightly smaller if needed */
   }
 }
