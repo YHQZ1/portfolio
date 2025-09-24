@@ -89,6 +89,15 @@ export default function About() {
               platforms.
             </p>
           </li>
+          <li>
+            <span className="list-highlight2">Media & Documentation Lead</span> –
+            National level Hackathon by Google Developers Groups on Campus
+            <p>
+              Captured and organized event documentation with a professional
+              touch, ensuring every session, workshop, and outcome was showcased
+              effectively to participants and the wider community.
+            </p>
+          </li>
         </ul>
       </section>
 
@@ -105,15 +114,6 @@ export default function About() {
               Developed an innovative smart governance solution that stood out
               among 400+ competing teams, demonstrating both technical skill and
               real-world impact.
-            </p>
-          </li>
-          <li>
-            <span className="list-highlight2">Media & Documentation Lead</span> –
-            National level Hackathon by Google Developers Groups on Campus
-            <p>
-              Captured and organized event documentation with a professional
-              touch, ensuring every session, workshop, and outcome was showcased
-              effectively to participants and the wider community.
             </p>
           </li>
         </ul>
