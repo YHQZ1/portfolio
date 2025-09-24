@@ -90,7 +90,7 @@ export default function About() {
             </p>
           </li>
           <li>
-            <span className="list-highlight2">Media & Documentation Lead</span> –
+            <span className="list-highlight2">Media & Documentation Head</span> –
             National level Hackathon by Google Developers Groups on Campus
             <p>
               Captured and organized event documentation with a professional
