@@ -76,7 +76,7 @@ export default function Work() {
       github: "https://github.com/YHQZ1/ISCKON-Alumni-Connect",
       live: "#",
       image:
-        "/alumniConnect.png",
+        "/alumni-connect.png",
       accentColor: "#6366f1",
     },
     {
