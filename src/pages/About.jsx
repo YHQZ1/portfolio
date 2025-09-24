@@ -71,7 +71,10 @@ export default function About() {
             <span className="list-highlight1">
               Competitive Programming Co-Head
             </span>{" "}
-            – Google Developer Students Club, SIT Pune
+            –{" "}
+            <span className="list-org">
+              Google Developer Students Club, SIT Pune
+            </span>
             <p>
               Passionately led coding challenges and creative problem-solving
               sessions, inspiring students to explore new algorithms and push
@@ -81,7 +84,7 @@ export default function About() {
           </li>
           <li>
             <span className="list-highlight2">Social Media Head</span> –
-            SymbiTech, SIT Pune
+            <span className="list-org"> SymbiTech, SIT Pune</span>
             <p>
               Brought events to life online through innovative digital
               campaigns. Curated stories, visuals, and interactions that sparked
@@ -90,8 +93,12 @@ export default function About() {
             </p>
           </li>
           <li>
-            <span className="list-highlight2">Media & Documentation Head</span> –
-            National level Hackathon by Google Developers Groups on Campus
+            <span className="list-highlight3">Media & Documentation Head</span>{" "}
+            –
+            <span className="list-org">
+              {" "}
+              National level Hackathon by Google Developers Groups on Campus
+            </span>
             <p>
               Captured and organized event documentation with a professional
               touch, ensuring every session, workshop, and outcome was showcased
@@ -107,7 +114,7 @@ export default function About() {
         </h2>
         <ul className="achievements-list">
           <li>
-            <span className="list-highlight1">
+            <span className="list-highlight4">
               Hackathon Finalist – ACE 2.0 (2025)
             </span>
             <p>
@@ -142,8 +149,8 @@ export default function About() {
 
         .text-gradient {
           background: ${darkMode
-            ? "linear-gradient(90deg, #f28b82, #fdd663)"
-            : "linear-gradient(90deg, #ea4335, #fbbc04)"};
+            ? "linear-gradient(90deg, #c58af9, #a142f4)" // purple gradient for dark mode
+            : "linear-gradient(90deg, #a142f4, #c58af9)"}; // purple gradient for light mode
           -webkit-background-clip: text;
           background-clip: text;
           color: transparent;
@@ -186,15 +193,33 @@ export default function About() {
         }
 
         .list-highlight1 {
-          color: ${darkMode ? "#c58af9" : "#a142f4"};
+          color: ${darkMode ? "#f28b82" : "#ea4335"}; /* red */
           font-weight: 500;
           font-size: 1.2rem;
         }
 
         .list-highlight2 {
-          color: ${darkMode ? "#8ab4f8" : "#4285f4"};
+          color: ${darkMode ? "#8ab4f8" : "#4285f4"}; /* blue */
           font-weight: 500;
           font-size: 1.2rem;
+        }
+
+        .list-highlight3 {
+          color: ${darkMode ? "#fdd663" : "#fbbc04"}; /* yellow */
+          font-weight: 500;
+          font-size: 1.2rem;
+        }
+
+        .list-highlight4 {
+          color: ${darkMode ? "#81c995" : "#34a853"}; /* green */
+          font-weight: 500;
+          font-size: 1.2rem;
+        }
+
+        .list-org {
+          font-size: 1.2rem;
+          font-weight: 500;
+          color: ${darkMode ? "#ccc" : "#555"}; /* neutral gray */
         }
 
         .roles-list,
@@ -213,6 +238,26 @@ export default function About() {
           margin: 0.3rem 0 0 0;
           color: ${darkMode ? "#ccc" : "#333"};
           font-size: 1.2rem;
+        }
+
+        .google-blue {
+          color: ${darkMode ? "#8ab4f8" : "#4285f4"};
+          font-weight: 500;
+        }
+
+        .google-red {
+          color: ${darkMode ? "#f28b82" : "#ea4335"};
+          font-weight: 500;
+        }
+
+        .google-yellow {
+          color: ${darkMode ? "#fdd663" : "#fbbc04"};
+          font-weight: 500;
+        }
+
+        .google-green {
+          color: ${darkMode ? "#81c995" : "#34a853"};
+          font-weight: 500;
         }
       `}</style>
     </main>

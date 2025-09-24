@@ -68,6 +68,27 @@ export default function Work() {
         "https://influencermarketinghub.com/wp-content/uploads/2022/08/x-best-URL-Shortening-Services.png",
       accentColor: "#3b82f6",
     },
+    {
+      title: "Alumni Connect",
+      description:
+        "A platform connecting students and alumni for mentorship and networking. Features user profiles, messaging, and event management to foster community engagement and career growth.",
+      tags: ["React", "Node.js", "Express", "Supabase"],
+      github: "https://github.com/YHQZ1/ISCKON-Alumni-Connect",
+      live: "#",
+      image:
+        "/alumniConnect.png",
+      accentColor: "#6366f1",
+    },
+    {
+      title: "OneGov",
+      description:
+        "Developed a web platform integrating government services, local businesses, community events, transportation info, and emergency services with role-based access for citizens, businesses, and administrators.",
+      tags: ["React", "Node.js", "Express", "Supabase"],
+      github: "https://github.com/YHQZ1/OneGov",
+      live: "https://one-gov.vercel.app/",
+      image: "/onegov.png",
+      accentColor: "#10b981",
+    },
   ];
 
   const techSkills = [
