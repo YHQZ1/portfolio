@@ -74,7 +74,7 @@ export default function Work() {
         "A platform connecting students and alumni for mentorship and networking. Features user profiles, messaging, and event management to foster community engagement and career growth.",
       tags: ["React", "Node.js", "Express", "Supabase"],
       github: "https://github.com/YHQZ1/ISCKON-Alumni-Connect",
-      live: "#",
+      live: "https://gradcircle.vercel.app/",
       image:
         "/alumni-connect.png",
       accentColor: "#6366f1",
