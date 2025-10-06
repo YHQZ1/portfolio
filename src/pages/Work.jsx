@@ -63,7 +63,7 @@ export default function Work() {
         "React & Supabase web app for URL shortening and QR code generation. Offers real-time link tracking and a clean, responsive UI for efficient link sharing and management.",
       tags: ["React", "Supabase", "JavaScript", "QR Code"],
       github: "https://github.com/YHQZ1/BitLink",
-      live: "#",
+      live: "https://bitlink-flame.vercel.app/",
       image:
         "https://influencermarketinghub.com/wp-content/uploads/2022/08/x-best-URL-Shortening-Services.png",
       accentColor: "#3b82f6",
