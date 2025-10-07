@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link to="/" className="navbar__logo">
+      <Link to="/work" className="navbar__logo">
         <img src="/logo.png" alt="Portfolio Logo" className="logo-image" />
       </Link>
 
