@@ -138,23 +138,16 @@ export default function About() {
 
       <style jsx>{`
         .gradient-text {
-          background: ${darkMode
-            ? "linear-gradient(90deg, #8ab4f8, #81c995)"
-            : "linear-gradient(90deg, #4285f4, #34a853)"};
-          -webkit-background-clip: text;
-          background-clip: text;
-          color: transparent;
-          display: inline;
-        }
+  color: ${darkMode ? "#E8EAED" : "#3C4043"}; /* clean contrast from Google UI grays */
+  font-weight: 700;
+}
+
 
         .text-gradient {
-          background: ${darkMode
-            ? "linear-gradient(90deg, #c58af9, #a142f4)" // purple gradient for dark mode
-            : "linear-gradient(90deg, #a142f4, #c58af9)"}; // purple gradient for light mode
-          -webkit-background-clip: text;
-          background-clip: text;
-          color: transparent;
-          display: inline;
+          color: ${darkMode
+            ? "#F3F3F3"
+            : "#2D2D2D"}; /* Soft white → deep charcoal */
+          font-weight: 600;
         }
 
         .text-accent {
