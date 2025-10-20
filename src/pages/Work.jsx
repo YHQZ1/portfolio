@@ -89,6 +89,17 @@ export default function Work() {
       image: "/onegov.png",
       accentColor: "#10b981",
     },
+    {
+      title: "Anchor",
+      description:
+        "Anchor is a student productivity platform that centralizes assignments, deadlines, and attendance. Sync with college systems, track submissions, get notifications, and gain insights—all in one dashboard to stay organized and on top of student life.",
+      tags: ["Next.js", "Supabase", "Typescript"],
+      github: "https://github.com/YHQZ1/Anchor",
+      live: "#",
+      image:
+        "./anchor.png",
+      accentColor: "#3b82f6",
+    }
   ];
 
   const techSkills = [
