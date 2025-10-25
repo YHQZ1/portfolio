@@ -65,7 +65,7 @@ export default function Work() {
       github: "https://github.com/YHQZ1/BitLink",
       live: "https://btlink.vercel.app/",
       image:
-        "https://influencermarketinghub.com/wp-content/uploads/2022/08/x-best-URL-Shortening-Services.png",
+        "/bitlink.png",
       accentColor: "#3b82f6",
     },
     {
@@ -76,7 +76,7 @@ export default function Work() {
       github: "https://github.com/YHQZ1/ISCKON-Alumni-Connect",
       live: "https://gradcircle.vercel.app/",
       image:
-        "/alumni-connect.png",
+        "/gradcircle.png",
       accentColor: "#6366f1",
     },
     {
@@ -95,7 +95,7 @@ export default function Work() {
         "Anchor is a student productivity platform that centralizes assignments, deadlines, and attendance. Sync with college systems, track submissions, get notifications, and gain insights—all in one dashboard to stay organized and on top of student life.",
       tags: ["Next.js", "Supabase", "Typescript"],
       github: "https://github.com/YHQZ1/Anchor",
-      live: "#",
+      live: "https://anchor-dev.vercel.app/",
       image:
         "./anchor.png",
       accentColor: "#3b82f6",
@@ -268,7 +268,8 @@ export default function Work() {
       <div className="intro-content">
         <h1 className="intro-heading">Hey, I'm Uttkarsh!</h1>
         <h2 className="intro-subheading">
-          CS major passionate about building{" "}
+          CS major 
+          <span className="highlight4"> passionate</span> about building{" "}
           <span className="highlight1">cool projects</span> and turning{" "}
           <span className="highlight2">ideas</span> into{" "}
           <span className="highlight3">code</span>.
