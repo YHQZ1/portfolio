@@ -283,9 +283,9 @@ export default function Work() {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 0 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.15 }}
+              transition={{ duration: 0.5 }}
               className="project-card"
               style={{ "--accent": project.accentColor }}
             >
@@ -323,11 +323,11 @@ export default function Work() {
               {techSkills.map((skill, index) => (
                 <motion.div
                   key={index}
-                  whileHover={{ y: -10, scale: 1.05 }}
+                  whileHover={{ y: 0, scale: 1 }}
                   whileTap={{ scale: 0.95 }}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 0 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: index * 0.05 }}
+                  transition={{ duration: 0.3 }}
                   className="skill-card"
                   style={{
                     "--skill-color": skill.color,
@@ -348,7 +348,7 @@ export default function Work() {
                           className="skill-level-fill"
                           initial={{ width: 0 }}
                           animate={{ width: `${skill.level}%` }}
-                          transition={{ duration: 1, delay: index * 0.1 }}
+                          transition={{ duration: 1 }}
                           style={{ backgroundColor: skill.color }}
                         ></motion.div>
                       </div>
@@ -366,12 +366,11 @@ export default function Work() {
               {softSkills.map((skill, index) => (
                 <motion.div
                   key={index}
-                  whileHover={{ scale: 1.05 }}
-                  initial={{ opacity: 0, y: 20 }}
+                  whileHover={{ scale: 1 }}
+                  initial={{ opacity: 0, y: 0 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
-                    duration: 0.3,
-                    delay: index * 0.05 + techSkills.length * 0.05,
+                    duration: 0.3
                   }}
                   className="soft-skill-item"
                 >
