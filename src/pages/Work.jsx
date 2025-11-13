@@ -36,7 +36,7 @@ export default function Work() {
     {
       title: "VerQ",
       description:
-        "College placement automation platform built using MERN stack and Supabase. Features an AI-powered resume scorer (ATS Checker) to optimize student CVs.",
+        "A unified platform that streamlines the student placement journey from start to finish. By combining an AI-driven ATS resume scanner, personalized application tracking, and direct company outreach, it eliminates friction and empowers students to secure their ideal roles.",
       tags: ["Full-Stack", "AI Integration", "Real-time", "Scalable"],
       github: "https://github.com/About-Rudra/Verq",
       live: "https://verq-pi.vercel.app",
@@ -45,7 +45,7 @@ export default function Work() {
     {
       title: "Order Management System",
       description:
-        "Desktop-based Java Swing app integrated with JDBC for database operations. Enables efficient customer, order, and vendor management with real-time tracking.",
+        "A robust desktop application built to streamline business operations. It provides a centralized system for managing customers, orders, and vendors, featuring real-time tracking and powerful data management capabilities for complete operational oversight.",
       tags: ["Desktop App", "Database Design", "CRUD Operations", "Enterprise"],
       github: "https://github.com/YHQZ1/Order-Management-System",
       live: "#",
@@ -54,7 +54,7 @@ export default function Work() {
     {
       title: "BitLink",
       description:
-        "React & Supabase web app for URL shortening and QR code generation. Offers real-time link tracking and a clean, responsive UI.",
+        "A modern, full-stack web application for streamlined link management. It allows users to shorten URLs, generate dynamic QR codes, and gain valuable insights through a real-time analytics dashboard, all within a clean and intuitive interface.",
       tags: ["URL Shortener", "Analytics", "QR Generation", "Real-time"],
       github: "https://github.com/YHQZ1/BitLink",
       live: "https://btlink.vercel.app/",
@@ -63,7 +63,7 @@ export default function Work() {
     {
       title: "Alumni Connect",
       description:
-        "A platform connecting students and alumni for mentorship and networking. Features user profiles, messaging, and event management.",
+        "A fundraising platform that enables educational institutions to launch and promote donation campaigns. It connects schools with alumni and broader communities, facilitating secure contributions to support academic programs and campus development.",
       tags: ["Social Platform", "Mentorship", "Real-time Chat", "Community"],
       github: "https://github.com/YHQZ1/ISCKON-Alumni-Connect",
       live: "https://gradcircle.vercel.app/",
@@ -72,7 +72,7 @@ export default function Work() {
     {
       title: "OneGov",
       description:
-        "Web platform integrating government services, local businesses, community events, transportation info, and emergency services with role-based access.",
+        "A centralized digital hub for modern community living. It seamlessly integrates key services including government, local commerce, transportation, and public safety, providing a personalized experience for every user through secure, role-based access.",
       tags: ["GovTech", "Multi-tenant", "Role-based", "Integrated Services"],
       github: "https://github.com/YHQZ1/OneGov",
       live: "https://one-gov.vercel.app/",
@@ -81,7 +81,7 @@ export default function Work() {
     {
       title: "Anchor",
       description:
-        "Student productivity platform that centralizes assignments, deadlines, and attendance. All-in-one dashboard to stay organized.",
+        "A unified student productivity platform that integrates directly with college systems to automate academic management. By automatically syncing assignments, tracking attendance thresholds, and providing actionable insights, it minimizes administrative effort and helps students stay organized and ahead of their deadlines.",
       tags: ["Productivity", "Dashboard", "Student Tech", "All-in-One"],
       github: "https://github.com/YHQZ1/Anchor",
       live: "https://anchor-dev.vercel.app/",
@@ -328,7 +328,7 @@ export default function Work() {
         darkMode ? "bg-[#0a0a0a]" : "bg-[#fafafa]"
       } px-4 sm:px-6`}
     >
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 pt-24 sm:pt-28 md:pt-32 pb-10">
+      <div className="max-w-8xl mx-auto px-2 sm:px-4 md:px-6 lg:px-12 xl:px-16 pt-24 sm:pt-28 md:pt-32 pb-10">
         <div className="mb-20 sm:mb-24 md:mb-32">
           <h1
             className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extralight mb-6 sm:mb-8 ${
@@ -371,7 +371,7 @@ export default function Work() {
             >
               Projects
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-4 md:gap-4">
               {projects.map((project, index) => (
                 <div
                   key={index}
@@ -454,7 +454,7 @@ export default function Work() {
             >
               Technical Skills
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-4">
               {technicalSkills.map((skill, index) => (
                 <div
                   key={index}
@@ -462,7 +462,7 @@ export default function Work() {
                     darkMode
                       ? "border-[#2a2a2a] bg-[#0f0f0f]"
                       : "border-[#e0e0e0] bg-white"
-                  } rounded-xl`}
+                  } rounded-sm`}
                 >
                   <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
                     <img

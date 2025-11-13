@@ -37,7 +37,7 @@ export default function About() {
         darkMode ? "bg-[#0a0a0a]" : "bg-[#fafafa]"
       } px-4 sm:px-6`}
     >
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 pt-24 sm:pt-28 md:pt-32 pb-10">
+      <div className="max-w-8xl mx-auto px-2 sm:px-4 md:px-6 lg:px-12 xl:px-16 pt-24 sm:pt-28 md:pt-32 pb-10">
         {/* Hero Section with Image and Bio */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-12 md:gap-16 lg:gap-20 mb-16 sm:mb-20">
           {/* Left: Large Image */}
