@@ -1,37 +1,5 @@
 import { useTheme } from "../context/ThemeContext";
-import {
-  FaJava,
-  FaPython,
-  FaJs,
-  FaReact,
-  FaNode,
-  FaGitAlt,
-  FaHtml5,
-  FaCss3Alt,
-  FaGithub,
-  FaExternalLinkAlt,
-  FaDatabase,
-  FaAws,
-} from "react-icons/fa";
-import {
-  SiCplusplus,
-  SiTailwindcss,
-  SiExpress,
-  SiSupabase,
-  SiMysql,
-  SiPostgresql,
-  SiMongodb,
-  SiDocker,
-} from "react-icons/si";
-import { motion } from "framer-motion";
-import "../styles/Work.css";
-import {
-  FaComment,
-  FaUsers,
-  FaGlobe,
-  FaPuzzlePiece,
-  FaSyncAlt,
-} from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Work() {
   const { darkMode } = useTheme();
@@ -40,370 +8,477 @@ export default function Work() {
     {
       title: "VerQ",
       description:
-        "College placement automation platform built using MERN stack and Supabase. Features an AI-powered resume scorer (ATS Checker) to optimize student CVs. Streamlined placement process connecting students, recruiters, and placement cells.",
-      tags: ["React", "Node.js", "Supabase", "AI", "Express"],
+        "College placement automation platform built using MERN stack and Supabase. Features an AI-powered resume scorer (ATS Checker) to optimize student CVs.",
+      tags: ["React", "Node.js", "Supabase", "AI"],
       github: "https://github.com/About-Rudra/Verq",
       live: "https://verq-pi.vercel.app",
       image: "/verq.png",
-      accentColor: "#6366f1",
     },
     {
       title: "Order Management System",
       description:
-        "Desktop-based Java Swing app integrated with JDBC for database operations. Enables efficient customer, order, and vendor management with real-time tracking, improving processing speed and vendor-user interactions.",
+        "Desktop-based Java Swing app integrated with JDBC for database operations. Enables efficient customer, order, and vendor management with real-time tracking.",
       tags: ["Java", "Swing", "JDBC", "MySQL"],
       github: "https://github.com/YHQZ1/Order-Management-System",
       live: "#",
       image: "/oms.png",
-      accentColor: "#10b981",
     },
     {
       title: "BitLink",
       description:
-        "React & Supabase web app for URL shortening and QR code generation. Offers real-time link tracking and a clean, responsive UI for efficient link sharing and management.",
-      tags: ["React", "Supabase", "JavaScript", "QR Code"],
+        "React & Supabase web app for URL shortening and QR code generation. Offers real-time link tracking and a clean, responsive UI.",
+      tags: ["React", "Supabase", "JavaScript"],
       github: "https://github.com/YHQZ1/BitLink",
       live: "https://btlink.vercel.app/",
-      image:
-        "/bitlink.png",
-      accentColor: "#3b82f6",
+      image: "/bitlink.png",
     },
     {
       title: "Alumni Connect",
       description:
-        "A platform connecting students and alumni for mentorship and networking. Features user profiles, messaging, and event management to foster community engagement and career growth.",
+        "A platform connecting students and alumni for mentorship and networking. Features user profiles, messaging, and event management.",
       tags: ["React", "Node.js", "Express", "Supabase"],
       github: "https://github.com/YHQZ1/ISCKON-Alumni-Connect",
       live: "https://gradcircle.vercel.app/",
-      image:
-        "/gradcircle.png",
-      accentColor: "#6366f1",
+      image: "/gradcircle.png",
     },
     {
       title: "OneGov",
       description:
-        "Developed a web platform integrating government services, local businesses, community events, transportation info, and emergency services with role-based access for citizens, businesses, and administrators.",
-      tags: ["React", "Node.js", "Express", "Supabase"],
+        "Web platform integrating government services, local businesses, community events, transportation info, and emergency services with role-based access.",
+      tags: ["React", "Node.js", "Express"],
       github: "https://github.com/YHQZ1/OneGov",
       live: "https://one-gov.vercel.app/",
       image: "/onegov.png",
-      accentColor: "#10b981",
     },
     {
       title: "Anchor",
       description:
-        "Anchor is a student productivity platform that centralizes assignments, deadlines, and attendance. Sync with college systems, track submissions, get notifications, and gain insights—all in one dashboard to stay organized and on top of student life.",
-      tags: ["Next.js", "Supabase", "Typescript"],
+        "Student productivity platform that centralizes assignments, deadlines, and attendance. All-in-one dashboard to stay organized.",
+      tags: ["Next.js", "Supabase", "TypeScript"],
       github: "https://github.com/YHQZ1/Anchor",
       live: "https://anchor-dev.vercel.app/",
-      image:
-        "./anchor.png",
-      accentColor: "#3b82f6",
-    }
+      image: "./anchor.png",
+    },
   ];
 
-  const techSkills = [
+  const technicalSkills = [
     {
       name: "Java",
-      level: 80,
-      icon: <FaJava />,
-      category: "language",
-      color: "#f89820",
+      logo: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
+      level: "Advanced",
+      experience: "3+ years",
+      projects: [
+        "Order Management System",
+        "Academic Projects",
+        "Backend APIs",
+      ],
     },
     {
-      name: "C++",
-      level: 40,
-      icon: <SiCplusplus />,
-      category: "language",
-      color: "#00599c",
-    },
-    {
-      name: "C",
-      level: 80,
-      icon: <div className="c-icon">C</div>,
-      category: "language",
-      color: "#555555",
-    },
-    {
-      name: "Python",
-      level: 40,
-      icon: <FaPython />,
-      category: "language",
-      color: "#3776ab",
+      name: "C/C++",
+      logo: "https://cdn.simpleicons.org/cplusplus/00599C",
+      level: "Intermediate",
+      experience: "2+ years",
+      projects: ["System Programming", "Algorithms", "Academic Projects"],
     },
     {
       name: "JavaScript",
-      level: 70,
-      icon: <FaJs />,
-      category: "language",
-      color: "#f7df1e",
+      logo: "https://cdn.simpleicons.org/javascript/F7DF1E",
+      level: "Advanced",
+      experience: "3+ years",
+      projects: ["VerQ", "BitLink", "Alumni Connect", "OneGov"],
     },
     {
-      name: "PL/SQL",
-      level: 70,
-      icon: <FaDatabase />,
-      category: "language",
-      color: "#f29111",
+      name: "TypeScript",
+      logo: "https://cdn.simpleicons.org/typescript/3178C6",
+      level: "Intermediate",
+      experience: "2 years",
+      projects: ["Anchor", "Current Projects", "Full-stack Apps"],
     },
     {
-      name: "React",
-      level: 90,
-      icon: <FaReact />,
-      category: "frontend",
-      color: "#61dafb",
+      name: "Python",
+      logo: "https://cdn.simpleicons.org/python/3776AB",
+      level: "Intermediate",
+      experience: "2 years",
+      projects: ["AI Components", "Automation Scripts", "Backend APIs"],
     },
     {
-      name: "HTML",
-      level: 90,
-      icon: <FaHtml5 />,
-      category: "frontend",
-      color: "#e34f26",
+      name: "Bash",
+      logo: "https://cdn.simpleicons.org/gnubash/4EAA25",
+      level: "Intermediate",
+      experience: "2 years",
+      projects: ["DevOps Scripts", "Automation", "System Administration"],
     },
     {
-      name: "CSS",
-      level: 100,
-      icon: <FaCss3Alt />,
-      category: "frontend",
-      color: "#1572b6",
-    },
-    {
-      name: "Tailwind",
-      level: 100,
-      icon: <SiTailwindcss />,
-      category: "frontend",
-      color: "#38b2ac",
-    },
-    {
-      name: "Node.js",
-      level: 70,
-      icon: <FaNode />,
-      category: "backend",
-      color: "#68a063",
-    },
-    {
-      name: "Express",
-      level: 80,
-      icon: <SiExpress />,
-      category: "backend",
-      color: "#000000",
-    },
-    {
-      name: "Flask",
-      level: 40,
-      icon: <FaPython />,
-      category: "backend",
-      color: "#000000",
-    },
-    {
-      name: "SQLAlchemy",
-      level: 80,
-      icon: <FaPython />,
-      category: "backend",
-      color: "#336791",
-    },
-
-    {
-      name: "MySQL",
-      level: 90,
-      icon: <SiMysql />,
-      category: "database",
-      color: "#4479a1",
-    },
-    {
-      name: "PostgreSQL",
-      level: 90,
-      icon: <SiPostgresql />,
-      category: "database",
-      color: "#336791",
-    },
-    {
-      name: "MongoDB",
-      level: 70,
-      icon: <SiMongodb />,
-      category: "database",
-      color: "#4DB33D",
-    },
-    {
-      name: "Supabase",
-      level: 90,
-      icon: <SiSupabase />,
-      category: "database",
-      color: "#3ecf8e",
-    },
-    {
-      name: "Git",
-      level: 100,
-      icon: <FaGitAlt />,
-      category: "tool",
-      color: "#f05032",
-    },
-    {
-      name: "Docker",
-      level: 80,
-      icon: <SiDocker />,
-      category: "tool",
-      color: "#0db7ed",
+      name: "SQL",
+      logo: "https://cdn.simpleicons.org/postgresql/4169E1",
+      level: "Intermediate",
+      experience: "2+ years",
+      projects: [
+        "Database Design",
+        "Query Optimization",
+        "All Backend Projects",
+      ],
     },
     {
       name: "AWS",
-      level: 40,
-      icon: <FaAws />,
-      category: "tool",
-      color: "#ff9900",
+      logo: "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg",
+      level: "Intermediate",
+      experience: "1+ year",
+      projects: ["Cloud Deployment", "Infrastructure", "Side Projects"],
+    },
+    {
+      name: "Supabase",
+      logo: "https://cdn.simpleicons.org/supabase/3FCF8E",
+      level: "Advanced",
+      experience: "2 years",
+      projects: ["VerQ", "BitLink", "Alumni Connect", "Anchor"],
+    },
+    {
+      name: "Vercel",
+      logo: "https://cdn.simpleicons.org/vercel/000000",
+      darkLogo: "https://cdn.simpleicons.org/vercel/FFFFFF",
+      level: "Advanced",
+      experience: "2 years",
+      projects: ["All Frontend Deployments", "Portfolio", "Web Apps"],
+    },
+    {
+      name: "Render",
+      logo: "https://cdn.simpleicons.org/render/46E3B7",
+      level: "Intermediate",
+      experience: "1+ year",
+      projects: ["Backend Services", "API Hosting", "Microservices"],
+    },
+    {
+      name: "Docker",
+      logo: "https://cdn.simpleicons.org/docker/2496ED",
+      level: "Intermediate",
+      experience: "1+ year",
+      projects: ["Containerization", "Local Development", "Deployment"],
+    },
+    {
+      name: "Kubernetes",
+      logo: "https://cdn.simpleicons.org/kubernetes/326CE5",
+      level: "Beginner",
+      experience: "< 1 year",
+      projects: ["Learning", "Orchestration Concepts"],
+    },
+    {
+      name: "PostgreSQL",
+      logo: "https://cdn.simpleicons.org/postgresql/4169E1",
+      level: "Intermediate",
+      experience: "2 years",
+      projects: ["Backend APIs", "Full-stack Apps", "Data Management"],
+    },
+    {
+      name: "MongoDB",
+      logo: "https://cdn.simpleicons.org/mongodb/47A248",
+      level: "Intermediate",
+      experience: "1+ year",
+      projects: ["NoSQL Projects", "Flexible Data Models"],
+    },
+    {
+      name: "Prisma",
+      logo: "https://cdn.simpleicons.org/prisma/2D3748",
+      darkLogo: "https://cdn.simpleicons.org/prisma/FFFFFF",
+      level: "Intermediate",
+      experience: "1+ year",
+      projects: ["Database ORM", "Type-safe Queries", "Backend APIs"],
+    },
+    {
+      name: "Next.js",
+      logo: "https://cdn.simpleicons.org/nextdotjs/000000",
+      darkLogo: "https://cdn.simpleicons.org/nextdotjs/FFFFFF",
+      level: "Advanced",
+      experience: "2 years",
+      projects: ["Anchor", "Portfolio", "Full-stack Applications"],
+    },
+    {
+      name: "ReactJS",
+      logo: "https://cdn.simpleicons.org/react/61DAFB",
+      level: "Advanced",
+      experience: "3+ years",
+      projects: ["VerQ", "BitLink", "Alumni Connect", "OneGov"],
+    },
+    {
+      name: "Node.js",
+      logo: "https://cdn.simpleicons.org/nodedotjs/339933",
+      level: "Advanced",
+      experience: "3+ years",
+      projects: ["VerQ", "Alumni Connect", "OneGov", "Backend Services"],
+    },
+    {
+      name: "Express.js",
+      logo: "https://cdn.simpleicons.org/express/000000",
+      darkLogo: "https://cdn.simpleicons.org/express/FFFFFF",
+      level: "Advanced",
+      experience: "3 years",
+      projects: ["VerQ", "Alumni Connect", "OneGov", "REST APIs"],
+    },
+    {
+      name: "Flask",
+      logo: "https://cdn.simpleicons.org/flask/000000",
+      darkLogo: "https://cdn.simpleicons.org/flask/FFFFFF",
+      level: "Intermediate",
+      experience: "1+ year",
+      projects: ["Python APIs", "Microservices", "Prototyping"],
+    },
+    {
+      name: "FastAPI",
+      logo: "https://cdn.simpleicons.org/fastapi/009688",
+      level: "Intermediate",
+      experience: "1 year",
+      projects: ["High-performance APIs", "Python Backends"],
+    },
+    {
+      name: "Spring Boot",
+      logo: "https://cdn.simpleicons.org/springboot/6DB33F",
+      level: "Beginner",
+      experience: "< 1 year",
+      projects: ["Learning", "Java Backend Development"],
+    },
+    {
+      name: "Redis",
+      logo: "https://cdn.simpleicons.org/redis/DC382D",
+      level: "Beginner",
+      experience: "< 1 year",
+      projects: ["Caching", "Session Management", "Learning"],
+    },
+    {
+      name: "Git/GitHub",
+      logo: "https://cdn.simpleicons.org/github/181717",
+      darkLogo: "https://cdn.simpleicons.org/github/FFFFFF",
+      level: "Advanced",
+      experience: "3+ years",
+      projects: ["All Projects", "Team Collaboration", "Version Control"],
+    },
+    {
+      name: "Postman",
+      logo: "https://cdn.simpleicons.org/postman/FF6C37",
+      level: "Advanced",
+      experience: "3 years",
+      projects: ["API Testing", "Documentation", "Development Workflow"],
+    },
+    {
+      name: "Tailwind",
+      logo: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+      level: "Advanced",
+      experience: "2+ years",
+      projects: ["Current Projects", "Portfolio", "BitLink", "All Frontends"],
     },
   ];
 
-  const softSkills = [
-    { name: "Problem Solving", level: 80, icon: <FaPuzzlePiece /> },
-    { name: "Analytical Thinking", level: 85, icon: <FaGlobe /> },
-    { name: "Adaptability", level: 100, icon: <FaSyncAlt /> },
-    { name: "Communication", level: 90, icon: <FaComment /> },
-    { name: "Teamwork", level: 90, icon: <FaUsers /> },
-    { name: "Attention to Detail", level: 80, icon: <FaComment /> },
-  ];
-
   return (
-    <main className={`work-container ${darkMode ? "dark" : ""}`}>
-      {/* Intro */}
-      <div className="intro-content">
-        <h1 className="intro-heading">Hey, I'm Uttkarsh!</h1>
-        <h2 className="intro-subheading">
-          CS major 
-          <span className="highlight4"> passionate</span> about building{" "}
-          <span className="highlight1">cool projects</span> and turning{" "}
-          <span className="highlight2">ideas</span> into{" "}
-          <span className="highlight3">code</span>.
-        </h2>
-      </div>
-
-      {/* Projects */}
-      <div className="projects-section">
-        <h2 className="projects-title">Projects</h2>
-        <div className="projects-grid">
-          {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 0 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="project-card"
-              style={{ "--accent": project.accentColor }}
-            >
-              <div className="project-image-container">
-                <div
-                  className="project-image"
-                  style={{ backgroundImage: `url(${project.image})` }}
-                ></div>
-              </div>
-              <div className="project-content">
-                <h3 className="project-name">{project.title}</h3>
-                <p className="project-description">{project.description}</p>
-                <div className="project-links">
-                  <a href={project.github} className="project-link">
-                    <FaGithub /> Code
-                  </a>
-                  <a href={project.live} className="project-link">
-                    <FaExternalLinkAlt /> Live
-                  </a>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+    <main
+      className={`min-h-screen ${darkMode ? "bg-[#0a0a0a]" : "bg-[#fafafa]"}`}
+    >
+      <div className="max-w-8xl mx-auto px-8 lg:px-16 xl:px-24 pt-32 pb-10">
+        <div className="mb-32">
+          <h1
+            className={`text-7xl md:text-8xl font-extralight mb-8 ${
+              darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+            } tracking-tighter leading-none`}
+          >
+            Hey, I'm Uttkarsh!
+          </h1>
+          <p
+            className={`text-2xl md:text-3xl font-light leading-relaxed ${
+              darkMode ? "text-[#888]" : "text-[#666]"
+            }`}
+          >
+            A computer science major{" "}
+            <span className={darkMode ? "text-[#8ab4f8]" : "text-[#4285f4]"}>
+              passionate
+            </span>{" "}
+            about building{" "}
+            <span className={darkMode ? "text-[#f28b82]" : "text-[#ea4335]"}>
+              cool projects
+            </span>{" "}
+            and turning{" "}
+            <span className={darkMode ? "text-[#fdd663]" : "text-[#fbbc04]"}>
+              ideas
+            </span>{" "}
+            into{" "}
+            <span className={darkMode ? "text-[#81c995]" : "text-[#34a853]"}>
+              code
+            </span>
+          </p>
         </div>
-      </div>
 
-      {/* Skills */}
-      <div className="skills-section">
-        <h2 className="skills-title">Skills</h2>
-        <div className="skills-categories">
-          {/* Technical Skills */}
-          <div className="technical-skills">
-            <h3 className="skills-subtitle">Technical Skills</h3>
-            <div className="skills-grid">
-              {techSkills.map((skill, index) => (
-                <motion.div
+        <section className="mb-32">
+          <div>
+            <h2
+              className={`text-5xl font-extralight mb-8 ${
+                darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+              } tracking-tight`}
+            >
+              Projects
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+              {projects.map((project, index) => (
+                <div
                   key={index}
-                  whileHover={{ y: 0, scale: 1 }}
-                  whileTap={{ scale: 0.95 }}
-                  initial={{ opacity: 0, y: 0 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="skill-card"
-                  style={{
-                    "--skill-color": skill.color,
-                    "--card-bg": darkMode
-                      ? "rgba(30, 30, 30, 0.7)"
-                      : "rgba(255, 255, 255, 0.9)",
-                  }}
+                  className={`border ${
+                    darkMode
+                      ? "border-[#1a1a1a] bg-[#0f0f0f]"
+                      : "border-[#e8e8e8] bg-white"
+                  } rounded-sm overflow-hidden flex flex-col`}
                 >
-                  <div className="skill-icon" style={{ color: skill.color }}>
-                    {skill.icon}
+                  <div className="relative h-48 overflow-hidden">
+                    <div
+                      className="w-full h-full bg-cover bg-center"
+                      style={{ backgroundImage: `url(${project.image})` }}
+                    />
                   </div>
-                  <div className="skill-info">
-                    <span className="skill-name">{skill.name}</span>
-                    <div className="skill-level-container">
-                      <span className="skill-percent">{skill.level}%</span>
-                      <div className="skill-level-bar">
-                        <motion.div
-                          className="skill-level-fill"
-                          initial={{ width: 0 }}
-                          animate={{ width: `${skill.level}%` }}
-                          transition={{ duration: 1 }}
-                          style={{ backgroundColor: skill.color }}
-                        ></motion.div>
+                  <div className="p-6 flex flex-col flex-1">
+                    <h3
+                      className={`text-2xl font-light mb-3 ${
+                        darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+                      } tracking-tight`}
+                    >
+                      {project.title}
+                    </h3>
+                    <p
+                      className={`text-sm leading-relaxed mb-6 flex-1 ${
+                        darkMode ? "text-[#888]" : "text-[#666]"
+                      }`}
+                    >
+                      {project.description}
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      {project.tags.map((tag, tagIndex) => (
+                        <span
+                          key={tagIndex}
+                          className={`px-3 py-1 text-xs font-medium rounded-full border ${
+                            darkMode
+                              ? "border-[#2a2a2a] bg-[#1a1a1a] text-[#888]"
+                              : "border-[#e0e0e0] bg-[#f5f5f5] text-[#666]"
+                          }`}
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="flex gap-6 mt-auto">
+                      <a
+                        href={project.github}
+                        className={`flex items-center gap-2 text-sm font-light ${
+                          darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+                        }`}
+                      >
+                        <FaGithub className="text-base" />
+                        <span>Code</span>
+                      </a>
+                      <a
+                        href={project.live}
+                        className={`flex items-center gap-2 text-sm font-light ${
+                          darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+                        }`}
+                      >
+                        <FaExternalLinkAlt className="text-sm" />
+                        <span>Live</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-20">
+          <div>
+            <h2
+              className={`text-5xl font-extralight mb-8 ${
+                darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+              } tracking-tight`}
+            >
+              Technical Skills
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {technicalSkills.map((skill, index) => (
+                <div
+                  key={index}
+                  className={`p-6 border ${
+                    darkMode
+                      ? "border-[#2a2a2a] bg-[#0f0f0f]"
+                      : "border-[#e0e0e0] bg-white"
+                  } rounded-xl`}
+                >
+                  <div className="flex items-center gap-4 mb-4">
+                    <img
+                      src={
+                        darkMode && skill.darkLogo ? skill.darkLogo : skill.logo
+                      }
+                      alt={skill.name}
+                      className="w-12 h-12"
+                    />
+                    <div className="flex-1 min-w-0">
+                      <h3
+                        className={`text-lg font-medium truncate ${
+                          darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+                        }`}
+                      >
+                        {skill.name}
+                      </h3>
+                      <div className="flex items-center gap-2 mt-1">
+                        <span
+                          className={`text-xs px-2 py-1 rounded-full border ${
+                            darkMode
+                              ? "border-[#8ab4f8] text-[#8ab4f8] bg-[#8ab4f8]/10"
+                              : "border-[#4285f4] text-[#4285f4] bg-[#4285f4]/10"
+                          }`}
+                        >
+                          {skill.level}
+                        </span>
                       </div>
                     </div>
                   </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-
-          {/* Soft Skills */}
-          <div className="soft-skills">
-            <h3 className="skills-subtitle">Soft Skills</h3>
-            <div className="soft-skills-container">
-              {softSkills.map((skill, index) => (
-                <motion.div
-                  key={index}
-                  whileHover={{ scale: 1 }}
-                  initial={{ opacity: 0, y: 0 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 0.3
-                  }}
-                  className="soft-skill-item"
-                >
-                  <div
-                    className="soft-skill-icon"
-                    style={{ color: "var(--accent-color)" }}
-                  >
-                    {skill.icon}
-                  </div>
-                  <div className="soft-skill-content">
-                    <span className="soft-skill-name">{skill.name}</span>
-                    <div className="skill-dots">
-                      {[...Array(5)].map((_, i) => (
-                        <div
-                          key={i}
-                          className={`dot ${
-                            i < Math.floor(skill.level / 20) ? "filled" : ""
-                          }`}
-                          style={{
-                            background:
-                              i < Math.floor(skill.level / 20)
-                                ? `var(--accent-color)`
-                                : `var(--skill-dot-empty)`,
-                          }}
-                        ></div>
-                      ))}
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <span
+                        className={`text-sm ${
+                          darkMode ? "text-[#888]" : "text-[#666]"
+                        }`}
+                      >
+                        Experience
+                      </span>
+                      <span
+                        className={`text-sm font-medium ${
+                          darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+                        }`}
+                      >
+                        {skill.experience}
+                      </span>
+                    </div>
+                    <div>
+                      <span
+                        className={`text-sm block mb-2 ${
+                          darkMode ? "text-[#888]" : "text-[#666]"
+                        }`}
+                      >
+                        Used in:
+                      </span>
+                      <div className="flex flex-wrap gap-1">
+                        {skill.projects.map((project, projectIndex) => (
+                          <span
+                            key={projectIndex}
+                            className={`text-xs px-2 py-1 rounded border ${
+                              darkMode
+                                ? "border-[#2a2a2a] bg-[#1a1a1a] text-[#888]"
+                                : "border-[#e0e0e0] bg-[#f5f5f5] text-[#666]"
+                            }`}
+                          >
+                            {project}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </main>
   );
