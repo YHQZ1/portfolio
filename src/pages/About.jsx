@@ -74,14 +74,9 @@ export default function About() {
                   darkMode ? "text-[#888]" : "text-[#666]"
                 }`}
               >
-                <span
-                  className={`font-medium ${
-                    darkMode ? "text-[#8ab4f8]" : "text-[#4285f4]"
-                  }`}
-                >
-                  Hey, I'm Uttkarsh
-                </span>
-                , a Computer Science undergrad passionate about{" "}
+                {" "}
+                Hey, I'm Uttkarsh , a Computer Science undergrad passionate
+                about{" "}
                 <span
                   className={`font-medium ${
                     darkMode ? "text-[#8ab4f8]" : "text-[#4285f4]"
@@ -316,6 +311,38 @@ export default function About() {
 
             <div
               className={`border-l-4 ${
+                darkMode ? "border-[#81c995]" : "border-[#34a853]"
+              } pl-4 sm:pl-6 md:pl-8`}
+            >
+              <h3
+                className={`text-xl sm:text-2xl md:text-3xl font-light mb-2 ${
+                  darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+                } tracking-tight`}
+              >
+                Media Co-Head
+              </h3>
+              <p
+                className={`text-xs sm:text-sm mb-3 sm:mb-4 ${
+                  darkMode ? "text-[#666]" : "text-[#999]"
+                }`}
+              >
+                Google Developer Students Club, SIT Pune
+              </p>
+              <p
+                className={`text-base sm:text-lg leading-relaxed ${
+                  darkMode ? "text-[#888]" : "text-[#666]"
+                }`}
+              >
+                Led the club’s digital presence with focused, high-impact media
+                campaigns. Produced crisp visuals, announcements, and event
+                coverage that boosted engagement and kept the community active
+                and informed. Helped the club reach and interact with thousands
+                of students across platforms.
+              </p>
+            </div>
+
+            <div
+              className={`border-l-4 ${
                 darkMode ? "border-[#8ab4f8]" : "border-[#4285f4]"
               } pl-4 sm:pl-6 md:pl-8`}
             >
@@ -393,7 +420,11 @@ export default function About() {
             Key Achievements
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 md:gap-16 border-l-4 text-[#81c995] pl-4 sm:pl-6 md:pl-8">
+          <div
+            className={`grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 md:gap-16 border-l-4 ${
+              darkMode ? "text-[#81c995]" : "text-[#34a853]"
+            } pl-4 sm:pl-6 md:pl-8`}
+          >
             <div>
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-4 mb-3 sm:mb-4">
                 <h3
