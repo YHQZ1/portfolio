@@ -1,7 +1,35 @@
+import { useState, useEffect } from "react";
 import { useTheme } from "../context/ThemeContext";
+
+function useTypewriter(texts, speed = 80, delay = 2000) {
+  const [displayText, setDisplayText] = useState("");
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+
+  useEffect(() => {
+    if (currentIndex < texts[currentTextIndex].length) {
+      const timeout = setTimeout(() => {
+        setDisplayText((prev) => prev + texts[currentTextIndex][currentIndex]);
+        setCurrentIndex((prev) => prev + 1);
+      }, speed);
+      return () => clearTimeout(timeout);
+    } else {
+      // Wait, then move to next text
+      const timeout = setTimeout(() => {
+        setDisplayText("");
+        setCurrentIndex(0);
+        setCurrentTextIndex((prev) => (prev + 1) % texts.length);
+      }, delay);
+      return () => clearTimeout(timeout);
+    }
+  }, [currentIndex, currentTextIndex, texts, speed, delay]);
+
+  return displayText;
+}
 
 export default function About() {
   const { darkMode } = useTheme();
+  const typedText = useTypewriter(["About"], 80, 3000);
 
   return (
     <main
@@ -36,7 +64,8 @@ export default function About() {
                 darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
               } tracking-tighter leading-tight`}
             >
-              About Me
+              {typedText}
+              <span className="ml-1 animate-pulse">|</span>
             </h1>
 
             <div className="space-y-4 sm:space-y-6 md:space-y-8">

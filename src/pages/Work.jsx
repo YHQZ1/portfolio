@@ -1,8 +1,36 @@
+import { useState, useEffect } from "react";
 import { useTheme } from "../context/ThemeContext";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
+function useTypewriter(texts, speed = 80, delay = 2000) {
+  const [displayText, setDisplayText] = useState("");
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+
+  useEffect(() => {
+    if (currentIndex < texts[currentTextIndex].length) {
+      const timeout = setTimeout(() => {
+        setDisplayText((prev) => prev + texts[currentTextIndex][currentIndex]);
+        setCurrentIndex((prev) => prev + 1);
+      }, speed);
+      return () => clearTimeout(timeout);
+    } else {
+      // Wait, then move to next text
+      const timeout = setTimeout(() => {
+        setDisplayText("");
+        setCurrentIndex(0);
+        setCurrentTextIndex((prev) => (prev + 1) % texts.length);
+      }, delay);
+      return () => clearTimeout(timeout);
+    }
+  }, [currentIndex, currentTextIndex, texts, speed, delay]);
+
+  return displayText;
+}
+
 export default function Work() {
   const { darkMode } = useTheme();
+  const typedText = useTypewriter(["Hey, I'm Uttkarsh!"], 80, 3000);
 
   const projects = [
     {
@@ -307,7 +335,8 @@ export default function Work() {
               darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
             } tracking-tighter leading-tight`}
           >
-            Hey, I'm Uttkarsh!
+            {typedText}
+            <span className="ml-1 animate-pulse">|</span>
           </h1>
           <p
             className={`text-lg sm:text-xl md:text-2xl lg:text-3xl font-light leading-relaxed ${
