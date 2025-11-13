@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState, useRef } from "react";
 import { useTheme } from "../context/ThemeContext";
 import emailjs from "@emailjs/browser";
@@ -43,7 +44,6 @@ export default function Contact() {
       })
       .then(
         (response) => {
-          console.log("SUCCESS!", response);
           setSubmitStatus("success");
           setFormData({
             user_name: "",
@@ -53,9 +53,7 @@ export default function Contact() {
           });
         },
         (error) => {
-          console.log("FAILED...", error);
           setSubmitStatus("error");
-
           if (error.text) {
             if (error.text.includes("Invalid")) {
               setErrorDetails(
@@ -80,32 +78,40 @@ export default function Contact() {
 
   return (
     <div
-      className={`min-h-screen ${darkMode ? "bg-[#0a0a0a]" : "bg-[#fafafa]"}`}
+      className={`min-h-screen ${
+        darkMode ? "bg-[#0a0a0a]" : "bg-[#fafafa]"
+      } px-4 sm:px-6`}
     >
-      <div className="max-w-[900px] mx-auto pt-40 pb-10 px-8 lg:px-16 xl:px-24">
+      <div className="max-w-[900px] mx-auto pt-20 md:pt-32 lg:pt-40 pb-10 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24">
         <div
-          className={`rounded-sm p-8 border ${
+          className={`rounded-sm p-6 sm:p-8 border ${
             darkMode
               ? "border-[#1a1a1a] bg-[#0f0f0f]"
               : "border-[#e8e8e8] bg-white"
           }`}
         >
-          <div className="text-center mb-8">
+          <div className="text-center mb-6 sm:mb-8">
             <h2
-              className={`text-4xl font-extralight mb-4 ${
+              className={`text-2xl sm:text-3xl md:text-4xl font-extralight mb-3 sm:mb-4 ${
                 darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
               } tracking-tight`}
             >
               Get In Touch
             </h2>
             <p
-              className={`text-lg ${darkMode ? "text-[#888]" : "text-[#666]"}`}
+              className={`text-base sm:text-lg ${
+                darkMode ? "text-[#888]" : "text-[#666]"
+              }`}
             >
               Have a question or want to work together? Send me a message.
             </p>
           </div>
 
-          <form className="space-y-6" ref={form} onSubmit={sendEmail}>
+          <form
+            className="space-y-4 sm:space-y-6"
+            ref={form}
+            onSubmit={sendEmail}
+          >
             <div>
               <label
                 className={`block mb-2 font-medium ${
@@ -119,10 +125,10 @@ export default function Contact() {
                 name="user_name"
                 value={formData.user_name}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 rounded-sm border ${
+                className={`w-full px-3 sm:px-4 py-2 sm:py-3 rounded-sm border transition-none duration-200 focus:outline-none focus:ring-2 ${
                   darkMode
-                    ? "border-[#2a2a2a] bg-[#0f0f0f] text-[#f5f5f5] placeholder-[#888]"
-                    : "border-[#e0e0e0] bg-white text-[#1a1a1a] placeholder-[#666]"
+                    ? "border-[#2a2a2a] bg-[#0f0f0f] text-[#f5f5f5] placeholder-[#888] hover:border-[#3a3a3a] focus:border-[#8ab4f8] focus:ring-[#8ab4f8] focus:ring-opacity-20"
+                    : "border-[#e0e0e0] bg-white text-[#1a1a1a] placeholder-[#666] hover:border-[#d0d0d0] focus:border-[#4285f4] focus:ring-[#4285f4] focus:ring-opacity-20"
                 }`}
                 required
                 placeholder="Enter your name"
@@ -142,10 +148,10 @@ export default function Contact() {
                 name="user_email"
                 value={formData.user_email}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 rounded-sm border ${
+                className={`w-full px-3 sm:px-4 py-2 sm:py-3 rounded-sm border transition-none duration-200 focus:outline-none focus:ring-2 ${
                   darkMode
-                    ? "border-[#2a2a2a] bg-[#0f0f0f] text-[#f5f5f5] placeholder-[#888]"
-                    : "border-[#e0e0e0] bg-white text-[#1a1a1a] placeholder-[#666]"
+                    ? "border-[#2a2a2a] bg-[#0f0f0f] text-[#f5f5f5] placeholder-[#888] hover:border-[#3a3a3a] focus:border-[#8ab4f8] focus:ring-[#8ab4f8] focus:ring-opacity-20"
+                    : "border-[#e0e0e0] bg-white text-[#1a1a1a] placeholder-[#666] hover:border-[#d0d0d0] focus:border-[#4285f4] focus:ring-[#4285f4] focus:ring-opacity-20"
                 }`}
                 required
                 placeholder="your.email@example.com"
@@ -165,10 +171,10 @@ export default function Contact() {
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 rounded-sm border ${
+                className={`w-full px-3 sm:px-4 py-2 sm:py-3 rounded-sm border transition-none duration-200 focus:outline-none focus:ring-2 ${
                   darkMode
-                    ? "border-[#2a2a2a] bg-[#0f0f0f] text-[#f5f5f5] placeholder-[#888]"
-                    : "border-[#e0e0e0] bg-white text-[#1a1a1a] placeholder-[#666]"
+                    ? "border-[#2a2a2a] bg-[#0f0f0f] text-[#f5f5f5] placeholder-[#888] hover:border-[#3a3a3a] focus:border-[#8ab4f8] focus:ring-[#8ab4f8] focus:ring-opacity-20"
+                    : "border-[#e0e0e0] bg-white text-[#1a1a1a] placeholder-[#666] hover:border-[#d0d0d0] focus:border-[#4285f4] focus:ring-[#4285f4] focus:ring-opacity-20"
                 }`}
                 placeholder="What is this regarding?"
               />
@@ -186,12 +192,12 @@ export default function Contact() {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 rounded-sm border resize-none ${
+                className={`w-full px-3 sm:px-4 py-2 sm:py-3 rounded-sm border resize-none transition-none duration-200 focus:outline-none focus:ring-2 ${
                   darkMode
-                    ? "border-[#2a2a2a] bg-[#0f0f0f] text-[#f5f5f5] placeholder-[#888]"
-                    : "border-[#e0e0e0] bg-white text-[#1a1a1a] placeholder-[#666]"
+                    ? "border-[#2a2a2a] bg-[#0f0f0f] text-[#f5f5f5] placeholder-[#888] hover:border-[#3a3a3a] focus:border-[#8ab4f8] focus:ring-[#8ab4f8] focus:ring-opacity-20"
+                    : "border-[#e0e0e0] bg-white text-[#1a1a1a] placeholder-[#666] hover:border-[#d0d0d0] focus:border-[#4285f4] focus:ring-[#4285f4] focus:ring-opacity-20"
                 }`}
-                rows="5"
+                rows="4"
                 required
                 placeholder="Type your message here..."
               />
@@ -199,7 +205,7 @@ export default function Contact() {
 
             {submitStatus === "success" && (
               <div
-                className={`p-4 rounded-sm border ${
+                className={`p-3 sm:p-4 rounded-sm border transition-none duration-200 ${
                   darkMode
                     ? "border-[#1a1a1a] bg-[#0f0f0f] text-[#81c995]"
                     : "border-[#e0e0e0] bg-[#f5f5f5] text-[#34a853]"
@@ -211,7 +217,7 @@ export default function Contact() {
 
             {submitStatus === "error" && (
               <div
-                className={`p-4 rounded-sm border ${
+                className={`p-3 sm:p-4 rounded-sm border transition-none duration-200 ${
                   darkMode
                     ? "border-[#1a1a1a] bg-[#0f0f0f] text-[#f28b82]"
                     : "border-[#e0e0e0] bg-[#f5f5f5] text-[#ea4335]"
@@ -219,9 +225,11 @@ export default function Contact() {
               >
                 Sorry, there was an error sending your message.
                 {errorDetails && (
-                  <div className="mt-2 text-sm opacity-80">{errorDetails}</div>
+                  <div className="mt-1 sm:mt-2 text-sm opacity-80">
+                    {errorDetails}
+                  </div>
                 )}
-                <div className="mt-2 text-sm">
+                <div className="mt-1 sm:mt-2 text-sm">
                   Please ensure you've set up the correct email template in
                   EmailJS.
                 </div>
@@ -230,9 +238,15 @@ export default function Contact() {
 
             <button
               type="submit"
-              className={`w-full py-3 px-6 rounded-sm font-semibold text-white ${
-                darkMode ? "bg-[#8ab4f8]" : "bg-[#4285f4]"
-              } ${isSubmitting ? "opacity-50 cursor-not-allowed" : ""}`}
+              className={`w-full py-2 sm:py-3 px-6 rounded-sm font-semibold text-white transition-none duration-200 ${
+                darkMode
+                  ? "bg-[#8ab4f8] hover:bg-[#7aa3f0]"
+                  : "bg-[#4285f4] hover:bg-[#3367d6]"
+              } ${
+                isSubmitting
+                  ? "opacity-50 cursor-not-allowed"
+                  : "cursor-pointer"
+              }`}
               disabled={isSubmitting}
             >
               {isSubmitting ? "Sending..." : "Send Message"}
