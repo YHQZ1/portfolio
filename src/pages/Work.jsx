@@ -296,7 +296,8 @@ export default function Work() {
     {
       name: "AWS",
       logo: "https://avatars.githubusercontent.com/u/49037648?s=280&v=4",
-      darkLogo: "https://i.scdn.co/image/ab6765630000ba8a49f81331af04ec3614a5a741",
+      darkLogo:
+        "https://i.scdn.co/image/ab6765630000ba8a49f81331af04ec3614a5a741",
       level: "Intermediate",
       experience: "<1 year",
       category: [
@@ -333,18 +334,52 @@ export default function Work() {
     },
 
     {
-      name: "Git/GitHub",
+      name: "Git",
       logo: "https://cdn.simpleicons.org/git/F05032",
       level: "Advanced",
       experience: "2+ years",
       category: ["Version Control", "Team Collaboration", "DevOps Workflow"],
     },
+  ];
+
+  const toolsAndWorkflow = [
     {
       name: "Postman",
       logo: "https://cdn.simpleicons.org/postman/FF6C37",
       level: "Advanced",
       experience: "1+ years",
       category: ["API Testing", "Documentation", "Development Workflow"],
+    },
+    {
+      name: "Figma",
+      logo: "https://cdn.simpleicons.org/figma/F24E1E",
+      category: ["UI Collaboration", "Prototyping", "Design Handoff"],
+    },
+    {
+      name: "Jira",
+      logo: "https://cdn.simpleicons.org/jira/0052CC",
+      category: ["Project Management", "Issue Tracking", "Sprint Planning"],
+    },
+    {
+      name: "Notion",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png",
+      category: ["Documentation", "Planning", "Knowledge Base"],
+    },
+    {
+      name: "VS Code",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png",
+      category: ["Code Editor", "Extensions", "Debugging"],
+    },
+    {
+      name: "GitHub",
+      logo: "https://cdn.simpleicons.org/github/181717",
+      darkLogo: "https://cdn.simpleicons.org/github/FFFFFF",
+      category: ["Project Boards", "Team Collaboration", "Issue Tracking"],
+    },
+    {
+      name: "Chrome DevTools",
+      logo: "https://cdn.simpleicons.org/googlechrome/4285F4",
+      category: ["Debugging", "Performance Analysis", "Frontend Tools"],
     },
   ];
 
@@ -471,6 +506,12 @@ export default function Work() {
           </div>
         </section>
 
+        <div
+          className={`w-full h-px ${
+            darkMode ? "bg-[#2a2a2a]" : "bg-[#e8e8e8]"
+          } my-8 sm:my-10`}
+        />
+
         <section className="mb-16 sm:mb-20">
           <div>
             <h2
@@ -558,6 +599,82 @@ export default function Work() {
                           </span>
                         ))}
                       </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <div
+          className={`w-full h-px ${
+            darkMode ? "bg-[#2a2a2a]" : "bg-[#e8e8e8]"
+          } my-8 sm:my-10`}
+        />
+
+        <section className="mb-16 sm:mb-20">
+          <div>
+            <h2
+              className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 ${
+                darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+              } tracking-tight`}
+            >
+              Tools & Workflow
+            </h2>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-4">
+              {toolsAndWorkflow.map((tool, index) => (
+                <div
+                  key={index}
+                  className={`p-4 sm:p-6 border ${
+                    darkMode
+                      ? "border-[#2a2a2a] bg-[#0f0f0f]"
+                      : "border-[#e0e0e0] bg-white"
+                  } rounded-sm`}
+                >
+                  <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                    <img
+                      src={
+                        darkMode && tool.darkLogo ? tool.darkLogo : tool.logo
+                      }
+                      alt={tool.name}
+                      className="w-10 h-10 sm:w-12 sm:h-12"
+                    />
+
+                    <div className="flex-1 min-w-0">
+                      <h3
+                        className={`text-base sm:text-lg font-medium truncate ${
+                          darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+                        }`}
+                      >
+                        {tool.name}
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div className="space-y-2 sm:space-y-3">
+                    <span
+                      className={`text-xs sm:text-sm block mb-1 sm:mb-2 ${
+                        darkMode ? "text-[#888]" : "text-[#666]"
+                      }`}
+                    >
+                      Used for:
+                    </span>
+
+                    <div className="flex flex-wrap gap-1">
+                      {tool.category.map((tag, tagIndex) => (
+                        <span
+                          key={tagIndex}
+                          className={`text-xs px-2 py-1 rounded border ${
+                            darkMode
+                              ? "border-[#2a2a2a] bg-[#1a1a1a] text-[#888]"
+                              : "border-[#e0e0e0] bg-[#f5f5f5] text-[#666]"
+                          }`}
+                        >
+                          {tag}
+                        </span>
+                      ))}
                     </div>
                   </div>
                 </div>
