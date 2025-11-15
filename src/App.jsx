@@ -11,7 +11,10 @@ function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   }, [pathname]);
 
   return null;
@@ -25,7 +28,6 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Work />} />
-          <Route path="/work" element={<Work />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

@@ -132,7 +132,6 @@ export default function Work() {
       experience: "1 year",
       category: ["DevOps Scripts", "System Administration", "CI/CD Automation"],
     },
-
     {
       name: "Node.js",
       logo: "https://cdn.simpleicons.org/nodedotjs/339933",
@@ -192,7 +191,6 @@ export default function Work() {
       experience: "<1 year",
       category: ["API Design", "Backend Development", "Web Services"],
     },
-
     {
       name: "ReactJS",
       logo: "https://cdn.simpleicons.org/react/61DAFB",
@@ -215,7 +213,6 @@ export default function Work() {
       experience: "2+ years",
       category: ["Frontend Styling", "Responsive Design", "UI Development"],
     },
-
     {
       name: "SQL",
       logo: "https://www.svgrepo.com/show/331760/sql-database-generic.svg",
@@ -261,7 +258,6 @@ export default function Work() {
       experience: "<1 year",
       category: ["Database ORM", "Type-safe Queries", "Backend Development"],
     },
-
     {
       name: "Redis",
       logo: "https://www.svgrepo.com/show/303460/redis-logo.svg",
@@ -269,7 +265,6 @@ export default function Work() {
       experience: "<1 year",
       category: ["Caching", "Session Management", "Performance Optimization"],
     },
-
     {
       name: "Docker",
       logo: "https://cdn.simpleicons.org/docker/2496ED",
@@ -284,7 +279,6 @@ export default function Work() {
       experience: "<1 year",
       category: ["Container Orchestration", "DevOps Infrastructure"],
     },
-
     {
       name: "AWS",
       logo: "https://avatars.githubusercontent.com/u/49037648?s=280&v=4",
@@ -324,7 +318,6 @@ export default function Work() {
       experience: "1 year",
       category: ["Backend Services", "API Hosting", "Microservices Deployment"],
     },
-
     {
       name: "Git",
       logo: "https://cdn.simpleicons.org/git/F05032",
@@ -386,45 +379,32 @@ export default function Work() {
           <h1
             className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extralight mb-6 sm:mb-8 ${
               darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-            } tracking-tighter leading-tight`}
+            } tracking-tighter leading-[1.1]`}
           >
             {typedText}
             <span className="ml-1 animate-pulse">|</span>
           </h1>
           <p
-            className={`text-lg sm:text-xl md:text-2xl lg:text-3xl font-light leading-relaxed ${
+            className={`text-lg sm:text-xl md:text-2xl lg:text-3xl font-light leading-[1.6] max-w-4xl ${
               darkMode ? "text-[#888]" : "text-[#666]"
             }`}
           >
-            A computer science major{" "}
-            <span
-              className={`
-    ${darkMode ? "text-[#8ab4f8]" : "text-[#4285f4]"} 
-    underline decoration-[1px] underline-offset-[5px] decoration-opacity-30
-  `}
-            >
-              passionate about building
-            </span>{" "}
-            projects and turning ideas into{" "}
-            <span
-              className={`
-    ${darkMode ? "text-[#8ab4f8]" : "text-[#4285f4]"} 
-    underline decoration-[1px] underline-offset-[5px] decoration-opacity-30
-  `}
-            >
-              clean, scalable code.
-            </span>
+            A computer science major passionate about building projects and
+            turning ideas into clean, scalable code.
           </p>
         </div>
 
         <section className="mb-10 sm:mb-16 md:mb-20">
           <div>
             <h2
-              className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 ${
+              className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 relative inline-block group ${
                 darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-              } tracking-tight`}
+              } tracking-tight leading-[1.2]`}
             >
-              Projects
+              My Work
+              <span
+                className={`absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300 group-hover:w-full`}
+              ></span>
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-4 md:gap-4">
               {projects.map((project, index) => (
@@ -446,12 +426,12 @@ export default function Work() {
                     <h3
                       className={`text-xl sm:text-2xl font-light mb-2 sm:mb-3 ${
                         darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-                      } tracking-tight`}
+                      } tracking-tight leading-[1.3]`}
                     >
                       {project.title}
                     </h3>
                     <p
-                      className={`text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6 flex-1 ${
+                      className={`text-sm leading-[1.6] mb-4 sm:mb-6 flex-1 ${
                         darkMode ? "text-[#888]" : "text-[#666]"
                       }`}
                     >
@@ -476,11 +456,11 @@ export default function Work() {
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`flex items-center gap-1 sm:gap-2 text-xs sm:text-sm font-light ${
+                        className={`flex items-center gap-1 sm:gap-2 text-sm font-light ${
                           darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
                         }`}
                       >
-                        <FaGithub className="text-sm sm:text-base" />
+                        <FaGithub className="text-base sm:text-lg" />
                         <span className="relative after:absolute after:left-0 after:bottom-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
                           Code
                         </span>
@@ -490,11 +470,11 @@ export default function Work() {
                           href={project.live}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className={`flex items-center gap-1 sm:gap-2 text-xs sm:text-sm font-light ${
+                          className={`flex items-center gap-1 sm:gap-2 text-sm font-light ${
                             darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
                           }`}
                         >
-                          <FaExternalLinkAlt className="text-xs sm:text-sm" />
+                          <FaExternalLinkAlt className="text-sm sm:text-base" />
                           <span className="relative after:absolute after:left-0 after:bottom-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
                             Live
                           </span>
@@ -517,11 +497,14 @@ export default function Work() {
         <section className="mb-16 sm:mb-20">
           <div>
             <h2
-              className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 ${
+              className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 relative inline-block group ${
                 darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-              } tracking-tight`}
+              } tracking-tight leading-[1.2]`}
             >
               Technical Skills
+              <span
+                className={`absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300 group-hover:w-full`}
+              ></span>
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-4">
               {technicalSkills.map((skill, index) => (
@@ -543,7 +526,7 @@ export default function Work() {
                     />
                     <div className="flex-1 min-w-0">
                       <h3
-                        className={`text-base sm:text-lg font-medium truncate ${
+                        className={`text-lg sm:text-xl font-medium truncate leading-[1.3] ${
                           darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
                         }`}
                       >
@@ -565,14 +548,14 @@ export default function Work() {
                   <div className="space-y-2 sm:space-y-3">
                     <div className="flex items-center justify-between">
                       <span
-                        className={`text-xs sm:text-sm ${
+                        className={`text-sm ${
                           darkMode ? "text-[#888]" : "text-[#666]"
                         }`}
                       >
                         Experience
                       </span>
                       <span
-                        className={`text-xs sm:text-sm font-medium ${
+                        className={`text-sm font-medium ${
                           darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
                         }`}
                       >
@@ -581,7 +564,7 @@ export default function Work() {
                     </div>
                     <div>
                       <span
-                        className={`text-xs sm:text-sm block mb-1 sm:mb-2 ${
+                        className={`text-sm block mb-1 sm:mb-2 ${
                           darkMode ? "text-[#888]" : "text-[#666]"
                         }`}
                       >
@@ -591,7 +574,7 @@ export default function Work() {
                         {skill.category.map((project, projectIndex) => (
                           <span
                             key={projectIndex}
-                            className={`text-xs px-2 py-1 rounded border ${
+                            className={`text-xs px-2 py-1 rounded border leading-[1.4] ${
                               darkMode
                                 ? "border-[#2a2a2a] bg-[#1a1a1a] text-[#888]"
                                 : "border-[#e0e0e0] bg-[#f5f5f5] text-[#666]"
@@ -618,13 +601,15 @@ export default function Work() {
         <section className="mb-16 sm:mb-20">
           <div>
             <h2
-              className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 ${
+              className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 relative inline-block group ${
                 darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-              } tracking-tight`}
+              } tracking-tight leading-[1.2]`}
             >
               Tools & Workflow
+              <span
+                className={`absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300 group-hover:w-full`}
+              ></span>
             </h2>
-
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-4">
               {toolsAndWorkflow.map((tool, index) => (
                 <div
@@ -646,7 +631,7 @@ export default function Work() {
 
                     <div className="flex-1 min-w-0">
                       <h3
-                        className={`text-base sm:text-lg font-medium truncate ${
+                        className={`text-lg sm:text-xl font-medium truncate leading-[1.3] ${
                           darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
                         }`}
                       >
@@ -657,7 +642,7 @@ export default function Work() {
 
                   <div className="space-y-2 sm:space-y-3">
                     <span
-                      className={`text-xs sm:text-sm block mb-1 sm:mb-2 ${
+                      className={`text-sm block mb-1 sm:mb-2 ${
                         darkMode ? "text-[#888]" : "text-[#666]"
                       }`}
                     >
@@ -668,7 +653,7 @@ export default function Work() {
                       {tool.category.map((tag, tagIndex) => (
                         <span
                           key={tagIndex}
-                          className={`text-xs px-2 py-1 rounded border ${
+                          className={`text-xs px-2 py-1 rounded border leading-[1.4] ${
                             darkMode
                               ? "border-[#2a2a2a] bg-[#1a1a1a] text-[#888]"
                               : "border-[#e0e0e0] bg-[#f5f5f5] text-[#666]"

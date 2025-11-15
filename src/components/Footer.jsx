@@ -10,7 +10,7 @@ import {
   FaReddit,
   FaStackOverflow,
 } from "react-icons/fa";
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaXTwitter } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 
 export default function Footer() {
@@ -27,18 +27,18 @@ export default function Footer() {
     >
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 text-center">
         <h3
-          className={`mb-10 sm:mb-10 text-xl sm:text-2xl font-light ${
+          className={`mb-12 sm:mb-14 text-2xl sm:text-3xl font-light ${
             darkMode ? "text-[#888]" : "text-[#666]"
           }`}
         >
           Let's connect.
         </h3>
-        <div className="flex justify-center gap-4 sm:gap-6 md:gap-8 mb-2">
+        <div className="flex justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
           <a
             href="https://www.linkedin.com/in/uttkarsh-ruparel/"
             target="_blank"
             rel="noopener noreferrer"
-            className={`relative text-xl sm:text-2xl transition-colors duration-300 group ${
+            className={`relative text-2xl sm:text-3xl transition-colors duration-300 group ${
               darkMode
                 ? "text-[#888] hover:text-[#f5f5f5]"
                 : "text-[#666] hover:text-[#1a1a1a]"
@@ -46,7 +46,7 @@ export default function Footer() {
           >
             <FaLinkedin />
             <span
-              className={`absolute -top-10 left-1/2 -translate-x-1/2 text-xs px-2 py-1 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${
+              className={`absolute -top-12 left-1/2 -translate-x-1/2 text-sm px-3 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${
                 darkMode
                   ? "bg-[#1a1a1a] text-[#f5f5f5] border border-[#2a2a2a]"
                   : "bg-[#eaeaea] text-[#1a1a1a] border border-[#e0e0e0]"
@@ -66,7 +66,7 @@ export default function Footer() {
             href="https://github.com/YHQZ1"
             target="_blank"
             rel="noopener noreferrer"
-            className={`relative text-xl sm:text-2xl transition-colors duration-300 group ${
+            className={`relative text-2xl sm:text-3xl transition-colors duration-300 group ${
               darkMode
                 ? "text-[#888] hover:text-[#f5f5f5]"
                 : "text-[#666] hover:text-[#1a1a1a]"
@@ -74,7 +74,7 @@ export default function Footer() {
           >
             <FaGithub />
             <span
-              className={`absolute -top-10 left-1/2 -translate-x-1/2 text-xs px-2 py-1 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${
+              className={`absolute -top-12 left-1/2 -translate-x-1/2 text-sm px-3 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${
                 darkMode
                   ? "bg-[#1a1a1a] text-[#f5f5f5] border border-[#2a2a2a]"
                   : "bg-[#eaeaea] text-[#1a1a1a] border border-[#e0e0e0]"
@@ -94,7 +94,7 @@ export default function Footer() {
             href="https://leetcode.com/u/yhqz/"
             target="_blank"
             rel="noopener noreferrer"
-            className={`relative text-xl sm:text-2xl transition-colors duration-300 group ${
+            className={`relative text-2xl sm:text-3xl transition-colors duration-300 group ${
               darkMode
                 ? "text-[#888] hover:text-[#f5f5f5]"
                 : "text-[#666] hover:text-[#1a1a1a]"
@@ -102,7 +102,7 @@ export default function Footer() {
           >
             <SiLeetcode />
             <span
-              className={`absolute -top-10 left-1/2 -translate-x-1/2 text-xs px-2 py-1 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${
+              className={`absolute -top-12 left-1/2 -translate-x-1/2 text-sm px-3 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${
                 darkMode
                   ? "bg-[#1a1a1a] text-[#f5f5f5] border border-[#2a2a2a]"
                   : "bg-[#eaeaea] text-[#1a1a1a] border border-[#e0e0e0]"
@@ -122,7 +122,7 @@ export default function Footer() {
             href="https://stackoverflow.com/users/29559883/uttkarsh-ruparel"
             target="_blank"
             rel="noopener noreferrer"
-            className={`relative text-xl sm:text-2xl transition-colors duration-300 group ${
+            className={`relative text-2xl sm:text-3xl transition-colors duration-300 group ${
               darkMode
                 ? "text-[#888] hover:text-[#f5f5f5]"
                 : "text-[#666] hover:text-[#1a1a1a]"
@@ -130,7 +130,7 @@ export default function Footer() {
           >
             <FaStackOverflow />
             <span
-              className={`absolute -top-10 left-1/2 -translate-x-1/2 text-xs px-2 py-1 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${
+              className={`absolute -top-12 left-1/2 -translate-x-1/2 text-sm px-3 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${
                 darkMode
                   ? "bg-[#1a1a1a] text-[#f5f5f5] border border-[#2a2a2a]"
                   : "bg-[#eaeaea] text-[#1a1a1a] border border-[#e0e0e0]"
@@ -150,7 +150,7 @@ export default function Footer() {
             href="https://www.instagram.com/uttkarsh09_?igsh=MW9xYWxxYW00cjVkZg%3D%3D&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
-            className={`relative text-xl sm:text-2xl transition-colors duration-300 group ${
+            className={`relative text-2xl sm:text-3xl transition-colors duration-300 group ${
               darkMode
                 ? "text-[#888] hover:text-[#f5f5f5]"
                 : "text-[#666] hover:text-[#1a1a1a]"
@@ -158,7 +158,7 @@ export default function Footer() {
           >
             <FaInstagram />
             <span
-              className={`absolute -top-10 left-1/2 -translate-x-1/2 text-xs px-2 py-1 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${
+              className={`absolute -top-12 left-1/2 -translate-x-1/2 text-sm px-3 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${
                 darkMode
                   ? "bg-[#1a1a1a] text-[#f5f5f5] border border-[#2a2a2a]"
                   : "bg-[#eaeaea] text-[#1a1a1a] border border-[#e0e0e0]"
@@ -178,7 +178,7 @@ export default function Footer() {
             href="https://x.com/uttkarsh09_?s=21"
             target="_blank"
             rel="noopener noreferrer"
-            className={`relative text-xl sm:text-2xl transition-colors duration-300 group ${
+            className={`relative text-2xl sm:text-3xl transition-colors duration-300 group ${
               darkMode
                 ? "text-[#888] hover:text-[#f5f5f5]"
                 : "text-[#666] hover:text-[#1a1a1a]"
@@ -186,7 +186,7 @@ export default function Footer() {
           >
             <FaXTwitter />
             <span
-              className={`absolute -top-10 left-1/2 -translate-x-1/2 text-xs px-2 py-1 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${
+              className={`absolute -top-12 left-1/2 -translate-x-1/2 text-sm px-3 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${
                 darkMode
                   ? "bg-[#1a1a1a] text-[#f5f5f5] border border-[#2a2a2a]"
                   : "bg-[#eaeaea] text-[#1a1a1a] border border-[#e0e0e0]"
@@ -207,7 +207,7 @@ export default function Footer() {
             href="https://www.reddit.com/user/yhqz1/"
             target="_blank"
             rel="noopener noreferrer"
-            className={`relative text-xl sm:text-2xl transition-colors duration-300 group ${
+            className={`relative text-2xl sm:text-3xl transition-colors duration-300 group ${
               darkMode
                 ? "text-[#888] hover:text-[#f5f5f5]"
                 : "text-[#666] hover:text-[#1a1a1a]"
@@ -215,7 +215,7 @@ export default function Footer() {
           >
             <FaReddit />
             <span
-              className={`absolute -top-10 left-1/2 -translate-x-1/2 text-xs px-2 py-1 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${
+              className={`absolute -top-12 left-1/2 -translate-x-1/2 text-sm px-3 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${
                 darkMode
                   ? "bg-[#1a1a1a] text-[#f5f5f5] border border-[#2a2a2a]"
                   : "bg-[#eaeaea] text-[#1a1a1a] border border-[#e0e0e0]"
@@ -237,7 +237,7 @@ export default function Footer() {
               setCopied(true);
               setTimeout(() => setCopied(false), 1200);
             }}
-            className={`relative text-xl sm:text-2xl transition-colors duration-300 cursor-pointer group ${
+            className={`relative text-2xl sm:text-3xl transition-colors duration-300 cursor-pointer group ${
               darkMode
                 ? "text-[#888] hover:text-[#f5f5f5]"
                 : "text-[#666] hover:text-[#1a1a1a]"
@@ -247,7 +247,7 @@ export default function Footer() {
 
             {!copied && (
               <span
-                className={`absolute -top-10 left-1/2 -translate-x-1/2 text-xs px-2 py-1 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${
+                className={`absolute -top-12 left-1/2 -translate-x-1/2 text-sm px-3 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${
                   darkMode
                     ? "bg-[#1a1a1a] text-[#f5f5f5] border border-[#2a2a2a]"
                     : "bg-[#eaeaea] text-[#1a1a1a] border border-[#e0e0e0]"
@@ -266,7 +266,7 @@ export default function Footer() {
 
             {copied && (
               <span
-                className={`absolute -top-10 left-1/2 -translate-x-1/2 text-xs px-2 py-1 rounded-sm z-50 ${
+                className={`absolute -top-12 left-1/2 -translate-x-1/2 text-sm px-3 py-2 rounded-sm z-50 ${
                   darkMode
                     ? "bg-[#1a1a1a] text-[#f5f5f5] border border-[#2a2a2a]"
                     : "bg-[#eaeaea] text-[#1a1a1a] border border-[#e0e0e0]"
@@ -285,7 +285,7 @@ export default function Footer() {
           </button>
           <Link
             to="/contact"
-            className={`relative text-xl sm:text-2xl transition-colors duration-300 group ${
+            className={`relative text-2xl sm:text-3xl transition-colors duration-300 group ${
               darkMode
                 ? "text-[#888] hover:text-[#f5f5f5]"
                 : "text-[#666] hover:text-[#1a1a1a]"
@@ -293,7 +293,7 @@ export default function Footer() {
           >
             <FaEnvelope />
             <span
-              className={`absolute -top-10 left-1/2 -translate-x-1/2 text-xs px-2 py-1 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${
+              className={`absolute -top-12 left-1/2 -translate-x-1/2 text-sm px-3 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${
                 darkMode
                   ? "bg-[#1a1a1a] text-[#f5f5f5] border border-[#2a2a2a]"
                   : "bg-[#eaeaea] text-[#1a1a1a] border border-[#e0e0e0]"

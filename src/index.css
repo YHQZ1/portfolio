@@ -1,16 +1,23 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', system-ui, sans-serif;
+@layer base {
+  html {
+    background-color: #ffffff;
+  }
+
+  html.dark {
+    background-color: #000000;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", system-ui, sans-serif;
+    background-color: transparent;
+  }
 }
 
 * {
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
