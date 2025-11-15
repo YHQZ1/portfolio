@@ -2,35 +2,27 @@ import { useState, useEffect } from "react";
 import { useTheme } from "../context/ThemeContext";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-function useTypewriter(texts, speed = 80, delay = 2000) {
+function useTypewriter(text, speed = 80) {
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
   useEffect(() => {
-    if (currentIndex < texts[currentTextIndex].length) {
+    if (currentIndex < text.length) {
       const timeout = setTimeout(() => {
-        setDisplayText((prev) => prev + texts[currentTextIndex][currentIndex]);
+        setDisplayText((prev) => prev + text[currentIndex]);
         setCurrentIndex((prev) => prev + 1);
       }, speed);
-      return () => clearTimeout(timeout);
-    } else {
-      // Wait, then move to next text
-      const timeout = setTimeout(() => {
-        setDisplayText("");
-        setCurrentIndex(0);
-        setCurrentTextIndex((prev) => (prev + 1) % texts.length);
-      }, delay);
+
       return () => clearTimeout(timeout);
     }
-  }, [currentIndex, currentTextIndex, texts, speed, delay]);
+  }, [currentIndex, text, speed]);
 
   return displayText;
 }
 
 export default function Work() {
   const { darkMode } = useTheme();
-  const typedText = useTypewriter(["Hey, I'm Uttkarsh!"], 80, 3000);
+  const typedText = useTypewriter("Hey, I'm Uttkarsh!", 80);
 
   const projects = [
     {
@@ -405,25 +397,27 @@ export default function Work() {
             }`}
           >
             A computer science major{" "}
-            <span className={darkMode ? "text-[#8ab4f8]" : "text-[#4285f4]"}>
-              passionate
+            <span
+              className={`
+    ${darkMode ? "text-[#8ab4f8]" : "text-[#4285f4]"} 
+    underline decoration-[1px] underline-offset-[5px] decoration-opacity-30
+  `}
+            >
+              passionate about building
             </span>{" "}
-            about building{" "}
-            <span className={darkMode ? "text-[#f28b82]" : "text-[#ea4335]"}>
-              cool projects
-            </span>{" "}
-            and turning{" "}
-            <span className={darkMode ? "text-[#fdd663]" : "text-[#fbbc04]"}>
-              ideas
-            </span>{" "}
-            into{" "}
-            <span className={darkMode ? "text-[#81c995]" : "text-[#34a853]"}>
-              code
+            projects and turning ideas into{" "}
+            <span
+              className={`
+    ${darkMode ? "text-[#8ab4f8]" : "text-[#4285f4]"} 
+    underline decoration-[1px] underline-offset-[5px] decoration-opacity-30
+  `}
+            >
+              clean, scalable code.
             </span>
           </p>
         </div>
 
-        <section className="mb-20 sm:mb-24 md:mb-32">
+        <section className="mb-10 sm:mb-16 md:mb-20">
           <div>
             <h2
               className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 ${
@@ -480,22 +474,30 @@ export default function Work() {
                     <div className="flex gap-4 sm:gap-6 mt-auto">
                       <a
                         href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className={`flex items-center gap-1 sm:gap-2 text-xs sm:text-sm font-light ${
                           darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
                         }`}
                       >
                         <FaGithub className="text-sm sm:text-base" />
-                        <span>Code</span>
+                        <span className="relative after:absolute after:left-0 after:bottom-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
+                          Code
+                        </span>
                       </a>
                       {project.live !== "#" && (
                         <a
                           href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className={`flex items-center gap-1 sm:gap-2 text-xs sm:text-sm font-light ${
                             darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
                           }`}
                         >
                           <FaExternalLinkAlt className="text-xs sm:text-sm" />
-                          <span>Live</span>
+                          <span className="relative after:absolute after:left-0 after:bottom-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
+                            Live
+                          </span>
                         </a>
                       )}
                     </div>
