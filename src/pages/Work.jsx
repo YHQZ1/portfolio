@@ -116,7 +116,11 @@ export default function Work() {
       logo: "https://cdn.simpleicons.org/typescript/3178C6",
       level: "Intermediate",
       experience: "<1 year",
-      category: ["Full-stack Applications", "Type-safe Backend Systems"],
+      category: [
+        "Full-stack Applications",
+        "Type-safe Backend Systems",
+        "Frontend Development",
+      ],
     },
     {
       name: "Python",
@@ -175,7 +179,11 @@ export default function Work() {
       logo: "https://cdn.simpleicons.org/springboot/6DB33F",
       level: "Beginner",
       experience: "<1 year",
-      category: ["Java Backend Framework", "Enterprise Applications"],
+      category: [
+        "Java Backend Framework",
+        "Enterprise Applications",
+        "Microservices",
+      ],
     },
     {
       name: "REST APIs",
@@ -189,7 +197,7 @@ export default function Work() {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/1200px-GraphQL_Logo.svg.png",
       level: "Beginner",
       experience: "<1 year",
-      category: ["API Design", "Backend Development", "Web Services"],
+      category: ["API Design", "Backend Development", "Schema Modeling"],
     },
     {
       name: "ReactJS",
@@ -204,7 +212,11 @@ export default function Work() {
       darkLogo: "https://cdn.simpleicons.org/nextdotjs/FFFFFF",
       level: "Advanced",
       experience: "<1 year",
-      category: ["Full-stack Framework", "Server-side Rendering"],
+      category: [
+        "Full-stack Framework",
+        "Server-side Rendering",
+        "Frontend Development",
+      ],
     },
     {
       name: "Tailwind CSS",
@@ -225,12 +237,7 @@ export default function Work() {
       logo: "https://www.oracle.com/a/ocom/img/pl-sql.svg",
       level: "Intermediate",
       experience: "<1 year",
-      category: [
-        "Stored Procedures",
-        "Triggers",
-        "Functions",
-        "Database Logic",
-      ],
+      category: ["Stored Procedures", "Triggers", "Functions"],
     },
     {
       name: "PostgreSQL",
@@ -277,7 +284,11 @@ export default function Work() {
       logo: "https://cdn.simpleicons.org/kubernetes/326CE5",
       level: "Beginner",
       experience: "<1 year",
-      category: ["Container Orchestration", "DevOps Infrastructure"],
+      category: [
+        "Container Orchestration",
+        "DevOps Infrastructure",
+        "Scalable Systems",
+      ],
     },
     {
       name: "AWS",
@@ -309,7 +320,11 @@ export default function Work() {
       darkLogo: "https://cdn.simpleicons.org/vercel/FFFFFF",
       level: "Advanced",
       experience: "1 year",
-      category: ["Frontend Deployment", "Full-stack Applications"],
+      category: [
+        "Frontend Deployment",
+        "Full-stack Applications",
+        "Serverless Hosting",
+      ],
     },
     {
       name: "Render",
@@ -669,6 +684,20 @@ export default function Work() {
             </div>
           </div>
         </section>
+        <div
+          className={`w-full h-px ${
+            darkMode ? "bg-[#2a2a2a]" : "bg-[#e8e8e8]"
+          } my-8 sm:my-10`}
+        ></div>
+        <div className="text-center py-4 sm:py-5">
+          <p
+            className={`text-sm italic ${
+              darkMode ? "text-[#666]" : "text-[#999]"
+            }`}
+          >
+            My microservices talk to each other more politely than most humans
+          </p>
+        </div>
       </div>
     </main>
   );

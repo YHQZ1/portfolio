@@ -503,21 +503,6 @@ export default function About() {
             </p>
           </div>
         </section>
-
-        <div
-          className={`w-full h-px ${
-            darkMode ? "bg-[#2a2a2a]" : "bg-[#e8e8e8]"
-          } my-8 sm:my-10`}
-        ></div>
-        <div className="text-center py-4 sm:py-5">
-          <p
-            className={`text-sm italic ${
-              darkMode ? "text-[#666]" : "text-[#999]"
-            }`}
-          >
-            My microservices talk to each other more politely than most humans
-          </p>
-        </div>
       </div>
     </main>
   );
