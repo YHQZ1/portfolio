@@ -26,6 +26,33 @@ export default function Work() {
 
   const projects = [
     {
+      title: "Anchor",
+      description:
+        "A unified student productivity platform that integrates directly with college systems to automate academic management. By automatically syncing assignments, tracking attendance thresholds, and providing actionable insights, it minimizes administrative effort and helps students stay organized and ahead of their deadlines.",
+      tags: ["Productivity", "Dashboard", "Student Tech", "All-in-One"],
+      github: "https://github.com/YHQZ1/Anchor",
+      live: "https://anchor-dev.vercel.app/",
+      image: "/images/anchor.png",
+    },
+    {
+      title: "BitLink",
+      description:
+        "A modern, full-stack web application for streamlined link management. It allows users to shorten URLs, generate dynamic QR codes, and gain valuable insights through a real-time analytics dashboard, all within a clean and intuitive interface.",
+      tags: ["URL Shortener", "Analytics", "QR Generation", "Real-time"],
+      github: "https://github.com/YHQZ1/BitLink",
+      live: "https://btlink.vercel.app/",
+      image: "/images/bitlink.png",
+    },
+    {
+      title: "GradCircle",
+      description:
+        "A fundraising platform that enables educational institutions to launch and promote donation campaigns. It connects schools with alumni and broader communities, facilitating secure contributions to support academic programs and campus development.",
+      tags: ["Social Platform", "Mentorship", "Real-time Chat", "Community"],
+      github: "https://github.com/YHQZ1/ISCKON-Alumni-Connect",
+      live: "https://gradcircle.vercel.app/",
+      image: "/images/gradcircle.png",
+    },
+    {
       title: "VerQ",
       description:
         "A unified platform that streamlines the student placement journey from start to finish. By combining an AI-driven ATS resume scanner, personalized application tracking, and direct company outreach, it eliminates friction and empowers students to secure their ideal roles.",
@@ -44,24 +71,6 @@ export default function Work() {
       image: "/images/oms.png",
     },
     {
-      title: "BitLink",
-      description:
-        "A modern, full-stack web application for streamlined link management. It allows users to shorten URLs, generate dynamic QR codes, and gain valuable insights through a real-time analytics dashboard, all within a clean and intuitive interface.",
-      tags: ["URL Shortener", "Analytics", "QR Generation", "Real-time"],
-      github: "https://github.com/YHQZ1/BitLink",
-      live: "https://btlink.vercel.app/",
-      image: "/images/bitlink.png",
-    },
-    {
-      title: "Alumni Connect",
-      description:
-        "A fundraising platform that enables educational institutions to launch and promote donation campaigns. It connects schools with alumni and broader communities, facilitating secure contributions to support academic programs and campus development.",
-      tags: ["Social Platform", "Mentorship", "Real-time Chat", "Community"],
-      github: "https://github.com/YHQZ1/ISCKON-Alumni-Connect",
-      live: "https://gradcircle.vercel.app/",
-      image: "/images/gradcircle.png",
-    },
-    {
       title: "OneGov",
       description:
         "A centralized digital hub for modern community living. It seamlessly integrates key services including government, local commerce, transportation, and public safety, providing a personalized experience for every user through secure, role-based access.",
@@ -70,18 +79,10 @@ export default function Work() {
       live: "https://one-gov.vercel.app/",
       image: "/images/onegov.png",
     },
-    {
-      title: "Anchor",
-      description:
-        "A unified student productivity platform that integrates directly with college systems to automate academic management. By automatically syncing assignments, tracking attendance thresholds, and providing actionable insights, it minimizes administrative effort and helps students stay organized and ahead of their deadlines.",
-      tags: ["Productivity", "Dashboard", "Student Tech", "All-in-One"],
-      github: "https://github.com/YHQZ1/Anchor",
-      live: "https://anchor-dev.vercel.app/",
-      image: "/images/anchor.png",
-    },
   ];
 
   const technicalSkills = [
+    // 1. Core Languages
     {
       name: "Java",
       logo: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
@@ -136,6 +137,8 @@ export default function Work() {
       experience: "1 year",
       category: ["DevOps Scripts", "System Administration", "CI/CD Automation"],
     },
+
+    // 2. Backend & API Development
     {
       name: "Node.js",
       logo: "https://cdn.simpleicons.org/nodedotjs/339933",
@@ -199,6 +202,8 @@ export default function Work() {
       experience: "<1 year",
       category: ["API Design", "Backend Development", "Schema Modeling"],
     },
+
+    // 3. Frontend & UI
     {
       name: "ReactJS",
       logo: "https://cdn.simpleicons.org/react/61DAFB",
@@ -225,6 +230,8 @@ export default function Work() {
       experience: "2+ years",
       category: ["Frontend Styling", "Responsive Design", "UI Development"],
     },
+
+    // 4. Databases & ORM
     {
       name: "SQL",
       logo: "https://www.svgrepo.com/show/331760/sql-database-generic.svg",
@@ -272,6 +279,8 @@ export default function Work() {
       experience: "<1 year",
       category: ["Caching", "Session Management", "Performance Optimization"],
     },
+
+    // 5. Cloud & DevOps
     {
       name: "Docker",
       logo: "https://cdn.simpleicons.org/docker/2496ED",
@@ -333,6 +342,8 @@ export default function Work() {
       experience: "1 year",
       category: ["Backend Services", "API Hosting", "Microservices Deployment"],
     },
+
+    // 6. Tools
     {
       name: "Git",
       logo: "https://cdn.simpleicons.org/git/F05032",
