@@ -82,7 +82,6 @@ export default function Work() {
   ];
 
   const technicalSkills = [
-    // 1. Core Languages
     {
       name: "Java",
       logo: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
@@ -137,8 +136,6 @@ export default function Work() {
       experience: "1 year",
       category: ["DevOps Scripts", "System Administration", "CI/CD Automation"],
     },
-
-    // 2. Backend & API Development
     {
       name: "Node.js",
       logo: "https://cdn.simpleicons.org/nodedotjs/339933",
@@ -202,8 +199,6 @@ export default function Work() {
       experience: "<1 year",
       category: ["API Design", "Backend Development", "Schema Modeling"],
     },
-
-    // 3. Frontend & UI
     {
       name: "ReactJS",
       logo: "https://cdn.simpleicons.org/react/61DAFB",
@@ -230,8 +225,17 @@ export default function Work() {
       experience: "2+ years",
       category: ["Frontend Styling", "Responsive Design", "UI Development"],
     },
-
-    // 4. Databases & ORM
+    {
+      name: "Jest",
+      logo: "https://cdn.simpleicons.org/jest/C21325",
+      level: "Beginner",
+      experience: "<1 year",
+      category: [
+        "Unit Testing",
+        "Integration Testing",
+        "Frontend & Backend Testing",
+      ],
+    },
     {
       name: "SQL",
       logo: "https://www.svgrepo.com/show/331760/sql-database-generic.svg",
@@ -241,7 +245,7 @@ export default function Work() {
     },
     {
       name: "PL/SQL",
-      logo: "https://www.oracle.com/a/ocom/img/pl-sql.svg",
+      logo: "https://www.svgrepo.com/show/373980/plsql.svg",
       level: "Intermediate",
       experience: "<1 year",
       category: ["Stored Procedures", "Triggers", "Functions"],
@@ -279,8 +283,17 @@ export default function Work() {
       experience: "<1 year",
       category: ["Caching", "Session Management", "Performance Optimization"],
     },
-
-    // 5. Cloud & DevOps
+    {
+      name: "Linux",
+      logo: "https://cdn.simpleicons.org/linux/FCC624",
+      level: "Intermediate",
+      experience: "2+ years",
+      category: [
+        "System Administration",
+        "Shell Scripting",
+        "Server Management",
+      ],
+    },
     {
       name: "Docker",
       logo: "https://cdn.simpleicons.org/docker/2496ED",
@@ -300,17 +313,47 @@ export default function Work() {
       ],
     },
     {
-      name: "AWS",
-      logo: "https://avatars.githubusercontent.com/u/49037648?s=280&v=4",
-      darkLogo:
-        "https://i.scdn.co/image/ab6765630000ba8a49f81331af04ec3614a5a741",
+      name: "Nginx",
+      logo: "https://cdn.simpleicons.org/nginx/009639",
+      level: "Beginner",
+      experience: "<1 year",
+      category: ["Reverse Proxy", "Load Balancing", "API Deployment"],
+    },
+    {
+      name: "PM2",
+      logo: "https://cdn.simpleicons.org/pm2/2B037A",
+      level: "Beginner",
+      experience: "<1 year",
+      category: ["Process Management", "Backend Deployment", "Monitoring"],
+    },
+    {
+      name: "AWS EC2",
+      logo: "https://a.b.cdn.console.awsstatic.com/a/v1/RHSMMGZKYJXPPNI2IOC6Z63HJEW4FD5ZYMKJSXD7HQ5IPUTQR2TQ/icon/d88319dfa5d204f019b4284149886c59-7d586ea82f792b61a8c87de60565133d.svg",
       level: "Intermediate",
       experience: "<1 year",
       category: [
+        "Server Hosting",
+        "Backend Deployment",
         "Cloud Infrastructure",
-        "Deployment",
-        "Scalable Backend Services",
       ],
+    },
+    {
+      name: "AWS RDS",
+      logo: "https://a.b.cdn.console.awsstatic.com/a/v1/6JW3RZSXOZ4EFR2HZBU6IIOCUZEIFKRK6JZDCUDHQVQXRMAORYWQ/icon/1d374ed2a6bcf601d7bfd4fc3dfd3b5d-c9f69416d978016b3191175f35e59226.svg",
+      level: "Intermediate",
+      experience: "<1 year",
+      category: [
+        "Managed Databases",
+        "PostgreSQL Hosting",
+        "Production Backends",
+      ],
+    },
+    {
+      name: "AWS S3",
+      logo: "https://a.b.cdn.console.awsstatic.com/a/v1/DKY2SIL5N3MJQCULDNOQE7TKLNQIUXRSOHBJKJGQAHLZO7TLH3TQ/icon/c0828e0381730befd1f7a025057c74fb-43acc0496e64afba82dbc9ab774dc622.svg",
+      level: "Beginner",
+      experience: "<1 year",
+      category: ["Object Storage", "Static Assets", "File Management"],
     },
     {
       name: "Supabase",
@@ -342,8 +385,6 @@ export default function Work() {
       experience: "1 year",
       category: ["Backend Services", "API Hosting", "Microservices Deployment"],
     },
-
-    // 6. Tools
     {
       name: "Git",
       logo: "https://cdn.simpleicons.org/git/F05032",
@@ -386,6 +427,24 @@ export default function Work() {
       logo: "https://cdn.simpleicons.org/github/181717",
       darkLogo: "https://cdn.simpleicons.org/github/FFFFFF",
       category: ["Project Boards", "Team Collaboration", "Issue Tracking"],
+    },
+    {
+      name: "GitHub Actions",
+      logo: "https://cdn.simpleicons.org/githubactions/2088FF",
+      level: "Intermediate",
+      experience: "<1 year",
+      category: [
+        "CI/CD Automation",
+        "DevOps Pipelines",
+        "Workflow Orchestration",
+      ],
+    },
+    {
+      name: "GitLab",
+      logo: "https://cdn.simpleicons.org/gitlab/FCA121",
+      level: "Beginner",
+      experience: "<1 year",
+      category: ["Version Control", "CI/CD Pipelines", "DevOps Platform"],
     },
     {
       name: "Chrome DevTools",
