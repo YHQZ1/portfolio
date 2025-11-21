@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "../context/ThemeContext";
 import { projects } from "../data/projects";
-import { technicalSkills } from "../data/skills";
+import { skills } from "../data/skills";
 import { toolsAndWorkflow } from "../data/tools";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
@@ -23,9 +23,175 @@ function useTypewriter(text, speed = 80) {
   return displayText;
 }
 
+const FILTERS = [
+  "languages",
+  "frontend",
+  "backend",
+  "database",
+  "cloud",
+  "devops",
+];
+
+function SkillFilters({ darkMode, activeFilters, setActiveFilters }) {
+  const toggleFilter = (tag) => {
+    setActiveFilters((prev) =>
+      prev.includes(tag) ? prev.filter((f) => f !== tag) : [...prev, tag]
+    );
+  };
+
+  return (
+    <div className="flex items-center gap-2 mb-8 overflow-x-auto whitespace-nowrap scrollbar-hide sm:flex-wrap sm:overflow-visible">
+      {FILTERS.map((filter) => {
+        const isActive = activeFilters.includes(filter);
+
+        return (
+          <button
+            key={filter}
+            onClick={() => toggleFilter(filter)}
+            className={`px-3 py-1 text-sm rounded-sm border transition-none cursor-pointer ${
+              darkMode
+                ? isActive
+                  ? "bg-[#f5f5f5] text-black border-[#f5f5f5]"
+                  : "border-[#2a2a2a] text-[#aaa] bg-[#111]"
+                : isActive
+                ? "bg-[#0a0a0a] text-white border-[#0a0a0a]"
+                : "border-[#ddd] text-[#444] bg-white"
+            }`}
+          >
+            {filter}
+          </button>
+        );
+      })}
+
+      {activeFilters.length > 0 && (
+        <button
+          onClick={() => setActiveFilters([])}
+          className={`px-3 py-1 text-sm rounded-sm border transition-none cursor-pointer ${
+            darkMode
+              ? "border-[#2a2a2a] text-[#aaa] bg-[#111] hover:border-[#444]"
+              : "border-[#ddd] text-[#444] bg-white hover:border-[#aaa]"
+          }`}
+        >
+          Clear Filters ✕
+        </button>
+      )}
+    </div>
+  );
+}
+
+function SkillsGrid({ darkMode, activeFilters }) {
+  const filteredSkills =
+    activeFilters.length === 0
+      ? skills
+      : skills.filter((skill) =>
+          activeFilters.every((tag) => skill.filterCategories.includes(tag))
+        );
+
+  if (filteredSkills.length === 0) {
+    return (
+      <div className="pt-10 text-center">
+        <p
+          className={`text-lg sm:text-xl font-light ${
+            darkMode ? "text-[#888]" : "text-[#666]"
+          }`}
+        >
+          Nothing here… looks like you’ve filtered me into a corner.
+        </p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-4">
+      {filteredSkills.map((skill, index) => (
+        <div
+          key={index}
+          className={`p-4 sm:p-6 border ${
+            darkMode
+              ? "border-[#2a2a2a] bg-[#0f0f0f]"
+              : "border-[#e0e0e0] bg-white"
+          } rounded-sm`}
+        >
+          <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+            <img
+              src={darkMode && skill.darkLogo ? skill.darkLogo : skill.logo}
+              alt={skill.name}
+              className="w-10 h-10 sm:w-12 sm:h-12"
+            />
+            <div className="flex-1 min-w-0">
+              <h3
+                className={`text-lg sm:text-xl font-medium truncate leading-[1.3] ${
+                  darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+                }`}
+              >
+                {skill.name}
+              </h3>
+              <div className="flex items-center gap-2 mt-1">
+                <span
+                  className={`text-xs px-2 py-1 rounded-full border ${
+                    darkMode
+                      ? "border-[#8ab4f8] text-[#8ab4f8] bg-[#8ab4f8]/10"
+                      : "border-[#4285f4] text-[#4285f4] bg-[#4285f4]/10"
+                  }`}
+                >
+                  {skill.level}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div className="space-y-2 sm:space-y-3">
+            <div className="flex items-center justify-between">
+              <span
+                className={`text-sm ${
+                  darkMode ? "text-[#888]" : "text-[#666]"
+                }`}
+              >
+                Experience
+              </span>
+              <span
+                className={`text-sm font-medium ${
+                  darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+                }`}
+              >
+                {skill.experience}
+              </span>
+            </div>
+
+            <div>
+              <span
+                className={`text-sm block mb-1 sm:mb-2 ${
+                  darkMode ? "text-[#888]" : "text-[#666]"
+                }`}
+              >
+                Used in:
+              </span>
+              <div className="flex flex-wrap gap-1">
+                {skill.category.map((tag, idx) => (
+                  <span
+                    key={idx}
+                    className={`text-xs px-2 py-1 rounded border leading-[1.4] ${
+                      darkMode
+                        ? "border-[#2a2a2a] bg-[#1a1a1a] text-[#888]"
+                        : "border-[#e0e0e0] bg-[#f5f5f5] text-[#666]"
+                    }`}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default function Work() {
   const { darkMode } = useTheme();
   const typedText = useTypewriter("Hey, I'm Uttkarsh!", 80);
+  const [activeFilters, setActiveFilters] = useState([]);
 
   return (
     <main
@@ -165,89 +331,14 @@ export default function Work() {
                 className={`absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300 group-hover:w-full`}
               ></span>
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-4">
-              {technicalSkills.map((skill, index) => (
-                <div
-                  key={index}
-                  className={`p-4 sm:p-6 border ${
-                    darkMode
-                      ? "border-[#2a2a2a] bg-[#0f0f0f]"
-                      : "border-[#e0e0e0] bg-white"
-                  } rounded-sm`}
-                >
-                  <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
-                    <img
-                      src={
-                        darkMode && skill.darkLogo ? skill.darkLogo : skill.logo
-                      }
-                      alt={skill.name}
-                      className="w-10 h-10 sm:w-12 sm:h-12"
-                    />
-                    <div className="flex-1 min-w-0">
-                      <h3
-                        className={`text-lg sm:text-xl font-medium truncate leading-[1.3] ${
-                          darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-                        }`}
-                      >
-                        {skill.name}
-                      </h3>
-                      <div className="flex items-center gap-2 mt-1">
-                        <span
-                          className={`text-xs px-2 py-1 rounded-full border ${
-                            darkMode
-                              ? "border-[#8ab4f8] text-[#8ab4f8] bg-[#8ab4f8]/10"
-                              : "border-[#4285f4] text-[#4285f4] bg-[#4285f4]/10"
-                          }`}
-                        >
-                          {skill.level}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="space-y-2 sm:space-y-3">
-                    <div className="flex items-center justify-between">
-                      <span
-                        className={`text-sm ${
-                          darkMode ? "text-[#888]" : "text-[#666]"
-                        }`}
-                      >
-                        Experience
-                      </span>
-                      <span
-                        className={`text-sm font-medium ${
-                          darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-                        }`}
-                      >
-                        {skill.experience}
-                      </span>
-                    </div>
-                    <div>
-                      <span
-                        className={`text-sm block mb-1 sm:mb-2 ${
-                          darkMode ? "text-[#888]" : "text-[#666]"
-                        }`}
-                      >
-                        Used in:
-                      </span>
-                      <div className="flex flex-wrap gap-1">
-                        {skill.category.map((project, projectIndex) => (
-                          <span
-                            key={projectIndex}
-                            className={`text-xs px-2 py-1 rounded border leading-[1.4] ${
-                              darkMode
-                                ? "border-[#2a2a2a] bg-[#1a1a1a] text-[#888]"
-                                : "border-[#e0e0e0] bg-[#f5f5f5] text-[#666]"
-                            }`}
-                          >
-                            {project}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+
+            <SkillFilters
+              darkMode={darkMode}
+              activeFilters={activeFilters}
+              setActiveFilters={setActiveFilters}
+            />
+
+            <SkillsGrid darkMode={darkMode} activeFilters={activeFilters} />
           </div>
         </section>
 
