@@ -10,13 +10,13 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-1/2 transform -translate-x-1/2 w-[90%] sm:w-[80%] md:w-[60%] lg:w-[40%] xl:w-[30%] max-w-[400px] min-w-[280px] flex justify-between items-center py-3 px-6 sm:py-3 sm:px-6 md:py-2 md:px-4 backdrop-blur-xs bg-white/5 dark:bg-black/5 shadow-lg border border-white/20 dark:border-gray-500/20 rounded-full z-50 mt-4 sm:mt-5 md:mt-6 lg:mt-7`}
     >
-      <Link to="/" className="flex items-center">
+      <div className="flex items-center select-none cursor-default">
         <img
           src="/images/logo.png"
           alt="Portfolio Logo"
           className="h-8 sm:h-9 md:h-9 lg:h-10 w-auto max-w-none min-w-[32px] sm:min-w-[36px]"
         />
-      </Link>
+      </div>
 
       <div className="flex gap-3 sm:gap-4 md:gap-4 lg:gap-6 items-center">
         <Link
