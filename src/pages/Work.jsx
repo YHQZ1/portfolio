@@ -24,30 +24,34 @@ function useTypewriter(text, speed = 80) {
 }
 
 const FILTERS = [
-  "languages",
-  "frontend",
-  "backend",
-  "database",
-  "cloud",
-  "devops",
+  "Languages",
+  "Frontend",
+  "Backend",
+  "Database",
+  "Cloud",
+  "Devops",
 ];
 
 function SkillFilters({ darkMode, activeFilters, setActiveFilters }) {
   const toggleFilter = (tag) => {
+    const normalized = tag.toLowerCase();
+
     setActiveFilters((prev) =>
-      prev.includes(tag) ? prev.filter((f) => f !== tag) : [...prev, tag]
+      prev.includes(normalized)
+        ? prev.filter((f) => f !== normalized)
+        : [...prev, normalized]
     );
   };
 
   return (
     <div className="flex items-center gap-2 mb-8 overflow-x-auto whitespace-nowrap scrollbar-hide sm:flex-wrap sm:overflow-visible">
       {FILTERS.map((filter) => {
-        const isActive = activeFilters.includes(filter);
+        const isActive = activeFilters.includes(filter.toLowerCase());
 
         return (
           <button
             key={filter}
-            onClick={() => toggleFilter(filter)}
+            onClick={() => toggleFilter(filter.toLowerCase())}
             className={`px-3 py-1 text-sm rounded-sm border transition-none cursor-pointer ${
               darkMode
                 ? isActive

@@ -22,7 +22,6 @@
   box-sizing: border-box;
 }
 
-/* hide scrollbar but allow scrolling */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }

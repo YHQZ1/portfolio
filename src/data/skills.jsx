@@ -151,7 +151,7 @@ export const technicalSkills = [
     level: "Advanced",
     experienceStart: "2025-02",
     category: ["Query Optimization", "Joins & Indexing", "Database Design"],
-    filterCategories: ["database"],
+    filterCategories: ["languages", "database"],
   },
   {
     name: "PostgreSQL",
