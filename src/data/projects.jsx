@@ -40,6 +40,22 @@ export const projects = [
   },
 
   {
+    title: "QuickStream",
+    description:
+      "A lightweight Chrome extension for instant keyboard-driven video speed control. Built on Manifest V3, it enhances playback UX across YouTube and other supported sites by delivering clean, unobtrusive controls without clutter or heavy UI elements.",
+    tags: [
+      "Chrome Extension",
+      "Browser APIs",
+      "UX",
+      "Manifest V3",
+      "Productivity",
+    ],
+    github: "https://github.com/YHQZ1/quickstream",
+    live: "#",
+    image: "/images/quickstream.png",
+  },
+
+  {
     title: "Order Management System",
     description:
       "A feature-rich desktop application for managing customers, orders, inventory, and vendors. Designed for operational efficiency, it provides centralized data control, real-time status updates, and a robust workflow for business operations.",
@@ -53,7 +69,12 @@ export const projects = [
     title: "OneGov",
     description:
       "A unified digital hub that consolidates government, commerce, transport, and civic utilities into a single platform. With secure role-based access and a multi-tenant architecture, it delivers a personalized, integrated digital experience for every user type.",
-    tags: ["GovTech", "Multi-tenant", "Role-based Access", "Integrated Services"],
+    tags: [
+      "GovTech",
+      "Multi-tenant",
+      "Role-based Access",
+      "Integrated Services",
+    ],
     github: "https://github.com/YHQZ1/OneGov",
     live: "https://one-gov.vercel.app/",
     image: "/images/onegov.png",
