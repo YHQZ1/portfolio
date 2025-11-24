@@ -84,10 +84,9 @@ export default function About() {
                     darkMode ? "text-[#888]" : "text-[#666]"
                   }`}
                 >
-                  When I'm not building projects, I'm usually working out,
-                  eating my way through the city, or watching something
-                  compelling. I believe the best solutions come from simple,
-                  disciplined and thoughtful approaches.
+                  Outside of tech, I try to maintain a steady balance and focus
+                  on the things that keep me grounded. I don’t overthink it. I
+                  just move toward whatever feels right at the time.
                 </p>
               </div>
 
@@ -101,9 +100,9 @@ export default function About() {
                     darkMode ? "text-[#888]" : "text-[#666]"
                   }`}
                 >
-                  I'm always learning and growing—currently exploring new areas
-                  in tech and always open to interesting conversations about
-                  software development.
+                  I keep learning as I go and pick up skills that actually help
+                  me build better things. Tech moves fast, so I just stay
+                  curious and keep improving wherever I can.
                 </p>
               </div>
 
@@ -117,10 +116,10 @@ export default function About() {
                     darkMode ? "text-[#888]" : "text-[#666]"
                   }`}
                 >
-                  Feel free to reach out if you want to chat about tech,
-                  collaborate on something cool, or just share what you're
-                  working on. I'm always excited to connect with fellow
-                  creators!
+                  I’m always trying out new ideas and figuring out what I can
+                  improve or build next. I keep things simple and move at my own
+                  pace. If you ever want to reach out or just say hi, I’m
+                  around.
                 </p>
               </div>
             </div>
@@ -272,7 +271,7 @@ export default function About() {
                 Competitive Programming Co-Head
               </h3>
               <p
-                className={`text-sm mb-3 sm:mb-4 ${
+                className={`text-sm italic mb-3 sm:mb-4 ${
                   darkMode ? "text-[#666]" : "text-[#999]"
                 }`}
               >
@@ -304,7 +303,7 @@ export default function About() {
                 Media Co-Head
               </h3>
               <p
-                className={`text-sm mb-3 sm:mb-4 ${
+                className={`text-sm italic mb-3 sm:mb-4 ${
                   darkMode ? "text-[#666]" : "text-[#999]"
                 }`}
               >
@@ -336,7 +335,7 @@ export default function About() {
                 Social Media Head
               </h3>
               <p
-                className={`text-sm mb-3 sm:mb-4 ${
+                className={`text-sm italic mb-3 sm:mb-4 ${
                   darkMode ? "text-[#666]" : "text-[#999]"
                 }`}
               >
@@ -367,7 +366,7 @@ export default function About() {
                 Media & Documentation Head
               </h3>
               <p
-                className={`text-sm mb-3 sm:mb-4 ${
+                className={`text-sm italic mb-3 sm:mb-4 ${
                   darkMode ? "text-[#666]" : "text-[#999]"
                 }`}
               >
@@ -422,7 +421,7 @@ export default function About() {
                   Hackathon Finalist – ACE 2.0
                 </h3>
                 <span
-                  className={`text-sm mt-1 sm:mt-0 ${
+                  className={`text-sm mt-1 italic sm:mt-0 ${
                     darkMode ? "text-[#666]" : "text-[#999]"
                   }`}
                 >
@@ -455,7 +454,7 @@ export default function About() {
                   Open Source Contributor
                 </h3>
                 <span
-                  className={`text-sm mt-1 sm:mt-0 ${
+                  className={`text-sm mt-1 italic sm:mt-0 ${
                     darkMode ? "text-[#666]" : "text-[#999]"
                   }`}
                 >
@@ -499,7 +498,7 @@ export default function About() {
                 darkMode ? "text-[#888]" : "text-[#666]"
               }`}
             >
-              Skills sharpened, just waiting for the right opportunity.
+              Building experience along the way.
             </p>
           </div>
         </section>
