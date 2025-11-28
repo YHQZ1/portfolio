@@ -70,7 +70,7 @@ export default function Footer() {
                     setCopied(true);
                     setTimeout(() => setCopied(false), 1200);
                   }}
-                  className={`relative text-2xl sm:text-3xl transition-colors duration-300 group ${baseColor}`}
+                  className={`relative cursor-pointer text-2xl sm:text-3xl transition-colors duration-300 group ${baseColor}`}
                 >
                   <Icon />
                   <span

@@ -29,3 +29,22 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Hide default cursor everywhere */
+html, body, * {
+  cursor: none !important;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  opacity: 0;
+  will-change: transform, opacity, left, top;
+}
+
+

@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import { ThemeProvider } from "./context/ThemeContext";
+import Cursor from "./components/Cursor";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -24,6 +25,7 @@ export default function App() {
   return (
     <ThemeProvider>
       <Router>
+        <Cursor />
         <ScrollToTop />
         <Navbar />
         <Routes>
