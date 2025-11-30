@@ -52,15 +52,22 @@ function SkillFilters({ darkMode, activeFilters, setActiveFilters }) {
           <button
             key={filter}
             onClick={() => toggleFilter(filter.toLowerCase())}
-            className={`px-3 py-1 text-sm rounded-sm border transition-none cursor-pointer ${
-              darkMode
-                ? isActive
-                  ? "bg-[#f5f5f5] text-black border-[#f5f5f5]"
-                  : "border-[#2a2a2a] text-[#aaa] bg-[#111]"
-                : isActive
-                ? "bg-[#0a0a0a] text-white border-[#0a0a0a]"
-                : "border-[#ddd] text-[#444] bg-white"
-            }`}
+            className={`
+    px-3 py-1 text-sm rounded-sm border cursor-pointer select-none
+    transition-none duration-200
+    ${
+      darkMode
+        ? isActive
+          ? "bg-[#f5f5f5] text-black border-[#f5f5f5]"
+          : "border-[#2a2a2a] text-[#aaa] bg-[#111]"
+        : isActive
+        ? "bg-[#0a0a0a] text-white border-[#0a0a0a]"
+        : "border-[#ddd] text-[#444] bg-white"
+    }
+    hover:scale-[1.04]
+    hover:shadow-[0_2px_6px_rgba(0,0,0,0.15)]
+    hover:border-current
+  `}
           >
             {filter}
           </button>

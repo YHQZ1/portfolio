@@ -75,7 +75,7 @@ export default function Cursor() {
       style={{
         transform: isPointer
           ? "translate(-4px, -2px) scale(0.7)"
-          : "translate(-4px, -2px) scale(0.7)"
+          : "translate(-4px, -2px) scale(0.7)",
       }}
       alt=""
     />

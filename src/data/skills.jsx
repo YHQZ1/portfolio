@@ -73,7 +73,7 @@ export const technicalSkills = [
     level: "Intermediate",
     experienceStart: "2024-08",
     category: ["DevOps Scripts", "System Administration", "CI/CD Automation"],
-    filterCategories: ["devops"],
+    filterCategories: ["devops", "languages"],
   },
   {
     name: "Node.js",

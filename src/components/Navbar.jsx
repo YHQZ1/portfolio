@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { useTheme } from "../context/ThemeContext";
 import resumePDF from "/Resume.pdf";
 
 export default function Navbar() {
   const { darkMode, toggleTheme } = useTheme();
+  const location = useLocation();
+
+  const isActive = (path) => location.pathname === path;
 
   return (
     <nav
@@ -18,48 +21,47 @@ export default function Navbar() {
         />
       </div>
 
-      <div className="flex gap-3 sm:gap-4 md:gap-4 lg:gap-6 items-center">
+      <div
+        className={`flex gap-3 sm:gap-4 md:gap-4 lg:gap-6 items-center ${
+          darkMode ? "text-white" : "text-gray-900"
+        }`}
+      >
         <Link
           to="/"
-          className={`font-medium text-base sm:text-lg md:text-base lg:text-lg py-1 relative group transition-none duration-300 ${
-            darkMode ? "text-white" : "text-gray-900"
-          }`}
+          className={`${
+            isActive("/") ? "font-semibold" : "font-medium"
+          } text-base sm:text-lg md:text-base lg:text-lg py-1 relative group`}
         >
           Work
-          <span
-            className={`absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300 group-hover:w-full`}
-          ></span>
+          <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full" />
         </Link>
+
         <Link
           to="/about"
-          className={`font-medium text-base sm:text-lg md:text-base lg:text-lg py-1 relative group transition-none duration-300 ${
-            darkMode ? "text-white" : "text-gray-900"
-          }`}
+          className={`${
+            isActive("/about") ? "font-semibold" : "font-medium"
+          } text-base sm:text-lg md:text-base lg:text-lg py-1 relative group`}
         >
           About
-          <span
-            className={`absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300 group-hover:w-full`}
-          ></span>
+          <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full" />
         </Link>
+
         <a
           href={resumePDF}
           target="_blank"
           rel="noopener noreferrer"
-          className={`font-medium text-base sm:text-lg md:text-base lg:text-lg py-1 relative group transition-none duration-300 ${
-            darkMode ? "text-white" : "text-gray-900"
-          }`}
+          className={`${
+            isActive("/resume") ? "font-semibold" : "font-medium"
+          } text-base sm:text-lg md:text-base lg:text-lg py-1 relative group`}
         >
           Resume
-          <span
-            className={`absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300 group-hover:w-full`}
-          ></span>
+          <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full" />
         </a>
       </div>
 
       <button
         className="bg-transparent border-none cursor-pointer p-1.5 sm:p-2 md:p-1.5 lg:p-2 flex items-center justify-center rounded-full transition-all duration-300 hover:scale-110"
         onClick={toggleTheme}
-        aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
       >
         {darkMode ? (
           <FaSun className="w-5 h-5 sm:w-6 sm:h-6 md:w-5 md:h-5 lg:w-6 lg:h-6 text-gray-400" />
