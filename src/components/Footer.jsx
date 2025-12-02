@@ -48,11 +48,11 @@ export default function Footer() {
             >
               <Icon />
               <span
-                className={`absolute -top-12 left-1/2 -translate-x-1/2 text-sm px-3 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${tooltipBg}`}
+                className={`absolute -top-14 left-1/2 -translate-x-1/2 text-sm px-3 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 pointer-events-none ${tooltipBg}`}
               >
                 {name}
                 <span
-                  className={`absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 ${tooltipArrow}`}
+                  className={`absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 pointer-events-none ${tooltipArrow}`}
                 />
               </span>
             </a>
@@ -74,7 +74,7 @@ export default function Footer() {
                 >
                   <Icon />
                   <span
-                    className={`absolute -top-12 left-1/2 -translate-x-1/2 text-sm px-3 py-2 rounded-sm transition-opacity duration-300 whitespace-nowrap z-50 ${tooltipBg} ${
+                    className={`absolute -top-14 left-1/2 -translate-x-1/2 text-sm px-3 py-2 rounded-sm transition-opacity duration-300 whitespace-nowrap z-50 pointer-events-none ${tooltipBg} ${
                       copied
                         ? "opacity-100"
                         : "opacity-0 group-hover:opacity-100"
@@ -82,7 +82,7 @@ export default function Footer() {
                   >
                     {copied ? "Copied!" : item.name}
                     <span
-                      className={`absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 ${tooltipArrow}`}
+                      className={`absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 pointer-events-none ${tooltipArrow}`}
                     />
                   </span>
                 </button>
@@ -98,11 +98,11 @@ export default function Footer() {
                 >
                   <Icon />
                   <span
-                    className={`absolute -top-12 left-1/2 -translate-x-1/2 text-sm px-3 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 ${tooltipBg}`}
+                    className={`absolute -top-14 left-1/2 -translate-x-1/2 text-sm px-3 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 pointer-events-none ${tooltipBg}`}
                   >
                     {item.name}
                     <span
-                      className={`absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 ${tooltipArrow}`}
+                      className={`absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 pointer-events-none ${tooltipArrow}`}
                     />
                   </span>
                 </Link>

@@ -1,12 +1,20 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import { useEffect } from "react";
-import Navbar from "./components/Navbar";
+
 import Work from "./pages/Work";
 import About from "./pages/About";
+
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
-import { ThemeProvider } from "./context/ThemeContext";
 import Cursor from "./components/Cursor";
+
+import { ThemeProvider } from "./context/ThemeContext";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -14,7 +22,7 @@ function ScrollToTop() {
   useEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   }, [pathname]);
 

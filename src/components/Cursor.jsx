@@ -1,82 +1,65 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Cursor() {
   const cursorRef = useRef(null);
-  const [isPointer, setIsPointer] = useState(false);
+
+  const isTouchDevice =
+    typeof window !== "undefined" &&
+    ("ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      navigator.msMaxTouchPoints > 0);
 
   useEffect(() => {
-    const cursor = cursorRef.current;
+    if (isTouchDevice || !cursorRef.current) return;
 
+    const cursor = cursorRef.current;
     let mouseX = 0;
     let mouseY = 0;
+    let rafId = null;
 
-    const move = (e) => {
+    const moveCursor = (e) => {
       mouseX = e.clientX;
       mouseY = e.clientY;
       cursor.style.opacity = "1";
     };
 
-    const hide = () => {
+    const hideCursor = () => {
       cursor.style.opacity = "0";
     };
 
-    const show = () => {
+    const showCursor = () => {
       cursor.style.opacity = "1";
     };
 
-    const update = () => {
-      cursor.style.left = mouseX + "px";
-      cursor.style.top = mouseY + "px";
-      requestAnimationFrame(update);
+    const updateCursorPosition = () => {
+      cursor.style.left = `${mouseX - 4}px`;
+      cursor.style.top = `${mouseY - 2}px`;
+      rafId = requestAnimationFrame(updateCursorPosition);
     };
-    update();
 
-    window.addEventListener("mousemove", move);
+    document.addEventListener("mousemove", moveCursor);
+    document.addEventListener("mouseout", hideCursor);
+    document.addEventListener("mouseenter", showCursor);
 
-    document.addEventListener("mouseout", (e) => {
-      if (!e.relatedTarget) hide();
-    });
-
-    window.addEventListener("mouseenter", show);
+    updateCursorPosition();
 
     return () => {
-      window.removeEventListener("mousemove", move);
-      window.removeEventListener("mouseenter", show);
-      document.removeEventListener("mouseout", hide);
+      document.removeEventListener("mousemove", moveCursor);
+      document.removeEventListener("mouseout", hideCursor);
+      document.removeEventListener("mouseenter", showCursor);
+      if (rafId) cancelAnimationFrame(rafId);
     };
-  }, []);
+  }, [isTouchDevice]);
 
-  useEffect(() => {
-    const enter = () => setIsPointer(true);
-    const leave = () => setIsPointer(false);
-
-    const elems = document.querySelectorAll(
-      "a, button, [role='button'], .cursor-pointer-custom"
-    );
-
-    elems.forEach((el) => {
-      el.addEventListener("mouseenter", enter);
-      el.addEventListener("mouseleave", leave);
-    });
-
-    return () => {
-      elems.forEach((el) => {
-        el.removeEventListener("mouseenter", enter);
-        el.removeEventListener("mouseleave", leave);
-      });
-    };
-  }, []);
+  if (isTouchDevice) {
+    return null;
+  }
 
   return (
     <img
       ref={cursorRef}
-      src={"/custom-cursor.svg"}
+      src="/custom-cursor.svg"
       className="custom-cursor"
-      style={{
-        transform: isPointer
-          ? "translate(-4px, -2px) scale(0.7)"
-          : "translate(-4px, -2px) scale(0.7)",
-      }}
       alt=""
     />
   );
