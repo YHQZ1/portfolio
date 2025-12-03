@@ -13,8 +13,8 @@ export default function Cursor() {
     if (isTouchDevice || !cursorRef.current) return;
 
     const cursor = cursorRef.current;
-    let mouseX = 0;
-    let mouseY = 0;
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
     let rafId = null;
 
     const moveCursor = (e) => {
@@ -23,12 +23,8 @@ export default function Cursor() {
       cursor.style.opacity = "1";
     };
 
-    const hideCursor = () => {
+    const handleLeave = () => {
       cursor.style.opacity = "0";
-    };
-
-    const showCursor = () => {
-      cursor.style.opacity = "1";
     };
 
     const updateCursorPosition = () => {
@@ -38,15 +34,13 @@ export default function Cursor() {
     };
 
     document.addEventListener("mousemove", moveCursor);
-    document.addEventListener("mouseout", hideCursor);
-    document.addEventListener("mouseenter", showCursor);
+    document.addEventListener("mouseleave", handleLeave);
 
     updateCursorPosition();
 
     return () => {
       document.removeEventListener("mousemove", moveCursor);
-      document.removeEventListener("mouseout", hideCursor);
-      document.removeEventListener("mouseenter", showCursor);
+      document.removeEventListener("mouseleave", handleLeave);
       if (rafId) cancelAnimationFrame(rafId);
     };
   }, [isTouchDevice]);
