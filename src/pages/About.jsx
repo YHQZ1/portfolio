@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "../context/ThemeContext";
+import CommandPalette from "../components/CommandPalette";
 
 function useTypewriter(text, speed = 80) {
   const [displayText, setDisplayText] = useState("");
@@ -21,7 +22,45 @@ function useTypewriter(text, speed = 80) {
 
 export default function About() {
   const { darkMode } = useTheme();
+  const commands = [
+    { label: "Core Competencies", id: "core-competencies" },
+    { label: "Leadership Journey", id: "leadership-journey" },
+    { label: "Key Achievements", id: "key-achievements" },
+    { label: "Work Experience", id: "work-experience" },
+  ];
+
   const typedText = useTypewriter("About", 80);
+  const [showShortcutHint, setShowShortcutHint] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
+    const updateProgress = () => {
+      const scrollTop = window.scrollY;
+      const docHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (scrollTop / docHeight) * 100;
+      setScrollProgress(progress);
+    };
+
+    window.addEventListener("scroll", updateProgress);
+    return () => window.removeEventListener("scroll", updateProgress);
+  }, []);
+
+  useEffect(() => {
+    let timeout;
+
+    const handleScroll = () => {
+      setShowShortcutHint(true);
+
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        setShowShortcutHint(false);
+      }, 1200);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <main
@@ -29,6 +68,20 @@ export default function About() {
         darkMode ? "bg-[#0a0a0a]" : "bg-[#fafafa]"
       } px-4 sm:px-6`}
     >
+      <div
+        className={`
+    fixed top-0 left-0 h-[2px] z-50
+    ${
+      darkMode
+        ? "bg-white shadow-[0_0_6px_rgba(255,255,255,0.4)]"
+        : "bg-black shadow-[0_0_6px_rgba(0,0,0,0.25)]"
+    }
+    transition-[width] duration-500 ease-out
+  `}
+        style={{ width: `${scrollProgress}%` }}
+      ></div>
+
+      <CommandPalette darkMode={darkMode} commands={commands} />
       <div className="max-w-8xl mx-auto px-2 sm:px-4 md:px-6 lg:px-12 xl:px-16 pt-24 sm:pt-28 md:pt-32 pb-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-12 md:gap-16 lg:gap-20 mb-16 sm:mb-20">
           <div className="order-1 lg:order-1 lg:col-span-1">
@@ -40,7 +93,7 @@ export default function About() {
               } rounded-sm overflow-hidden h-full min-h-[400px] sm:min-h-[500px] md:min-h-[600px]`}
             >
               <img
-                src="/images/ProfilePicture.jpg"
+                src="/core/ProfilePicture.jpg"
                 alt="Uttkarsh"
                 className="w-full h-full object-cover"
               />
@@ -131,7 +184,7 @@ export default function About() {
             darkMode ? "bg-[#2a2a2a]" : "bg-[#e8e8e8]"
           } my-8 sm:my-10`}
         ></div>
-        <section className="mb-16 sm:mb-20">
+        <section id="core-competencies" className="mb-16 sm:mb-20">
           <h2
             className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-12 sm:mb-16 relative inline-block group ${
               darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
@@ -245,7 +298,7 @@ export default function About() {
             darkMode ? "bg-[#2a2a2a]" : "bg-[#e8e8e8]"
           } my-8 sm:my-10`}
         ></div>
-        <section className="mb-16 sm:mb-20">
+        <section id="leadership-journey" className="mb-16 sm:mb-20">
           <h2
             className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-12 sm:mb-16 relative inline-block group ${
               darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
@@ -392,7 +445,7 @@ export default function About() {
             darkMode ? "bg-[#2a2a2a]" : "bg-[#e8e8e8]"
           } my-8 sm:my-10`}
         ></div>
-        <section className="mb-16 sm:mb-20">
+        <section id="key-achievements" className="mb-16 sm:mb-20">
           <h2
             className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-12 sm:mb-16 relative inline-block group ${
               darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
@@ -480,7 +533,7 @@ export default function About() {
             darkMode ? "bg-[#2a2a2a]" : "bg-[#e8e8e8]"
           } my-8 sm:my-10`}
         />
-        <section className="mb-16 sm:mb-20">
+        <section id="work-experience" className="mb-16 sm:mb-20">
           <h2
             className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-12 sm:mb-16 relative inline-block group ${
               darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
@@ -502,6 +555,23 @@ export default function About() {
             </p>
           </div>
         </section>
+      </div>
+      <div
+        className={`
+    fixed bottom-6 left-6 text-xs z-40
+    px-2 py-1 rounded-md
+    backdrop-blur-md
+    ${
+      darkMode
+        ? "bg-white/10 border-white/20 text-white/80"
+        : "bg-black/10 border-black/20 text-black/70"
+    }
+    transition-opacity duration-300
+    ${showShortcutHint ? "opacity-100" : "opacity-0 pointer-events-none"}
+    whitespace-nowrap
+  `}
+      >
+        ⌘K / Ctrl+K to search
       </div>
     </main>
   );

@@ -4,6 +4,7 @@ import { projects } from "../data/projects";
 import { skills } from "../data/skills";
 import { toolsAndWorkflow } from "../data/tools";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import CommandPalette from "../components/CommandPalette";
 
 function useTypewriter(text, speed = 80) {
   const [displayText, setDisplayText] = useState("");
@@ -30,6 +31,7 @@ const FILTERS = [
   "Database",
   "Cloud",
   "Devops",
+  "Machine Learning",
 ];
 
 function SkillFilters({ darkMode, activeFilters, setActiveFilters }) {
@@ -201,8 +203,45 @@ function SkillsGrid({ darkMode, activeFilters }) {
 
 export default function Work() {
   const { darkMode } = useTheme();
+  const commands = [
+    { label: "My Work", id: "my-work" },
+    { label: "Technical Skills", id: "technical-skills" },
+    { label: "Tools & Workflow", id: "tools-and-workflow" },
+  ];
+
   const typedText = useTypewriter("Hey, I'm Uttkarsh!", 80);
   const [activeFilters, setActiveFilters] = useState([]);
+  const [showShortcutHint, setShowShortcutHint] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
+    const updateProgress = () => {
+      const scrollTop = window.scrollY;
+      const docHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (scrollTop / docHeight) * 100;
+      setScrollProgress(progress);
+    };
+
+    window.addEventListener("scroll", updateProgress);
+    return () => window.removeEventListener("scroll", updateProgress);
+  }, []);
+
+  useEffect(() => {
+    let timeout;
+
+    const handleScroll = () => {
+      setShowShortcutHint(true);
+
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        setShowShortcutHint(false);
+      }, 1200);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <main
@@ -210,6 +249,20 @@ export default function Work() {
         darkMode ? "bg-[#0a0a0a]" : "bg-[#fafafa]"
       } px-4 sm:px-6`}
     >
+      <div
+        className={`
+    fixed top-0 left-0 h-[2px] z-50
+    ${
+      darkMode
+        ? "bg-white shadow-[0_0_6px_rgba(255,255,255,0.4)]"
+        : "bg-black shadow-[0_0_6px_rgba(0,0,0,0.25)]"
+    }
+    transition-[width] duration-500 ease-out
+  `}
+        style={{ width: `${scrollProgress}%` }}
+      ></div>
+
+      <CommandPalette darkMode={darkMode} commands={commands} />
       <div className="max-w-8xl mx-auto px-2 sm:px-4 md:px-6 lg:px-12 xl:px-16 pt-24 sm:pt-28 md:pt-32 pb-10">
         <div className="mb-20 sm:mb-24 md:mb-32">
           <h1
@@ -230,7 +283,7 @@ export default function Work() {
           </p>
         </div>
 
-        <section className="mb-10 sm:mb-16 md:mb-20">
+        <section id="my-work" className="mb-10 sm:mb-16 md:mb-20">
           <div>
             <h2
               className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 relative inline-block group ${
@@ -330,7 +383,7 @@ export default function Work() {
           } my-8 sm:my-10`}
         />
 
-        <section className="mb-16 sm:mb-20">
+        <section id="technical-skills" className="mb-16 sm:mb-20">
           <div>
             <h2
               className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 relative inline-block group ${
@@ -359,7 +412,7 @@ export default function Work() {
           } my-8 sm:my-10`}
         />
 
-        <section className="mb-16 sm:mb-20">
+        <section id="tools-and-workflow" className="mb-16 sm:mb-20">
           <div>
             <h2
               className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 relative inline-block group ${
@@ -444,6 +497,23 @@ export default function Work() {
             My microservices talk to each other more politely than most humans
           </p>
         </div>
+      </div>
+      <div
+        className={`
+    fixed bottom-6 left-6 text-xs z-40
+    px-2 py-1 rounded-md
+    backdrop-blur-md
+    ${
+      darkMode
+        ? "bg-white/10 border-white/20 text-white/80"
+        : "bg-black/10 border-black/20 text-black/70"
+    }
+    transition-opacity duration-300
+    ${showShortcutHint ? "opacity-100" : "opacity-0 pointer-events-none"}
+    whitespace-nowrap
+  `}
+      >
+        ⌘K / Ctrl+K to search
       </div>
     </main>
   );

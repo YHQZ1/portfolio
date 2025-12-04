@@ -15,7 +15,7 @@ export default function Navbar() {
     >
       <div className="flex items-center select-none cursor-default">
         <img
-          src="/images/logo.png"
+          src="/core/logo.png"
           alt="Portfolio Logo"
           className="h-8 sm:h-9 md:h-9 lg:h-10 w-auto max-w-none min-w-[32px] sm:min-w-[36px]"
         />

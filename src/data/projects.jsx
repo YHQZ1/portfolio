@@ -6,7 +6,7 @@ export const projects = [
     tags: ["EdTech", "Automation", "Productivity", "System Integration"],
     github: "https://github.com/YHQZ1/Anchor",
     live: "https://anchor-dev.vercel.app/",
-    image: "/images/anchor.png",
+    image: "/projects/anchor.png",
   },
 
   {
@@ -16,7 +16,7 @@ export const projects = [
     tags: ["URL Shortener", "Analytics", "QR Codes", "Real-time"],
     github: "https://github.com/YHQZ1/BitLink",
     live: "https://btlink.vercel.app/",
-    image: "/images/bitlink.png",
+    image: "/projects/bitlink.png",
   },
 
   {
@@ -26,7 +26,7 @@ export const projects = [
     tags: ["Fundraising", "EdTech", "Campaign Management", "Alumni Outreach"],
     github: "https://github.com/YHQZ1/ISCKON-Alumni-Connect",
     live: "https://gradcircle.vercel.app/",
-    image: "/images/gradcircle.png",
+    image: "/projects/gradcircle.png",
   },
 
   {
@@ -36,7 +36,7 @@ export const projects = [
     tags: ["AI-Driven", "ATS Scanner", "Real-time", "Job Tracking"],
     github: "https://github.com/About-Rudra/Verq",
     live: "https://verq-pi.vercel.app",
-    image: "/images/verq.png",
+    image: "/projects/verq.png",
   },
 
   {
@@ -52,7 +52,7 @@ export const projects = [
     ],
     github: "https://github.com/YHQZ1/quickstream",
     live: "#",
-    image: "/images/quickstream.png",
+    image: "/projects/quickstream.png",
   },
 
   {
@@ -62,7 +62,7 @@ export const projects = [
     tags: ["Desktop App", "Inventory", "CRUD System", "Business Operations"],
     github: "https://github.com/YHQZ1/Order-Management-System",
     live: "#",
-    image: "/images/oms.png",
+    image: "/projects/oms.png",
   },
 
   {
@@ -77,6 +77,6 @@ export const projects = [
     ],
     github: "https://github.com/YHQZ1/OneGov",
     live: "https://one-gov.vercel.app/",
-    image: "/images/onegov.png",
+    image: "/projects/onegov.png",
   },
 ];

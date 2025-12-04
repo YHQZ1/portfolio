@@ -102,7 +102,7 @@ export const technicalSkills = [
   },
   {
     name: "REST APIs",
-    logo: "https://media.licdn.com/dms/image/v2/D5612AQE0nEZrPGv0JA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1679583758253?e=2147483647&v=beta&t=4QpsM1YKchLOfxVzpfFJAQWdkJ3vg3aKUWYL5tFVXXI",
+    logo: "/skills/rest-api.png",
     level: "Advanced",
     experienceStart: "2024-10",
     category: ["API Design", "Backend Development", "Web Services"],
@@ -147,7 +147,7 @@ export const technicalSkills = [
   },
   {
     name: "SQL",
-    logo: "/images/sql-logo.png",
+    logo: "/skills/sql-logo.png",
     level: "Advanced",
     experienceStart: "2025-02",
     category: ["Query Optimization", "Joins & Indexing", "Database Design"],
@@ -285,13 +285,11 @@ export const technicalSkills = [
   },
   {
     name: "NumPy",
-    logo: "https://www.pythontutorial.net/wp-content/uploads/2022/08/numpy-tutorial.svg",
-    darkLogo:
-      "https://www.pythontutorial.net/wp-content/uploads/2022/08/numpy-tutorial.svg",
+    logo: "/skills/numpy.png",
     level: "Beginner",
     experienceStart: "2025-12",
     category: ["Scientific Computing", "Numerical Analysis", "Data Processing"],
-    filterCategories: ["languages", "backend"],
+    filterCategories: ["machine learning"],
   },
   {
     name: "Pandas",
@@ -300,23 +298,23 @@ export const technicalSkills = [
     level: "Beginner",
     experienceStart: "2025-12",
     category: ["Data Analysis", "Data Manipulation", "ETL"],
-    filterCategories: ["languages", "backend"],
+    filterCategories: ["machine learning"],
   },
   {
     name: "Matplotlib",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Created_with_Matplotlib-logo.svg/2048px-Created_with_Matplotlib-logo.svg.png",
+    logo: "/skills/matplotlib.png",
     level: "Beginner",
     experienceStart: "2025-12",
     category: ["Data Visualization", "Plotting", "Analytics"],
-    filterCategories: ["frontend", "backend"],
+    filterCategories: ["machine learning"],
   },
   {
     name: "Seaborn",
-    logo: "https://seaborn.pydata.org/_images/logo-mark-lightbg.svg",
+    logo: "/skills/seaborn.png",
     level: "Beginner",
     experienceStart: "2025-12",
     category: ["Data Visualization", "Statistical Graphics", "Analytics"],
-    filterCategories: ["frontend", "backend"],
+    filterCategories: ["machine learning"],
   },
 ];
 
