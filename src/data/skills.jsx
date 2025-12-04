@@ -283,6 +283,41 @@ export const technicalSkills = [
     category: ["Version Control", "Team Collaboration", "DevOps Workflow"],
     filterCategories: ["devops"],
   },
+  {
+    name: "NumPy",
+    logo: "https://www.pythontutorial.net/wp-content/uploads/2022/08/numpy-tutorial.svg",
+    darkLogo:
+      "https://www.pythontutorial.net/wp-content/uploads/2022/08/numpy-tutorial.svg",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: ["Scientific Computing", "Numerical Analysis", "Data Processing"],
+    filterCategories: ["languages", "backend"],
+  },
+  {
+    name: "Pandas",
+    logo: "https://cdn.simpleicons.org/pandas/150458",
+    darkLogo: "https://cdn.simpleicons.org/pandas/FFFFFF",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: ["Data Analysis", "Data Manipulation", "ETL"],
+    filterCategories: ["languages", "backend"],
+  },
+  {
+    name: "Matplotlib",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Created_with_Matplotlib-logo.svg/2048px-Created_with_Matplotlib-logo.svg.png",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: ["Data Visualization", "Plotting", "Analytics"],
+    filterCategories: ["frontend", "backend"],
+  },
+  {
+    name: "Seaborn",
+    logo: "https://seaborn.pydata.org/_images/logo-mark-lightbg.svg",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: ["Data Visualization", "Statistical Graphics", "Analytics"],
+    filterCategories: ["frontend", "backend"],
+  },
 ];
 
 export const skills = technicalSkills.map((skill) => ({
