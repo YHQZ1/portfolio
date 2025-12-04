@@ -13,8 +13,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Cursor from "./components/Cursor";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
-import { ThemeProvider } from "./context/ThemeContext";
+import { ThemeProvider, useTheme } from "./context/ThemeContext";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -29,6 +30,11 @@ function ScrollToTop() {
   return null;
 }
 
+function ScrollToTopButtonWrapper() {
+  const { darkMode } = useTheme();
+  return <ScrollToTopButton darkMode={darkMode} />;
+}
+
 export default function App() {
   return (
     <ThemeProvider>
@@ -41,6 +47,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <ScrollToTopButtonWrapper />
         <Footer />
       </Router>
     </ThemeProvider>
