@@ -511,6 +511,7 @@ export default function Work() {
     transition-opacity duration-300
     ${showShortcutHint ? "opacity-100" : "opacity-0 pointer-events-none"}
     whitespace-nowrap
+    hidden sm:block
   `}
       >
         ⌘K / Ctrl+K to search
