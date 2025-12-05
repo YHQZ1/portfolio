@@ -8,6 +8,7 @@ import { useEffect } from "react";
 
 import Work from "./pages/Work";
 import About from "./pages/About";
+import Resume from "./pages/Resume";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -46,6 +47,7 @@ export default function App() {
           <Route path="/" element={<Work />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
         <ScrollToTopButtonWrapper />
         <Footer />
