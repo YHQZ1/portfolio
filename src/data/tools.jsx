@@ -2,9 +2,13 @@ export const toolsAndWorkflow = [
   {
     name: "Postman",
     logo: "https://cdn.simpleicons.org/postman/FF6C37",
-    level: "Advanced",
-    experience: "1+ years",
     category: ["API Testing", "Documentation", "Development Workflow"],
+  },
+  {
+    name: "cURL",
+    logo: "https://cdn.simpleicons.org/curl/073551",
+    darkLogo: "https://cdn.simpleicons.org/curl/FFFFFF",
+    category: ["API Testing", "Network Debugging", "Command-line Tools"],
   },
   {
     name: "Figma",
@@ -31,16 +35,5 @@ export const toolsAndWorkflow = [
     logo: "https://cdn.simpleicons.org/github/181717",
     darkLogo: "https://cdn.simpleicons.org/github/FFFFFF",
     category: ["Project Boards", "Team Collaboration", "Issue Tracking"],
-  },
-  {
-    name: "GitHub Actions",
-    logo: "https://cdn.simpleicons.org/githubactions/2088FF",
-    level: "Intermediate",
-    experience: "<1 year",
-    category: [
-      "CI/CD Automation",
-      "DevOps Pipelines",
-      "Workflow Orchestration",
-    ],
   },
 ];

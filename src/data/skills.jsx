@@ -65,7 +65,7 @@ export const technicalSkills = [
     level: "Intermediate",
     experienceStart: "2023-07",
     category: ["Backend APIs", "Automation Scripts", "Web Services"],
-    filterCategories: ["languages", "backend"],
+    filterCategories: ["languages", "backend", "machine learning"],
   },
   {
     name: "Bash",
@@ -99,6 +99,15 @@ export const technicalSkills = [
     experienceStart: "2025-06",
     category: ["High-performance APIs", "Python Backends", "Async Programming"],
     filterCategories: ["backend"],
+  },
+  {
+    name: "Flask",
+    logo: "https://cdn.simpleicons.org/flask/000000",
+    darkLogo: "https://cdn.simpleicons.org/flask/FFFFFF",
+    level: "Beginner",
+    experienceStart: "2025-07",
+    category: ["Python Backends", "REST APIs", "Web Framework"],
+    filterCategories: ["backend", "languages"],
   },
   {
     name: "REST APIs",
@@ -219,6 +228,14 @@ export const technicalSkills = [
     filterCategories: ["devops"],
   },
   {
+    name: "NGINX",
+    logo: "https://cdn.simpleicons.org/nginx/009639",
+    level: "Intermediate",
+    experienceStart: "2025-12",
+    category: ["Reverse Proxy", "Load Balancing", "Gateway Routing"],
+    filterCategories: ["devops", "backend"],
+  },
+  {
     name: "AWS EC2",
     logo: "https://a.b.cdn.console.awsstatic.com/a/v1/RHSMMGZKYJXPPNI2IOC6Z63HJEW4FD5ZYMKJSXD7HQ5IPUTQR2TQ/icon/d88319dfa5d204f019b4284149886c59-7d586ea82f792b61a8c87de60565133d.svg",
     level: "Intermediate",
@@ -282,6 +299,18 @@ export const technicalSkills = [
     experienceStart: "2024-10",
     category: ["Version Control", "Team Collaboration", "DevOps Workflow"],
     filterCategories: ["devops"],
+  },
+  {
+    name: "GitHub Actions",
+    logo: "https://cdn.simpleicons.org/githubactions/2088FF",
+    level: "Intermediate",
+    experienceStart: "2025-11",
+    category: [
+      "CI/CD Automation",
+      "DevOps Pipelines",
+      "Workflow Orchestration",
+    ],
+    filterCategories: ["devops", "cloud"],
   },
   {
     name: "NumPy",
