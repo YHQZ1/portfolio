@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { useTheme } from "../context/ThemeContext";
+import resumePDF from "/Resume.pdf";
 
 export default function Navbar() {
   const { darkMode, toggleTheme } = useTheme();
@@ -45,15 +46,17 @@ export default function Navbar() {
           <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full" />
         </Link>
 
-        <Link
-          to="/resume"
+        <a
+          href={resumePDF}
+          target="_blank"
+          rel="noopener noreferrer"
           className={`${
             isActive("/resume") ? "font-semibold" : "font-medium"
           } text-base sm:text-lg md:text-base lg:text-lg py-1 relative group`}
         >
           Resume
           <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full" />
-        </Link>
+        </a>
       </div>
 
       <button
