@@ -23,7 +23,7 @@ export default function ScrollToTopButton({ darkMode }) {
       onClick={scrollToTop}
       className={`
     fixed bottom-6 right-6 z-50 p-3 rounded-full shadow-md
-    transition-colors duration-200
+    transition-none duration-200
     ${
       visible
         ? "opacity-100 pointer-events-auto"
