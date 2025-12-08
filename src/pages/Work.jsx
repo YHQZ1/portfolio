@@ -330,7 +330,7 @@ export default function Work() {
                       {project.tags.map((tag, tagIndex) => (
                         <span
                           key={tagIndex}
-                          className={`px-2 sm:px-3 py-1 text-xs font-medium rounded-full border ${
+                          className={`text-xs px-2 py-1 rounded border leading-[1.4] ${
                             darkMode
                               ? "border-[#2a2a2a] bg-[#1a1a1a] text-[#888]"
                               : "border-[#e0e0e0] bg-[#f5f5f5] text-[#666]"
