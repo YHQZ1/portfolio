@@ -36,4 +36,14 @@ export const toolsAndWorkflow = [
     darkLogo: "https://cdn.simpleicons.org/github/FFFFFF",
     category: ["Project Boards", "Team Collaboration", "Issue Tracking"],
   },
+  {
+    name: "Jupyter Notebook",
+    logo: "https://cdn.simpleicons.org/jupyter/F37626",
+    category: ["Data Exploration", "Prototyping", "Machine Learning Workflow"],
+  },
+  {
+    name: "Google Colab",
+    logo: "https://cdn.simpleicons.org/googlecolab/F9AB00",
+    category: ["Notebooks", "GPU Training", "ML Experiments"],
+  },
 ];

@@ -266,12 +266,13 @@ export const technicalSkills = [
   },
   {
     name: "Jenkins",
-    logo: "https://cdn.simpleicons.org/jenkins/D24939",
+    logo: "https://www.jenkins.io/images/logo_128.png",
     level: "Beginner",
     experienceStart: "2025-12",
     category: ["CI/CD Automation", "DevOps Pipelines", "Build Systems"],
     filterCategories: ["devops"],
   },
+
   {
     name: "Git",
     logo: "https://cdn.simpleicons.org/git/F05032",
