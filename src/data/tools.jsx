@@ -11,9 +11,25 @@ export const toolsAndWorkflow = [
     category: ["API Testing", "Network Debugging", "Command-line Tools"],
   },
   {
-    name: "Figma",
-    logo: "https://cdn.simpleicons.org/figma/F24E1E",
-    category: ["UI Collaboration", "Prototyping", "Design Handoff"],
+    name: "VS Code",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png",
+    category: ["Code Editor", "Extensions", "Debugging"],
+  },
+  {
+    name: "n8n",
+    logo: "https://cdn.simpleicons.org/n8n/E74243",
+    category: [
+      "Workflow Automation",
+      "API Integrations",
+      "Background Jobs",
+      "Process Orchestration",
+    ],
+  },
+  {
+    name: "GitHub",
+    logo: "https://cdn.simpleicons.org/github/181717",
+    darkLogo: "https://cdn.simpleicons.org/github/FFFFFF",
+    category: ["Project Boards", "Team Collaboration", "Issue Tracking"],
   },
   {
     name: "Jira",
@@ -26,15 +42,9 @@ export const toolsAndWorkflow = [
     category: ["Documentation", "Planning", "Knowledge Base"],
   },
   {
-    name: "VS Code",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png",
-    category: ["Code Editor", "Extensions", "Debugging"],
-  },
-  {
-    name: "GitHub",
-    logo: "https://cdn.simpleicons.org/github/181717",
-    darkLogo: "https://cdn.simpleicons.org/github/FFFFFF",
-    category: ["Project Boards", "Team Collaboration", "Issue Tracking"],
+    name: "Figma",
+    logo: "https://cdn.simpleicons.org/figma/F24E1E",
+    category: ["UI Collaboration", "Prototyping", "Design Handoff"],
   },
   {
     name: "Jupyter Notebook",
