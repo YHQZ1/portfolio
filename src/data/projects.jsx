@@ -79,4 +79,13 @@ export const projects = [
     live: "https://one-gov.vercel.app/",
     image: "/projects/onegov.png",
   },
+  {
+    title: "Matchmaking Engine",
+    description:
+      "A Java-based matchmaking system inspired by competitive games. Uses data structures and algorithms for rating-based player pairing, dynamic skill window expansion, and balanced team formation, complete with a responsive Swing UI for live queue visualization.",
+    tags: ["DSA", "Algorithms", "Java", "Swing UI", "Team Balancing"],
+    github: "https://github.com/YHQZ1/Matchmaking-Engine",
+    live: "#",
+    image: "/projects/matchmaking-engine.png",
+  },
 ];
