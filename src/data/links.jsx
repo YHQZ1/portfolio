@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
+import { SiCodeforces } from "react-icons/si";
 
 export const socialLinks = [
   {
@@ -25,6 +26,11 @@ export const socialLinks = [
     name: "LeetCode",
     icon: SiLeetcode,
     url: "https://leetcode.com/u/yhqz/",
+  },
+  {
+    name: "Codeforces",
+    icon: SiCodeforces,
+    url: "https://codeforces.com/profile/uttkarsh09",
   },
   {
     name: "Stack Overflow",
