@@ -201,7 +201,7 @@ function SkillsGrid({ darkMode, activeFilters }) {
   );
 }
 
-export default function Work() {
+export default function Profile() {
   const { darkMode } = useTheme();
   const commands = [
     { label: "My Work", id: "my-work" },

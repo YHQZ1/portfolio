@@ -12,6 +12,18 @@ export default function CommandPalette({ darkMode, commands }) {
     }
   }, [open]);
 
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
   const filtered = commands.filter((cmd) =>
     cmd.label.toLowerCase().includes(query.toLowerCase())
   );
@@ -22,7 +34,11 @@ export default function CommandPalette({ darkMode, commands }) {
         e.preventDefault();
         setOpen((prev) => !prev);
       }
+
+      if (!open) return;
+
       if (e.key === "Escape") setOpen(false);
+
       if (e.key === "ArrowDown") {
         e.preventDefault();
         setActiveIndex((prev) => (prev + 1 < filtered.length ? prev + 1 : 0));
@@ -85,17 +101,17 @@ export default function CommandPalette({ darkMode, commands }) {
               key={cmd.id}
               onClick={() => goToSection(cmd.id)}
               className={`
-      w-full text-left px-4 py-3 transition-all duration-150
-      ${
-        index === activeIndex
-          ? darkMode
-            ? "bg-[#1e1e1e]"
-            : "bg-[#eaeaea]"
-          : darkMode
-          ? "hover:bg-[#1a1a1a]"
-          : "hover:bg-[#f0f0f0]"
-      }
-    `}
+                w-full text-left px-4 py-3 transition-all duration-150
+                ${
+                  index === activeIndex
+                    ? darkMode
+                      ? "bg-[#1e1e1e]"
+                      : "bg-[#eaeaea]"
+                    : darkMode
+                    ? "hover:bg-[#1a1a1a]"
+                    : "hover:bg-[#f0f0f0]"
+                }
+              `}
             >
               {cmd.label}
             </button>

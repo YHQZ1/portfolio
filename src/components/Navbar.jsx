@@ -32,7 +32,7 @@ export default function Navbar() {
             isActive("/") ? "font-semibold" : "font-medium"
           } text-base sm:text-lg md:text-base lg:text-lg py-1 relative group`}
         >
-          Work
+          Profile
           <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full" />
         </Link>
 
