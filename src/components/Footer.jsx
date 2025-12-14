@@ -22,6 +22,7 @@ export default function Footer() {
 
   return (
     <footer
+      id="site-footer"
       className={`w-full py-6 sm:py-8 ${
         darkMode
           ? "bg-[#0a0a0a] border-[#1a1a1a]"

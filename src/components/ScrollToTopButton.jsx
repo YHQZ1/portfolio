@@ -3,41 +3,39 @@ import { FaArrowUp } from "react-icons/fa";
 
 export default function ScrollToTopButton({ darkMode }) {
   const [visible, setVisible] = useState(false);
+  const [hideForFooter, setHideForFooter] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setVisible(window.scrollY > 300);
+    const onScroll = () => {
+      setVisible(window.scrollY > 300);
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+      const footer = document.getElementById("site-footer");
+      if (!footer) return;
+
+      const footerTop = footer.getBoundingClientRect().top;
+      setHideForFooter(footerTop < window.innerHeight);
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+  if (!visible || hideForFooter) return null;
 
   return (
     <button
-      onClick={scrollToTop}
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       className={`
-    fixed bottom-6 right-6 z-50 p-3 rounded-full shadow-md
-    transition-none duration-200
-    ${
-      visible
-        ? "opacity-100 pointer-events-auto"
-        : "opacity-0 pointer-events-none"
-    }
-
-    ${
-      darkMode
-        ? "bg-white text-black border-white hover:bg-[#e5e5e5]"
-        : "bg-black text-white border-black hover:bg-[#222]"
-    }
-  `}
+        fixed bottom-6 right-6 z-40
+        p-3 rounded-full shadow-md
+        ${
+          darkMode
+            ? "bg-white text-black hover:bg-[#e5e5e5]"
+            : "bg-black text-white hover:bg-[#222]"
+        }
+      `}
     >
-      <FaArrowUp className="text-lg" />
+      <FaArrowUp />
     </button>
   );
 }
