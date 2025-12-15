@@ -123,7 +123,7 @@ export const technicalSkills = [
     level: "Beginner",
     experienceStart: "2025-07",
     category: ["Python Backends", "REST APIs", "Web Framework"],
-    filterCategories: ["backend", "languages"],
+    filterCategories: ["backend"],
   },
   {
     name: "REST APIs",
@@ -299,7 +299,45 @@ export const technicalSkills = [
     category: ["CI/CD Automation", "DevOps Pipelines", "Build Systems"],
     filterCategories: ["devops"],
   },
-
+  {
+    name: "Prometheus",
+    logo: "https://cdn.simpleicons.org/prometheus/E6522C",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: [
+      "Metrics Collection",
+      "Monitoring",
+      "Observability",
+      "Backend Reliability",
+    ],
+    filterCategories: ["devops", "backend"],
+  },
+  {
+    name: "Grafana",
+    logo: "https://cdn.simpleicons.org/grafana/F46800",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: [
+      "Metrics Visualization",
+      "Monitoring Dashboards",
+      "Alerting",
+      "Observability",
+    ],
+    filterCategories: ["devops"],
+  },
+  {
+    name: "Terraform",
+    logo: "https://cdn.simpleicons.org/terraform/844FBA",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: [
+      "Infrastructure as Code",
+      "Cloud Automation",
+      "Provisioning",
+      "DevOps Infrastructure",
+    ],
+    filterCategories: ["devops", "cloud"],
+  },
   {
     name: "Git",
     logo: "https://cdn.simpleicons.org/git/F05032",
