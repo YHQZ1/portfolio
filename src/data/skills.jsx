@@ -229,6 +229,33 @@ export const technicalSkills = [
     filterCategories: ["backend", "devops"],
   },
   {
+    name: "RabbitMQ",
+    logo: "https://cdn.simpleicons.org/rabbitmq/FF6600",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: [
+      "Message Queues",
+      "Asynchronous Processing",
+      "Event-driven Architecture",
+      "Backend Communication",
+    ],
+    filterCategories: ["backend", "devops"],
+  },
+  {
+    name: "BullMQ",
+    logo: "/skills/bullmq-light.png",
+    darkLogo: "/skills/bullmq-dark.png",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: [
+      "Background Job Processing",
+      "Task Queues",
+      "Asynchronous Workflows",
+      "Redis-backed Queues",
+    ],
+    filterCategories: ["backend", "devops"],
+  },
+  {
     name: "Linux",
     logo: "https://cdn.simpleicons.org/linux/FCC624",
     level: "Intermediate",

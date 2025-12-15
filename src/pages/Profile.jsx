@@ -129,8 +129,9 @@ function SkillsGrid({ darkMode, activeFilters }) {
             <img
               src={darkMode && skill.darkLogo ? skill.darkLogo : skill.logo}
               alt={skill.name}
-              className="w-10 h-10 sm:w-12 sm:h-12"
+              className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
             />
+
             <div className="flex-1 min-w-0">
               <h3
                 className={`text-lg sm:text-xl font-medium truncate leading-[1.3] ${
