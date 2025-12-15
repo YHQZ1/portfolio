@@ -40,6 +40,18 @@ export const technicalSkills = [
     filterCategories: ["languages"],
   },
   {
+    name: "C#",
+    logo: "/skills/c-sharp.png",
+    level: "Intermediate",
+    experienceStart: "2024-01",
+    category: [
+      "Object-Oriented Programming",
+      "Strongly Typed Languages",
+      "General-purpose Development",
+    ],
+    filterCategories: ["languages"],
+  },
+  {
     name: "JavaScript",
     logo: "https://cdn.simpleicons.org/javascript/F7DF1E",
     level: "Advanced",
