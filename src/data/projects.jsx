@@ -88,4 +88,13 @@ export const projects = [
     live: "#",
     image: "/projects/matchmaking-engine.png",
   },
+  {
+    title: "F1 Performance Analysis (1950-2024)",
+    description:
+      "An exploratory analysis of Formula 1 race data spanning 75+ seasons, focusing on driver participation, team dominance, performance consistency, and the role of reliability. Emphasizes data validation, era-aware insights, and analytical reasoning over predictive modeling.",
+    tags: ["Exploratory Data Analysis", "Python", "Data Visualization"],
+    github: "https://github.com/YHQZ1/F1-EDA",
+    live: "#",
+    image: "/projects/f1.png",
+  },
 ];
