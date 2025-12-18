@@ -107,27 +107,7 @@ function SkillsGridSection({
           activeFilters.every((tag) => skill.filterCategories.includes(tag))
         );
 
-  if (filteredSkills.length === 0) {
-    return (
-      <div className="mb-16">
-        <h3
-          className={`text-2xl sm:text-3xl font-extralight mb-2 ${
-            darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-          }`}
-        >
-          {title}
-        </h3>
-
-        <p
-          className={`text-sm max-w-3xl ${
-            darkMode ? "text-[#666]" : "text-[#888]"
-          }`}
-        >
-          Nothing here… looks like you've filtered me into a corner.
-        </p>
-      </div>
-    );
-  }
+  if (filteredSkills.length === 0) return null;
 
   return (
     <div className="mb-16">
@@ -276,6 +256,12 @@ export default function Profile() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const hasAnyFilteredSkills =
+    activeFilters.length === 0 ||
+    skills.some((skill) =>
+      activeFilters.every((tag) => skill.filterCategories.includes(tag))
+    );
 
   return (
     <main
@@ -428,7 +414,6 @@ export default function Profile() {
               className={`absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300 group-hover:w-full`}
             ></span>
           </h2>
-
           <p
             className={`text-sm max-w-3xl mb-6 ${
               darkMode ? "text-[#888]" : "text-[#666]"
@@ -437,12 +422,21 @@ export default function Profile() {
             A structured overview of the technologies I work with, organized by
             depth of experience.
           </p>
-
           <SkillFilters
             darkMode={darkMode}
             activeFilters={activeFilters}
             setActiveFilters={setActiveFilters}
           />
+
+          {!hasAnyFilteredSkills && (
+            <div
+              className={`mb-16 text-sm max-w-3xl ${
+                darkMode ? "text-[#666]" : "text-[#888]"
+              }`}
+            >
+              Nothing here… looks like you've filtered me into a corner.
+            </div>
+          )}
 
           <SkillsGridSection
             title="Core Stack"
