@@ -28,6 +28,7 @@ const FILTERS = [
   "Languages",
   "Frontend",
   "Backend",
+  "Mobile",
   "Database",
   "Cloud",
   "Devops",
@@ -55,21 +56,21 @@ function SkillFilters({ darkMode, activeFilters, setActiveFilters }) {
             key={filter}
             onClick={() => toggleFilter(filter.toLowerCase())}
             className={`
-    px-3 py-1 text-sm rounded-sm border cursor-pointer select-none
-    transition-none duration-200
-    ${
-      darkMode
-        ? isActive
-          ? "bg-[#f5f5f5] text-black border-[#f5f5f5]"
-          : "border-[#2a2a2a] text-[#aaa] bg-[#111]"
-        : isActive
-        ? "bg-[#0a0a0a] text-white border-[#0a0a0a]"
-        : "border-[#ddd] text-[#444] bg-white"
-    }
-    hover:scale-[1.04]
-    hover:shadow-[0_2px_6px_rgba(0,0,0,0.15)]
-    hover:border-current
-  `}
+              px-3 py-1 text-sm rounded-sm border cursor-pointer select-none
+              transition-none duration-200
+              ${
+                darkMode
+                  ? isActive
+                    ? "bg-[#f5f5f5] text-black border-[#f5f5f5]"
+                    : "border-[#2a2a2a] text-[#aaa] bg-[#111]"
+                  : isActive
+                  ? "bg-[#0a0a0a] text-white border-[#0a0a0a]"
+                  : "border-[#ddd] text-[#444] bg-white"
+              }
+              hover:scale-[1.04]
+              hover:shadow-[0_2px_6px_rgba(0,0,0,0.15)]
+              hover:border-current
+            `}
           >
             {filter}
           </button>
@@ -92,7 +93,7 @@ function SkillFilters({ darkMode, activeFilters, setActiveFilters }) {
   );
 }
 
-function SkillsGrid({ darkMode, activeFilters }) {
+function SkillsGridSection({ title, skills, darkMode, activeFilters }) {
   const filteredSkills =
     activeFilters.length === 0
       ? skills
@@ -100,110 +101,111 @@ function SkillsGrid({ darkMode, activeFilters }) {
           activeFilters.every((tag) => skill.filterCategories.includes(tag))
         );
 
-  if (filteredSkills.length === 0) {
-    return (
-      <div className="pt-10 text-center">
-        <p
-          className={`text-lg sm:text-xl font-light ${
-            darkMode ? "text-[#888]" : "text-[#666]"
-          }`}
-        >
-          Nothing here… looks like you’ve filtered me into a corner.
-        </p>
-      </div>
-    );
-  }
+  if (filteredSkills.length === 0) return null;
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-4">
-      {filteredSkills.map((skill, index) => (
-        <div
-          key={index}
-          className={`p-4 sm:p-6 border ${
-            darkMode
-              ? "border-[#2a2a2a] bg-[#0f0f0f]"
-              : "border-[#e0e0e0] bg-white"
-          } rounded-sm`}
-        >
-          <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
-            <img
-              src={darkMode && skill.darkLogo ? skill.darkLogo : skill.logo}
-              alt={skill.name}
-              className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
-            />
+    <div className="mb-16">
+      <h3
+        className={`text-2xl sm:text-3xl font-extralight mb-6 ${
+          darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+        }`}
+      >
+        {title}
+      </h3>
 
-            <div className="flex-1 min-w-0">
-              <h3
-                className={`text-lg sm:text-xl font-medium truncate leading-[1.3] ${
-                  darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-                }`}
-              >
-                {skill.name}
-              </h3>
-              <div className="flex items-center gap-2 mt-1">
-                <span
-                  className={`text-xs px-2 py-1 rounded-full border ${
-                    darkMode
-                      ? "border-[#8ab4f8] text-[#8ab4f8] bg-[#8ab4f8]/10"
-                      : "border-[#4285f4] text-[#4285f4] bg-[#4285f4]/10"
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-4">
+        {filteredSkills.map((skill, index) => (
+          /* 🔽 EXACT SAME CARD AS BEFORE 🔽 */
+          <div
+            key={index}
+            className={`p-4 sm:p-6 border ${
+              darkMode
+                ? "border-[#2a2a2a] bg-[#0f0f0f]"
+                : "border-[#e0e0e0] bg-white"
+            } rounded-sm`}
+          >
+            <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+              <img
+                src={darkMode && skill.darkLogo ? skill.darkLogo : skill.logo}
+                alt={skill.name}
+                className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+              />
+
+              <div className="flex-1 min-w-0">
+                <h3
+                  className={`text-lg sm:text-xl font-medium truncate leading-[1.3] ${
+                    darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
                   }`}
                 >
-                  {skill.level}
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div className="space-y-2 sm:space-y-3">
-            <div className="flex items-center justify-between">
-              <span
-                className={`text-sm ${
-                  darkMode ? "text-[#888]" : "text-[#666]"
-                }`}
-              >
-                Experience
-              </span>
-              <span
-                className={`text-sm font-medium ${
-                  darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-                }`}
-              >
-                {skill.experience}
-              </span>
-            </div>
-
-            <div>
-              <span
-                className={`text-sm block mb-1 sm:mb-2 ${
-                  darkMode ? "text-[#888]" : "text-[#666]"
-                }`}
-              >
-                Used in:
-              </span>
-              <div className="flex flex-wrap gap-1">
-                {skill.category.map((tag, idx) => (
+                  {skill.name}
+                </h3>
+                <div className="flex items-center gap-2 mt-1">
                   <span
-                    key={idx}
-                    className={`text-xs px-2 py-1 rounded border leading-[1.4] ${
+                    className={`text-xs px-2 py-1 rounded-full border ${
                       darkMode
-                        ? "border-[#2a2a2a] bg-[#1a1a1a] text-[#888]"
-                        : "border-[#e0e0e0] bg-[#f5f5f5] text-[#666]"
+                        ? "border-[#8ab4f8] text-[#8ab4f8] bg-[#8ab4f8]/10"
+                        : "border-[#4285f4] text-[#4285f4] bg-[#4285f4]/10"
                     }`}
                   >
-                    {tag}
+                    {skill.level}
                   </span>
-                ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-2 sm:space-y-3">
+              <div className="flex items-center justify-between">
+                <span
+                  className={`text-sm ${
+                    darkMode ? "text-[#888]" : "text-[#666]"
+                  }`}
+                >
+                  Experience
+                </span>
+                <span
+                  className={`text-sm font-medium ${
+                    darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+                  }`}
+                >
+                  {skill.experience}
+                </span>
+              </div>
+
+              <div>
+                <span
+                  className={`text-sm block mb-1 sm:mb-2 ${
+                    darkMode ? "text-[#888]" : "text-[#666]"
+                  }`}
+                >
+                  Used in:
+                </span>
+                <div className="flex flex-wrap gap-1">
+                  {skill.category.map((tag, idx) => (
+                    <span
+                      key={idx}
+                      className={`text-xs px-2 py-1 rounded border leading-[1.4] ${
+                        darkMode
+                          ? "border-[#2a2a2a] bg-[#1a1a1a] text-[#888]"
+                          : "border-[#e0e0e0] bg-[#f5f5f5] text-[#666]"
+                      }`}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      ))}
+          /* 🔼 EXACT SAME CARD AS BEFORE 🔼 */
+        ))}
+      </div>
     </div>
   );
 }
 
 export default function Profile() {
   const { darkMode } = useTheme();
+
   const commands = [
     { label: "My Work", id: "my-work" },
     { label: "Technical Skills", id: "technical-skills" },
@@ -252,14 +254,14 @@ export default function Profile() {
     >
       <div
         className={`
-    fixed top-0 left-0 h-[2px] z-50
-    ${
-      darkMode
-        ? "bg-white shadow-[0_0_6px_rgba(255,255,255,0.4)]"
-        : "bg-black shadow-[0_0_6px_rgba(0,0,0,0.25)]"
-    }
-    transition-[width] duration-500 ease-out
-  `}
+          fixed top-0 left-0 h-[2px] z-50
+          ${
+            darkMode
+              ? "bg-white shadow-[0_0_6px_rgba(255,255,255,0.4)]"
+              : "bg-black shadow-[0_0_6px_rgba(0,0,0,0.25)]"
+          }
+          transition-[width] duration-500 ease-out
+        `}
         style={{ width: `${scrollProgress}%` }}
       ></div>
 
@@ -385,26 +387,49 @@ export default function Profile() {
         />
 
         <section id="technical-skills" className="mb-16 sm:mb-20">
-          <div>
-            <h2
-              className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 relative inline-block group ${
-                darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-              } tracking-tight leading-[1.2]`}
-            >
-              Technical Skills
-              <span
-                className={`absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300 group-hover:w-full`}
-              ></span>
-            </h2>
+          <h2
+            className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 relative inline-block group ${
+              darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+            } tracking-tight leading-[1.2]`}
+          >
+            Technical Skills
+            <span
+              className={`absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300 group-hover:w-full`}
+            ></span>
+          </h2>
 
-            <SkillFilters
-              darkMode={darkMode}
-              activeFilters={activeFilters}
-              setActiveFilters={setActiveFilters}
-            />
+          <p className="text-sm text-[#777] max-w-3xl mb-6">
+            Core tools reflect production-level usage. Applied tools were used
+            in shipped features. Exploration tools were used in focused
+            prototypes or learning experiments.
+          </p>
 
-            <SkillsGrid darkMode={darkMode} activeFilters={activeFilters} />
-          </div>
+          <SkillFilters
+            darkMode={darkMode}
+            activeFilters={activeFilters}
+            setActiveFilters={setActiveFilters}
+          />
+
+          <SkillsGridSection
+            title="Core Stack"
+            skills={skills.filter((s) => s.tier === "core")}
+            darkMode={darkMode}
+            activeFilters={activeFilters}
+          />
+
+          <SkillsGridSection
+            title="Applied Experience"
+            skills={skills.filter((s) => s.tier === "applied")}
+            darkMode={darkMode}
+            activeFilters={activeFilters}
+          />
+
+          <SkillsGridSection
+            title="Exploration & Learning"
+            skills={skills.filter((s) => s.tier === "exploration")}
+            darkMode={darkMode}
+            activeFilters={activeFilters}
+          />
         </section>
 
         <div

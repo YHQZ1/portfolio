@@ -17,6 +17,7 @@ export function calculateExperience(dateString) {
 export const technicalSkills = [
   {
     name: "Java",
+    tier: "core",
     logo: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
     level: "Advanced",
     experienceStart: "2025-01",
@@ -29,6 +30,7 @@ export const technicalSkills = [
   },
   {
     name: "C/C++",
+    tier: "applied",
     logo: "https://cdn.simpleicons.org/cplusplus/00599C",
     level: "Intermediate",
     experienceStart: "2024-01",
@@ -41,6 +43,7 @@ export const technicalSkills = [
   },
   {
     name: "C#",
+    tier: "applied",
     logo: "/skills/c-sharp.png",
     level: "Intermediate",
     experienceStart: "2024-01",
@@ -53,6 +56,7 @@ export const technicalSkills = [
   },
   {
     name: "JavaScript",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/javascript/F7DF1E",
     level: "Advanced",
     experienceStart: "2024-07",
@@ -61,18 +65,16 @@ export const technicalSkills = [
   },
   {
     name: "TypeScript",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/typescript/3178C6",
     level: "Intermediate",
     experienceStart: "2025-10",
-    category: [
-      "Full-stack Applications",
-      "Type-safe Backend Systems",
-      "Frontend Development",
-    ],
+    category: ["Full-stack Applications", "Type-safe Backend Systems"],
     filterCategories: ["languages", "frontend", "backend"],
   },
   {
     name: "Python",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/python/3776AB",
     level: "Intermediate",
     experienceStart: "2023-07",
@@ -81,6 +83,7 @@ export const technicalSkills = [
   },
   {
     name: "Bash",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/gnubash/4EAA25",
     level: "Intermediate",
     experienceStart: "2024-08",
@@ -89,6 +92,7 @@ export const technicalSkills = [
   },
   {
     name: "Go",
+    tier: "exploration",
     logo: "https://cdn.simpleicons.org/go/00ADD8",
     level: "Beginner",
     experienceStart: "2025-12",
@@ -97,6 +101,7 @@ export const technicalSkills = [
   },
   {
     name: "SQL",
+    tier: "core",
     logo: "/skills/sql-logo.png",
     level: "Advanced",
     experienceStart: "2025-02",
@@ -105,6 +110,7 @@ export const technicalSkills = [
   },
   {
     name: "Node.js",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/nodedotjs/339933",
     level: "Advanced",
     experienceStart: "2024-10",
@@ -113,6 +119,7 @@ export const technicalSkills = [
   },
   {
     name: "Express.js",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/express/000000",
     darkLogo: "https://cdn.simpleicons.org/express/FFFFFF",
     level: "Advanced",
@@ -122,6 +129,7 @@ export const technicalSkills = [
   },
   {
     name: "FastAPI",
+    tier: "applied",
     logo: "https://cdn.simpleicons.org/fastapi/009688",
     level: "Intermediate",
     experienceStart: "2025-06",
@@ -130,6 +138,7 @@ export const technicalSkills = [
   },
   {
     name: "Flask",
+    tier: "applied",
     logo: "https://cdn.simpleicons.org/flask/000000",
     darkLogo: "https://cdn.simpleicons.org/flask/FFFFFF",
     level: "Beginner",
@@ -139,6 +148,7 @@ export const technicalSkills = [
   },
   {
     name: "REST APIs",
+    tier: "core",
     logo: "/skills/rest-api.png",
     level: "Advanced",
     experienceStart: "2024-10",
@@ -147,6 +157,7 @@ export const technicalSkills = [
   },
   {
     name: "GraphQL",
+    tier: "applied",
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/1200px-GraphQL_Logo.svg.png",
     level: "Beginner",
     experienceStart: "2025-10",
@@ -155,6 +166,7 @@ export const technicalSkills = [
   },
   {
     name: "ReactJS",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/react/61DAFB",
     level: "Advanced",
     experienceStart: "2024-09",
@@ -163,6 +175,7 @@ export const technicalSkills = [
   },
   {
     name: "Next.js",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/nextdotjs/000000",
     darkLogo: "https://cdn.simpleicons.org/nextdotjs/FFFFFF",
     level: "Advanced",
@@ -176,6 +189,7 @@ export const technicalSkills = [
   },
   {
     name: "Tailwind CSS",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
     level: "Advanced",
     experienceStart: "2025-07",
@@ -183,7 +197,35 @@ export const technicalSkills = [
     filterCategories: ["frontend"],
   },
   {
+    name: "React Native",
+    tier: "exploration",
+    logo: "https://cdn.simpleicons.org/react/61DAFB",
+    level: "Intermediate",
+    experienceStart: "2025-12",
+    category: [
+      "Cross-platform Mobile Development",
+      "API-driven Applications",
+      "Native UI Components",
+    ],
+    filterCategories: ["frontend", "mobile"],
+  },
+  {
+    name: "Expo",
+    tier: "exploration",
+    logo: "https://cdn.simpleicons.org/expo/000000",
+    darkLogo: "https://cdn.simpleicons.org/expo/FFFFFF",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: [
+      "Rapid Mobile Prototyping",
+      "React Native Tooling",
+      "Native API Abstractions",
+    ],
+    filterCategories: ["mobile", "frontend"],
+  },
+  {
     name: "PostgreSQL",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/postgresql/4169E1",
     level: "Advanced",
     experienceStart: "2025-03",
@@ -192,6 +234,7 @@ export const technicalSkills = [
   },
   {
     name: "MongoDB",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/mongodb/47A248",
     level: "Intermediate",
     experienceStart: "2024-10",
@@ -204,6 +247,7 @@ export const technicalSkills = [
   },
   {
     name: "Cassandra",
+    tier: "exploration",
     logo: "https://cdn.simpleicons.org/apachecassandra/1287B1",
     level: "Beginner",
     experienceStart: "2025-12",
@@ -216,6 +260,7 @@ export const technicalSkills = [
   },
   {
     name: "Prisma",
+    tier: "applied",
     logo: "https://cdn.simpleicons.org/prisma/2D3748",
     darkLogo: "https://cdn.simpleicons.org/prisma/FFFFFF",
     level: "Intermediate",
@@ -225,6 +270,7 @@ export const technicalSkills = [
   },
   {
     name: "Redis",
+    tier: "core",
     logo: "https://www.svgrepo.com/show/303460/redis-logo.svg",
     level: "Advanced",
     experienceStart: "2025-09",
@@ -233,6 +279,7 @@ export const technicalSkills = [
   },
   {
     name: "Kafka",
+    tier: "exploration",
     logo: "https://cdn.simpleicons.org/apachekafka/231F20",
     darkLogo: "https://cdn.simpleicons.org/apachekafka/FFFFFF",
     level: "Beginner",
@@ -242,6 +289,7 @@ export const technicalSkills = [
   },
   {
     name: "RabbitMQ",
+    tier: "exploration",
     logo: "https://cdn.simpleicons.org/rabbitmq/FF6600",
     level: "Beginner",
     experienceStart: "2025-12",
@@ -255,6 +303,7 @@ export const technicalSkills = [
   },
   {
     name: "BullMQ",
+    tier: "exploration",
     logo: "/skills/bullmq-light.png",
     darkLogo: "/skills/bullmq-dark.png",
     level: "Beginner",
@@ -269,6 +318,7 @@ export const technicalSkills = [
   },
   {
     name: "Linux",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/linux/FCC624",
     level: "Intermediate",
     experienceStart: "2025-01",
@@ -277,6 +327,7 @@ export const technicalSkills = [
   },
   {
     name: "Docker",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/docker/2496ED",
     level: "Intermediate",
     experienceStart: "2025-06",
@@ -285,6 +336,7 @@ export const technicalSkills = [
   },
   {
     name: "Kubernetes",
+    tier: "exploration",
     logo: "https://cdn.simpleicons.org/kubernetes/326CE5",
     level: "Beginner",
     experienceStart: "2025-09",
@@ -297,6 +349,7 @@ export const technicalSkills = [
   },
   {
     name: "NGINX",
+    tier: "applied",
     logo: "https://cdn.simpleicons.org/nginx/009639",
     level: "Intermediate",
     experienceStart: "2025-12",
@@ -305,6 +358,7 @@ export const technicalSkills = [
   },
   {
     name: "Jenkins",
+    tier: "exploration",
     logo: "https://www.jenkins.io/images/logo_128.png",
     level: "Beginner",
     experienceStart: "2025-12",
@@ -313,6 +367,7 @@ export const technicalSkills = [
   },
   {
     name: "Prometheus",
+    tier: "exploration",
     logo: "https://cdn.simpleicons.org/prometheus/E6522C",
     level: "Beginner",
     experienceStart: "2025-12",
@@ -326,6 +381,7 @@ export const technicalSkills = [
   },
   {
     name: "Grafana",
+    tier: "exploration",
     logo: "https://cdn.simpleicons.org/grafana/F46800",
     level: "Beginner",
     experienceStart: "2025-12",
@@ -339,6 +395,7 @@ export const technicalSkills = [
   },
   {
     name: "Terraform",
+    tier: "exploration",
     logo: "https://cdn.simpleicons.org/terraform/844FBA",
     level: "Beginner",
     experienceStart: "2025-12",
@@ -351,7 +408,35 @@ export const technicalSkills = [
     filterCategories: ["devops", "cloud"],
   },
   {
+    name: "Ansible",
+    tier: "exploration",
+    logo: "https://cdn.simpleicons.org/ansible/EE0000",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: [
+      "Configuration Management",
+      "Infrastructure Automation",
+      "Provisioning",
+      "DevOps Workflows",
+    ],
+    filterCategories: ["devops", "cloud"],
+  },
+  {
+    name: "Jest",
+    tier: "applied",
+    logo: "https://cdn.simpleicons.org/jest/C21325",
+    level: "Beginner",
+    experienceStart: "2025-10",
+    category: [
+      "Unit Testing",
+      "Integration Testing",
+      "Test-driven Development",
+    ],
+    filterCategories: ["backend", "frontend", "devops"],
+  },
+  {
     name: "Git",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/git/F05032",
     level: "Advanced",
     experienceStart: "2024-10",
@@ -360,6 +445,7 @@ export const technicalSkills = [
   },
   {
     name: "GitHub Actions",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/githubactions/2088FF",
     level: "Intermediate",
     experienceStart: "2025-11",
@@ -372,6 +458,7 @@ export const technicalSkills = [
   },
   {
     name: "Cloudflare",
+    tier: "applied",
     logo: "https://cdn.simpleicons.org/cloudflare/F38020",
     level: "Intermediate",
     experienceStart: "2025-12",
@@ -385,6 +472,7 @@ export const technicalSkills = [
   },
   {
     name: "AWS EC2",
+    tier: "applied",
     logo: "https://a.b.cdn.console.awsstatic.com/a/v1/RHSMMGZKYJXPPNI2IOC6Z63HJEW4FD5ZYMKJSXD7HQ5IPUTQR2TQ/icon/d88319dfa5d204f019b4284149886c59-7d586ea82f792b61a8c87de60565133d.svg",
     level: "Intermediate",
     experienceStart: "2025-07",
@@ -393,6 +481,7 @@ export const technicalSkills = [
   },
   {
     name: "AWS RDS",
+    tier: "applied",
     logo: "https://a.b.cdn.console.awsstatic.com/a/v1/6JW3RZSXOZ4EFR2HZBU6IIOCUZEIFKRK6JZDCUDHQVQXRMAORYWQ/icon/1d374ed2a6bcf601d7bfd4fc3dfd3b5d-c9f69416d978016b3191175f35e59226.svg",
     level: "Intermediate",
     experienceStart: "2025-07",
@@ -405,6 +494,7 @@ export const technicalSkills = [
   },
   {
     name: "AWS S3",
+    tier: "applied",
     logo: "https://a.b.cdn.console.awsstatic.com/a/v1/DKY2SIL5N3MJQCULDNOQE7TKLNQIUXRSOHBJKJGQAHLZO7TLH3TQ/icon/c0828e0381730befd1f7a025057c74fb-43acc0496e64afba82dbc9ab774dc622.svg",
     level: "Beginner",
     experienceStart: "2025-09",
@@ -413,6 +503,7 @@ export const technicalSkills = [
   },
   {
     name: "Supabase",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/supabase/3FCF8E",
     level: "Advanced",
     experienceStart: "2025-02",
@@ -421,6 +512,7 @@ export const technicalSkills = [
   },
   {
     name: "Vercel",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/vercel/000000",
     darkLogo: "https://cdn.simpleicons.org/vercel/FFFFFF",
     level: "Advanced",
@@ -434,6 +526,7 @@ export const technicalSkills = [
   },
   {
     name: "Render",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/render/46E3B7",
     level: "Advanced",
     experienceStart: "2025-01",
@@ -442,6 +535,7 @@ export const technicalSkills = [
   },
   {
     name: "NumPy",
+    tier: "core",
     logo: "/skills/numpy.png",
     level: "Beginner",
     experienceStart: "2025-12",
@@ -450,6 +544,7 @@ export const technicalSkills = [
   },
   {
     name: "Pandas",
+    tier: "core",
     logo: "https://cdn.simpleicons.org/pandas/150458",
     darkLogo: "https://cdn.simpleicons.org/pandas/FFFFFF",
     level: "Beginner",
@@ -459,6 +554,7 @@ export const technicalSkills = [
   },
   {
     name: "Matplotlib",
+    tier: "core",
     logo: "/skills/matplotlib.png",
     level: "Beginner",
     experienceStart: "2025-12",
@@ -467,6 +563,7 @@ export const technicalSkills = [
   },
   {
     name: "Seaborn",
+    tier: "core",
     logo: "/skills/seaborn.png",
     level: "Beginner",
     experienceStart: "2025-12",
