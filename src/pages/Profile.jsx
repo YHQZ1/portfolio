@@ -28,11 +28,11 @@ const FILTERS = [
   "Languages",
   "Frontend",
   "Backend",
-  "Mobile",
   "Database",
   "Cloud",
   "Devops",
   "Machine Learning",
+  "Mobile Development",
 ];
 
 function SkillFilters({ darkMode, activeFilters, setActiveFilters }) {
@@ -93,7 +93,13 @@ function SkillFilters({ darkMode, activeFilters, setActiveFilters }) {
   );
 }
 
-function SkillsGridSection({ title, skills, darkMode, activeFilters }) {
+function SkillsGridSection({
+  title,
+  description,
+  skills,
+  darkMode,
+  activeFilters,
+}) {
   const filteredSkills =
     activeFilters.length === 0
       ? skills
@@ -106,16 +112,22 @@ function SkillsGridSection({ title, skills, darkMode, activeFilters }) {
   return (
     <div className="mb-16">
       <h3
-        className={`text-2xl sm:text-3xl font-extralight mb-6 ${
+        className={`text-2xl sm:text-3xl font-extralight mb-2 ${
           darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
         }`}
       >
         {title}
       </h3>
+      <p
+        className={`text-sm mb-6 max-w-3xl ${
+          darkMode ? "text-[#888]" : "text-[#666]"
+        }`}
+      >
+        {description}
+      </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-4">
         {filteredSkills.map((skill, index) => (
-          /* 🔽 EXACT SAME CARD AS BEFORE 🔽 */
           <div
             key={index}
             className={`p-4 sm:p-6 border ${
@@ -196,7 +208,6 @@ function SkillsGridSection({ title, skills, darkMode, activeFilters }) {
               </div>
             </div>
           </div>
-          /* 🔼 EXACT SAME CARD AS BEFORE 🔼 */
         ))}
       </div>
     </div>
@@ -388,7 +399,7 @@ export default function Profile() {
 
         <section id="technical-skills" className="mb-16 sm:mb-20">
           <h2
-            className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 relative inline-block group ${
+            className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-3 sm:mb-4 relative inline-block group ${
               darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
             } tracking-tight leading-[1.2]`}
           >
@@ -398,10 +409,13 @@ export default function Profile() {
             ></span>
           </h2>
 
-          <p className="text-sm text-[#777] max-w-3xl mb-6">
-            Core tools reflect production-level usage. Applied tools were used
-            in shipped features. Exploration tools were used in focused
-            prototypes or learning experiments.
+          <p
+            className={`text-sm max-w-3xl mb-6 ${
+              darkMode ? "text-[#888]" : "text-[#666]"
+            }`}
+          >
+            A structured overview of the technologies I work with, organized by
+            depth of experience.
           </p>
 
           <SkillFilters
@@ -412,6 +426,7 @@ export default function Profile() {
 
           <SkillsGridSection
             title="Core Stack"
+            description="Primary technologies used across most projects I build."
             skills={skills.filter((s) => s.tier === "core")}
             darkMode={darkMode}
             activeFilters={activeFilters}
@@ -419,6 +434,7 @@ export default function Profile() {
 
           <SkillsGridSection
             title="Applied Experience"
+            description="Technologies used in shipped features and real-world implementations."
             skills={skills.filter((s) => s.tier === "applied")}
             darkMode={darkMode}
             activeFilters={activeFilters}
@@ -426,6 +442,7 @@ export default function Profile() {
 
           <SkillsGridSection
             title="Exploration & Learning"
+            description="Technologies explored through focused prototypes and learning-driven projects."
             skills={skills.filter((s) => s.tier === "exploration")}
             darkMode={darkMode}
             activeFilters={activeFilters}
@@ -441,7 +458,7 @@ export default function Profile() {
         <section id="tools-and-workflow" className="mb-16 sm:mb-20">
           <div>
             <h2
-              className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 relative inline-block group ${
+              className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-3 sm:mb-4 relative inline-block group ${
                 darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
               } tracking-tight leading-[1.2]`}
             >
@@ -450,6 +467,14 @@ export default function Profile() {
                 className={`absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300 group-hover:w-full`}
               ></span>
             </h2>
+            <p
+              className={`text-sm max-w-3xl mb-6 ${
+                darkMode ? "text-[#888]" : "text-[#666]"
+              }`}
+            >
+              Supporting tools used for development, testing, deployment, and
+              collaboration.
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-4">
               {toolsAndWorkflow.map((tool, index) => (
                 <div

@@ -50,7 +50,7 @@ export const technicalSkills = [
     category: [
       "Object-Oriented Programming",
       "Strongly Typed Languages",
-      "General-purpose Development",
+      "Application Development",
     ],
     filterCategories: ["languages"],
   },
@@ -69,7 +69,11 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/typescript/3178C6",
     level: "Intermediate",
     experienceStart: "2025-10",
-    category: ["Full-stack Applications", "Type-safe Backend Systems"],
+    category: [
+      "Type-safe Systems",
+      "Full-stack Applications",
+      "Backend Development",
+    ],
     filterCategories: ["languages", "frontend", "backend"],
   },
   {
@@ -78,7 +82,7 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/python/3776AB",
     level: "Intermediate",
     experienceStart: "2023-07",
-    category: ["Backend APIs", "Automation Scripts", "Web Services"],
+    category: ["Backend APIs", "Automation", "Web Services"],
     filterCategories: ["languages", "backend", "machine learning"],
   },
   {
@@ -87,7 +91,7 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/gnubash/4EAA25",
     level: "Intermediate",
     experienceStart: "2024-08",
-    category: ["DevOps Scripts", "System Administration", "CI/CD Automation"],
+    category: ["Scripting", "System Automation", "CI/CD"],
     filterCategories: ["devops", "languages"],
   },
   {
@@ -105,7 +109,7 @@ export const technicalSkills = [
     logo: "/skills/sql-logo.png",
     level: "Advanced",
     experienceStart: "2025-02",
-    category: ["Query Optimization", "Joins & Indexing", "Database Design"],
+    category: ["Database Design", "Query Optimization", "Indexing"],
     filterCategories: ["languages", "database"],
   },
   {
@@ -114,7 +118,7 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/nodedotjs/339933",
     level: "Advanced",
     experienceStart: "2024-10",
-    category: ["Backend Services", "API Development", "Server-side JavaScript"],
+    category: ["Backend Services", "API Development", "Runtime Systems"],
     filterCategories: ["backend"],
   },
   {
@@ -124,7 +128,7 @@ export const technicalSkills = [
     darkLogo: "https://cdn.simpleicons.org/express/FFFFFF",
     level: "Advanced",
     experienceStart: "2024-10",
-    category: ["Backend Frameworks", "REST APIs", "Web Servers"],
+    category: ["REST APIs", "Backend Frameworks", "Web Servers"],
     filterCategories: ["backend"],
   },
   {
@@ -133,7 +137,7 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/fastapi/009688",
     level: "Intermediate",
     experienceStart: "2025-06",
-    category: ["High-performance APIs", "Python Backends", "Async Programming"],
+    category: ["High-performance APIs", "Async Programming", "Python Backends"],
     filterCategories: ["backend"],
   },
   {
@@ -143,7 +147,7 @@ export const technicalSkills = [
     darkLogo: "https://cdn.simpleicons.org/flask/FFFFFF",
     level: "Beginner",
     experienceStart: "2025-07",
-    category: ["Python Backends", "REST APIs", "Web Framework"],
+    category: ["Python Backends", "REST APIs", "Microservices"],
     filterCategories: ["backend"],
   },
   {
@@ -152,7 +156,7 @@ export const technicalSkills = [
     logo: "/skills/rest-api.png",
     level: "Advanced",
     experienceStart: "2024-10",
-    category: ["API Design", "Backend Development", "Web Services"],
+    category: ["API Design", "Backend Development", "Web Integration"],
     filterCategories: ["backend"],
   },
   {
@@ -161,7 +165,7 @@ export const technicalSkills = [
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/1200px-GraphQL_Logo.svg.png",
     level: "Beginner",
     experienceStart: "2025-10",
-    category: ["API Design", "Backend Development", "Schema Modeling"],
+    category: ["API Design", "Schema Modeling", "Backend Development"],
     filterCategories: ["backend"],
   },
   {
@@ -170,7 +174,11 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/react/61DAFB",
     level: "Advanced",
     experienceStart: "2024-09",
-    category: ["Frontend Development", "User Interface", "Web Applications"],
+    category: [
+      "Frontend Development",
+      "Component Architecture",
+      "Web Applications",
+    ],
     filterCategories: ["frontend"],
   },
   {
@@ -193,7 +201,7 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
     level: "Advanced",
     experienceStart: "2025-07",
-    category: ["Frontend Styling", "Responsive Design", "UI Development"],
+    category: ["Responsive Design", "Utility-first CSS", "UI Development"],
     filterCategories: ["frontend"],
   },
   {
@@ -202,12 +210,8 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/react/61DAFB",
     level: "Intermediate",
     experienceStart: "2025-12",
-    category: [
-      "Cross-platform Mobile Development",
-      "API-driven Applications",
-      "Native UI Components",
-    ],
-    filterCategories: ["frontend", "mobile"],
+    category: ["Cross-platform Mobile", "Native UI", "API-driven Apps"],
+    filterCategories: ["frontend", "mobile development"],
   },
   {
     name: "Expo",
@@ -216,12 +220,8 @@ export const technicalSkills = [
     darkLogo: "https://cdn.simpleicons.org/expo/FFFFFF",
     level: "Beginner",
     experienceStart: "2025-12",
-    category: [
-      "Rapid Mobile Prototyping",
-      "React Native Tooling",
-      "Native API Abstractions",
-    ],
-    filterCategories: ["mobile", "frontend"],
+    category: ["React Native Tooling", "Rapid Prototyping", "Mobile APIs"],
+    filterCategories: ["mobile development", "frontend"],
   },
   {
     name: "PostgreSQL",
@@ -229,7 +229,7 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/postgresql/4169E1",
     level: "Advanced",
     experienceStart: "2025-03",
-    category: ["Database Management", "Backend Systems", "Data Modeling"],
+    category: ["Relational Databases", "Data Modeling", "Backend Systems"],
     filterCategories: ["database", "backend"],
   },
   {
@@ -238,11 +238,7 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/mongodb/47A248",
     level: "Intermediate",
     experienceStart: "2024-10",
-    category: [
-      "NoSQL Databases",
-      "Flexible Data Models",
-      "Backend Development",
-    ],
+    category: ["NoSQL Databases", "Flexible Schemas", "Backend Development"],
     filterCategories: ["database", "backend"],
   },
   {
@@ -253,8 +249,8 @@ export const technicalSkills = [
     experienceStart: "2025-12",
     category: [
       "Distributed Databases",
+      "High Availability",
       "Scalable Storage",
-      "High-Availability Systems",
     ],
     filterCategories: ["database", "backend"],
   },
@@ -265,7 +261,7 @@ export const technicalSkills = [
     darkLogo: "https://cdn.simpleicons.org/prisma/FFFFFF",
     level: "Intermediate",
     experienceStart: "2025-09",
-    category: ["Database ORM", "Type-safe Queries", "Backend Development"],
+    category: ["ORM", "Type-safe Queries", "Backend Development"],
     filterCategories: ["database", "backend"],
   },
   {
@@ -274,7 +270,7 @@ export const technicalSkills = [
     logo: "https://www.svgrepo.com/show/303460/redis-logo.svg",
     level: "Advanced",
     experienceStart: "2025-09",
-    category: ["Caching", "Session Management", "Performance Optimization"],
+    category: ["Caching", "In-memory Storage", "Performance Optimization"],
     filterCategories: ["database", "backend"],
   },
   {
@@ -284,7 +280,7 @@ export const technicalSkills = [
     darkLogo: "https://cdn.simpleicons.org/apachekafka/FFFFFF",
     level: "Beginner",
     experienceStart: "2025-12",
-    category: ["Event Streaming", "Distributed Systems", "Message Queues"],
+    category: ["Event Streaming", "Distributed Systems", "Message Processing"],
     filterCategories: ["backend", "devops"],
   },
   {
@@ -293,12 +289,7 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/rabbitmq/FF6600",
     level: "Beginner",
     experienceStart: "2025-12",
-    category: [
-      "Message Queues",
-      "Asynchronous Processing",
-      "Event-driven Architecture",
-      "Backend Communication",
-    ],
+    category: ["Message Queues", "Async Processing", "Event-driven Systems"],
     filterCategories: ["backend", "devops"],
   },
   {
@@ -308,12 +299,7 @@ export const technicalSkills = [
     darkLogo: "/skills/bullmq-dark.png",
     level: "Beginner",
     experienceStart: "2025-12",
-    category: [
-      "Background Job Processing",
-      "Task Queues",
-      "Asynchronous Workflows",
-      "Redis-backed Queues",
-    ],
+    category: ["Background Jobs", "Task Queues", "Async Workflows"],
     filterCategories: ["backend", "devops"],
   },
   {
@@ -342,8 +328,8 @@ export const technicalSkills = [
     experienceStart: "2025-09",
     category: [
       "Container Orchestration",
-      "DevOps Infrastructure",
       "Scalable Systems",
+      "DevOps Infrastructure",
     ],
     filterCategories: ["devops"],
   },
@@ -362,7 +348,7 @@ export const technicalSkills = [
     logo: "https://www.jenkins.io/images/logo_128.png",
     level: "Beginner",
     experienceStart: "2025-12",
-    category: ["CI/CD Automation", "DevOps Pipelines", "Build Systems"],
+    category: ["CI/CD Automation", "Build Pipelines", "DevOps Workflows"],
     filterCategories: ["devops"],
   },
   {
@@ -371,12 +357,7 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/prometheus/E6522C",
     level: "Beginner",
     experienceStart: "2025-12",
-    category: [
-      "Metrics Collection",
-      "Monitoring",
-      "Observability",
-      "Backend Reliability",
-    ],
+    category: ["Metrics Collection", "Monitoring", "Observability"],
     filterCategories: ["devops", "backend"],
   },
   {
@@ -385,12 +366,7 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/grafana/F46800",
     level: "Beginner",
     experienceStart: "2025-12",
-    category: [
-      "Metrics Visualization",
-      "Monitoring Dashboards",
-      "Alerting",
-      "Observability",
-    ],
+    category: ["Metrics Visualization", "Dashboards", "Alerting"],
     filterCategories: ["devops"],
   },
   {
@@ -399,12 +375,7 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/terraform/844FBA",
     level: "Beginner",
     experienceStart: "2025-12",
-    category: [
-      "Infrastructure as Code",
-      "Cloud Automation",
-      "Provisioning",
-      "DevOps Infrastructure",
-    ],
+    category: ["Infrastructure as Code", "Provisioning", "Cloud Automation"],
     filterCategories: ["devops", "cloud"],
   },
   {
@@ -417,7 +388,6 @@ export const technicalSkills = [
       "Configuration Management",
       "Infrastructure Automation",
       "Provisioning",
-      "DevOps Workflows",
     ],
     filterCategories: ["devops", "cloud"],
   },
@@ -427,11 +397,7 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/jest/C21325",
     level: "Beginner",
     experienceStart: "2025-10",
-    category: [
-      "Unit Testing",
-      "Integration Testing",
-      "Test-driven Development",
-    ],
+    category: ["Unit Testing", "Integration Testing", "Test Automation"],
     filterCategories: ["backend", "frontend", "devops"],
   },
   {
@@ -440,7 +406,7 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/git/F05032",
     level: "Advanced",
     experienceStart: "2024-10",
-    category: ["Version Control", "Team Collaboration", "DevOps Workflow"],
+    category: ["Version Control", "Collaboration", "Workflow Management"],
     filterCategories: ["devops"],
   },
   {
@@ -451,8 +417,8 @@ export const technicalSkills = [
     experienceStart: "2025-11",
     category: [
       "CI/CD Automation",
-      "DevOps Pipelines",
       "Workflow Orchestration",
+      "DevOps Pipelines",
     ],
     filterCategories: ["devops", "cloud"],
   },
@@ -462,12 +428,7 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/cloudflare/F38020",
     level: "Intermediate",
     experienceStart: "2025-12",
-    category: [
-      "CDN & Edge",
-      "Security",
-      "DNS Management",
-      "Serverless Compute",
-    ],
+    category: ["CDN", "Security", "Edge Networking"],
     filterCategories: ["cloud", "devops", "backend"],
   },
   {
@@ -476,7 +437,7 @@ export const technicalSkills = [
     logo: "https://a.b.cdn.console.awsstatic.com/a/v1/RHSMMGZKYJXPPNI2IOC6Z63HJEW4FD5ZYMKJSXD7HQ5IPUTQR2TQ/icon/d88319dfa5d204f019b4284149886c59-7d586ea82f792b61a8c87de60565133d.svg",
     level: "Intermediate",
     experienceStart: "2025-07",
-    category: ["Server Hosting", "Backend Deployment", "Cloud Infrastructure"],
+    category: ["Compute Instances", "Backend Hosting", "Cloud Infrastructure"],
     filterCategories: ["cloud", "backend"],
   },
   {
@@ -485,11 +446,7 @@ export const technicalSkills = [
     logo: "https://a.b.cdn.console.awsstatic.com/a/v1/6JW3RZSXOZ4EFR2HZBU6IIOCUZEIFKRK6JZDCUDHQVQXRMAORYWQ/icon/1d374ed2a6bcf601d7bfd4fc3dfd3b5d-c9f69416d978016b3191175f35e59226.svg",
     level: "Intermediate",
     experienceStart: "2025-07",
-    category: [
-      "Managed Databases",
-      "PostgreSQL Hosting",
-      "Production Backends",
-    ],
+    category: ["Managed Databases", "Production Backends", "Cloud Storage"],
     filterCategories: ["cloud", "database"],
   },
   {
@@ -507,7 +464,7 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/supabase/3FCF8E",
     level: "Advanced",
     experienceStart: "2025-02",
-    category: ["Backend-as-a-Service", "Database Management", "Authentication"],
+    category: ["Backend-as-a-Service", "Authentication", "Database Management"],
     filterCategories: ["database", "backend", "cloud"],
   },
   {
@@ -517,11 +474,7 @@ export const technicalSkills = [
     darkLogo: "https://cdn.simpleicons.org/vercel/FFFFFF",
     level: "Advanced",
     experienceStart: "2025-01",
-    category: [
-      "Frontend Deployment",
-      "Full-stack Applications",
-      "Serverless Hosting",
-    ],
+    category: ["Frontend Deployment", "Serverless Hosting", "Full-stack Apps"],
     filterCategories: ["cloud", "frontend"],
   },
   {
@@ -530,8 +483,17 @@ export const technicalSkills = [
     logo: "https://cdn.simpleicons.org/render/46E3B7",
     level: "Advanced",
     experienceStart: "2025-01",
-    category: ["Backend Services", "API Hosting", "Microservices Deployment"],
+    category: ["Backend Hosting", "API Deployment", "Microservices"],
     filterCategories: ["cloud", "backend"],
+  },
+  {
+    name: "scikit-learn",
+    tier: "exploration",
+    logo: "https://cdn.simpleicons.org/scikitlearn/F7931E",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: ["Machine Learning", "Model Training", "Model Evaluation"],
+    filterCategories: ["machine learning"],
   },
   {
     name: "NumPy",
@@ -539,7 +501,11 @@ export const technicalSkills = [
     logo: "/skills/numpy.png",
     level: "Beginner",
     experienceStart: "2025-12",
-    category: ["Scientific Computing", "Numerical Analysis", "Data Processing"],
+    category: [
+      "Numerical Computing",
+      "Array Processing",
+      "Scientific Computing",
+    ],
     filterCategories: ["machine learning"],
   },
   {
@@ -567,7 +533,11 @@ export const technicalSkills = [
     logo: "/skills/seaborn.png",
     level: "Beginner",
     experienceStart: "2025-12",
-    category: ["Data Visualization", "Statistical Graphics", "Analytics"],
+    category: [
+      "Statistical Visualization",
+      "Exploratory Analysis",
+      "Analytics",
+    ],
     filterCategories: ["machine learning"],
   },
 ];
