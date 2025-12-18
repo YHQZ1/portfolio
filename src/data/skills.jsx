@@ -489,7 +489,7 @@ export const technicalSkills = [
   {
     name: "scikit-learn",
     tier: "exploration",
-    logo: "https://cdn.simpleicons.org/scikitlearn/F7931E",
+    logo: "/skills/scikit-learn.png",
     level: "Beginner",
     experienceStart: "2025-12",
     category: ["Machine Learning", "Model Training", "Model Evaluation"],

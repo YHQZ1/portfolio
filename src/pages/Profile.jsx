@@ -107,7 +107,27 @@ function SkillsGridSection({
           activeFilters.every((tag) => skill.filterCategories.includes(tag))
         );
 
-  if (filteredSkills.length === 0) return null;
+  if (filteredSkills.length === 0) {
+    return (
+      <div className="mb-16">
+        <h3
+          className={`text-2xl sm:text-3xl font-extralight mb-2 ${
+            darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+          }`}
+        >
+          {title}
+        </h3>
+
+        <p
+          className={`text-sm max-w-3xl ${
+            darkMode ? "text-[#666]" : "text-[#888]"
+          }`}
+        >
+          Nothing here… looks like you've filtered me into a corner.
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div className="mb-16">
