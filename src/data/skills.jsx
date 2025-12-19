@@ -487,6 +487,33 @@ export const technicalSkills = [
     filterCategories: ["cloud", "backend"],
   },
   {
+    name: "OpenCV",
+    tier: "exploration",
+    logo: "skills/opencv.png",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: [
+      "Image Preprocessing",
+      "Noise Reduction",
+      "Thresholding & Binarization",
+      "Layout & Contour Detection",
+    ],
+    filterCategories: ["backend", "machine learning"],
+  },
+  {
+    name: "Tesseract OCR",
+    tier: "applied",
+    logo: "/skills/tesseract.png",
+    level: "Intermediate",
+    experienceStart: "2025-12",
+    category: [
+      "Optical Character Recognition",
+      "Image Parsing",
+      "Document-to-Data Pipelines",
+    ],
+    filterCategories: ["backend", "machine learning"],
+  },
+  {
     name: "scikit-learn",
     tier: "exploration",
     logo: "https://cdn.simpleicons.org/scikitlearn/F7931E",
