@@ -8,7 +8,6 @@ export const projects = [
     live: "https://anchor-dev.vercel.app/",
     image: "/projects/anchor.png",
   },
-
   {
     title: "BitLink",
     description:
@@ -18,17 +17,6 @@ export const projects = [
     live: "https://btlink.vercel.app/",
     image: "/projects/bitlink.png",
   },
-
-  {
-    title: "GradCircle",
-    description:
-      "A fundraising platform designed for educational institutions to create, manage, and promote donation campaigns. It connects schools with alumni and communities, enabling secure contributions and transparent campaign progress.",
-    tags: ["Fundraising", "EdTech", "Campaign Management", "Alumni Outreach"],
-    github: "https://github.com/YHQZ1/ISCKON-Alumni-Connect",
-    live: "https://gradcircle.vercel.app/",
-    image: "/projects/gradcircle.png",
-  },
-
   {
     title: "VerQ",
     description:
@@ -38,7 +26,29 @@ export const projects = [
     live: "https://verq-pi.vercel.app",
     image: "/projects/verq.png",
   },
-
+  {
+    title: "GradCircle",
+    description:
+      "A fundraising platform designed for educational institutions to create, manage, and promote donation campaigns. It connects schools with alumni and communities, enabling secure contributions and transparent campaign progress.",
+    tags: ["Fundraising", "EdTech", "Campaign Management", "Alumni Outreach"],
+    github: "https://github.com/YHQZ1/ISCKON-Alumni-Connect",
+    live: "https://gradcircle.vercel.app/",
+    image: "/projects/gradcircle.png",
+  },
+  {
+    title: "OneGov",
+    description:
+      "A unified digital hub that consolidates government, commerce, transport, and civic utilities into a single platform. With secure role-based access and a multi-tenant architecture, it delivers a personalized, integrated digital experience for every user type.",
+    tags: [
+      "GovTech",
+      "Multi-tenant",
+      "Role-based Access",
+      "Integrated Services",
+    ],
+    github: "https://github.com/YHQZ1/OneGov",
+    live: "https://one-gov.vercel.app/",
+    image: "/projects/onegov.png",
+  },
   {
     title: "QuickStream",
     description:
@@ -54,7 +64,6 @@ export const projects = [
     live: "#",
     image: "/projects/quickstream.png",
   },
-
   {
     title: "Order Management System",
     description:
@@ -63,21 +72,6 @@ export const projects = [
     github: "https://github.com/YHQZ1/Order-Management-System",
     live: "#",
     image: "/projects/oms.png",
-  },
-
-  {
-    title: "OneGov",
-    description:
-      "A unified digital hub that consolidates government, commerce, transport, and civic utilities into a single platform. With secure role-based access and a multi-tenant architecture, it delivers a personalized, integrated digital experience for every user type.",
-    tags: [
-      "GovTech",
-      "Multi-tenant",
-      "Role-based Access",
-      "Integrated Services",
-    ],
-    github: "https://github.com/YHQZ1/OneGov",
-    live: "https://one-gov.vercel.app/",
-    image: "/projects/onegov.png",
   },
   {
     title: "Matchmaking Engine",
