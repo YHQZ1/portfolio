@@ -357,8 +357,21 @@ export const technicalSkills = [
     filterCategories: ["backend", "frontend", "devops"],
   },
   {
+    name: "Selenium",
+    tier: "applied",
+    logo: "https://cdn.simpleicons.org/selenium/43B02A",
+    level: "Beginner",
+    experienceStart: "2025-10",
+    category: [
+      "Browser Automation",
+      "Dynamic Content Handling",
+      "Web Scraping",
+    ],
+    filterCategories: ["backend"],
+  },
+  {
     name: "Cypress",
-    tier: "exploration",
+    tier: "applied",
     logo: "https://cdn.simpleicons.org/cypress/69D3A7",
     level: "Beginner",
     experienceStart: "2025-10",
@@ -367,7 +380,7 @@ export const technicalSkills = [
       "UI Flow Validation",
       "Component-driven Testing",
     ],
-    filterCategories: ["frontend", "testing"],
+    filterCategories: ["frontend"],
   },
   {
     name: "Git",
