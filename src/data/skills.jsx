@@ -428,6 +428,19 @@ export const technicalSkills = [
     filterCategories: ["cloud"],
   },
   {
+    name: "Azure",
+    tier: "exploration",
+    logo: "/skills/azure.png",
+    level: "Beginner",
+    experienceStart: "2025-11",
+    category: [
+      "Cloud Infrastructure",
+      "Compute & Storage",
+      "Production Backends",
+    ],
+    filterCategories: ["cloud"],
+  },
+  {
     name: "Supabase",
     tier: "core",
     logo: "https://cdn.simpleicons.org/supabase/3FCF8E",
