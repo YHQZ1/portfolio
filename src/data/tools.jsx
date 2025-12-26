@@ -11,6 +11,11 @@ export const toolsAndWorkflow = [
     category: ["API Testing", "Network Debugging", "Command-line Tools"],
   },
   {
+    name: "pnpm",
+    logo: "/skills/pnpm.png",
+    category: ["Package Management", "Dependency Resolution", "Monorepos"],
+  },
+  {
     name: "VS Code",
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png",
     category: ["Code Editor", "Extensions", "Debugging"],
@@ -50,10 +55,5 @@ export const toolsAndWorkflow = [
     name: "Jupyter Notebook",
     logo: "https://cdn.simpleicons.org/jupyter/F37626",
     category: ["Data Exploration", "Prototyping", "Machine Learning Workflow"],
-  },
-  {
-    name: "Google Colab",
-    logo: "https://cdn.simpleicons.org/googlecolab/F9AB00",
-    category: ["Notebooks", "GPU Training", "ML Experiments"],
   },
 ];
