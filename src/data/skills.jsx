@@ -510,6 +510,19 @@ export const technicalSkills = [
     filterCategories: ["machine learning"],
   },
   {
+    name: "Power BI",
+    tier: "applied",
+    logo: "/skills/powerbi.png",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: [
+      "Data Visualization",
+      "Business Intelligence",
+      "Analytics & Reporting",
+    ],
+    filterCategories: ["machine learning", "data", "analytics"],
+  },
+  {
     name: "NumPy",
     tier: "core",
     logo: "/skills/numpy.png",
@@ -553,6 +566,14 @@ export const technicalSkills = [
       "Analytics",
     ],
     filterCategories: ["machine learning"],
+  },
+  {
+    name: "Streamlit",
+    tier: "applied",
+    logo: "/skills/streamlit.png",
+    level: "Intermediate",
+    experienceStart: "2025-12",
+    category: ["ML Prototyping", "Model Visualization", "Data Apps"],
   },
 ];
 
