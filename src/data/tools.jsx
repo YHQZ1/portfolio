@@ -16,6 +16,15 @@ export const toolsAndWorkflow = [
     category: ["Package Management", "Dependency Resolution", "Monorepos"],
   },
   {
+    name: "Selenium",
+    logo: "https://cdn.simpleicons.org/selenium/43B02A",
+    category: [
+      "Browser Automation",
+      "Dynamic Content Handling",
+      "Testing & Scraping",
+    ],
+  },
+  {
     name: "VS Code",
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png",
     category: ["Code Editor", "Extensions", "Debugging"],
