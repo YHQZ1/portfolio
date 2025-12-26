@@ -23,56 +23,52 @@ function useTypewriter(text, speed = 80) {
 
   return displayText;
 }
-
 const FILTERS = [
-  "Languages",
-  "Frontend",
-  "Backend",
-  "Database",
-  "Cloud",
-  "Devops",
-  "Machine Learning",
-  "Mobile Development",
+  { label: "Languages", key: "languages" },
+  { label: "Frontend", key: "frontend" },
+  { label: "Backend", key: "backend" },
+  { label: "Database", key: "database" },
+  { label: "Cloud", key: "cloud" },
+  { label: "Devops", key: "devops" },
+  { label: "Data Science", key: "data-science" },
+  { label: "AI / ML", key: "ai-ml" },
+  { label: "Mobile Development", key: "mobile development" },
 ];
 
 function SkillFilters({ darkMode, activeFilters, setActiveFilters }) {
-  const toggleFilter = (tag) => {
-    const normalized = tag.toLowerCase();
-
+  const toggleFilter = (key) => {
     setActiveFilters((prev) =>
-      prev.includes(normalized)
-        ? prev.filter((f) => f !== normalized)
-        : [...prev, normalized]
+      prev.includes(key) ? prev.filter((f) => f !== key) : [...prev, key]
     );
   };
 
   return (
     <div className="flex items-center gap-2 mb-8 overflow-x-auto whitespace-nowrap scrollbar-hide sm:flex-wrap sm:overflow-visible">
-      {FILTERS.map((filter) => {
-        const isActive = activeFilters.includes(filter.toLowerCase());
+      {FILTERS.map(({ label, key }) => {
+        const isActive = activeFilters.includes(key);
 
         return (
           <button
-            key={filter}
-            onClick={() => toggleFilter(filter.toLowerCase())}
+            key={key}
+            onClick={() => toggleFilter(key)}
             className={`
-              px-3 py-1 text-sm rounded-sm border cursor-pointer select-none
-              transition-none duration-200
-              ${
-                darkMode
-                  ? isActive
-                    ? "bg-[#f5f5f5] text-black border-[#f5f5f5]"
-                    : "border-[#2a2a2a] text-[#aaa] bg-[#111]"
-                  : isActive
-                  ? "bg-[#0a0a0a] text-white border-[#0a0a0a]"
-                  : "border-[#ddd] text-[#444] bg-white"
-              }
-              hover:scale-[1.04]
-              hover:shadow-[0_2px_6px_rgba(0,0,0,0.15)]
-              hover:border-current
-            `}
+        px-3 py-1 text-sm rounded-sm border cursor-pointer select-none
+        transition-none duration-200
+        ${
+          darkMode
+            ? isActive
+              ? "bg-[#f5f5f5] text-black border-[#f5f5f5]"
+              : "border-[#2a2a2a] text-[#aaa] bg-[#111]"
+            : isActive
+            ? "bg-[#0a0a0a] text-white border-[#0a0a0a]"
+            : "border-[#ddd] text-[#444] bg-white"
+        }
+        hover:scale-[1.04]
+        hover:shadow-[0_2px_6px_rgba(0,0,0,0.15)]
+        hover:border-current
+      `}
           >
-            {filter}
+            {label}
           </button>
         );
       })}

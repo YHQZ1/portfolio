@@ -83,7 +83,7 @@ export const technicalSkills = [
     level: "Intermediate",
     experienceStart: "2023-07",
     category: ["Backend APIs", "Automation", "Web Services"],
-    filterCategories: ["languages", "backend", "machine learning"],
+    filterCategories: ["languages", "backend", "ai-ml", "data-science"],
   },
   {
     name: "Bash",
@@ -443,7 +443,7 @@ export const technicalSkills = [
       "Compute & Storage",
       "Production Backends",
     ],
-    filterCategories: ["cloud", "backend"],
+    filterCategories: ["cloud"],
   },
   {
     name: "Supabase",
@@ -485,7 +485,7 @@ export const technicalSkills = [
       "Thresholding & Binarization",
       "Layout & Contour Detection",
     ],
-    filterCategories: ["backend", "machine learning"],
+    filterCategories: ["backend", "ai-ml"],
   },
   {
     name: "Tesseract OCR",
@@ -498,7 +498,7 @@ export const technicalSkills = [
       "Image Parsing",
       "Document-to-Data Pipelines",
     ],
-    filterCategories: ["backend", "machine learning"],
+    filterCategories: ["backend", "ai-ml"],
   },
   {
     name: "scikit-learn",
@@ -507,7 +507,7 @@ export const technicalSkills = [
     level: "Beginner",
     experienceStart: "2025-12",
     category: ["Machine Learning", "Model Training", "Model Evaluation"],
-    filterCategories: ["machine learning"],
+    filterCategories: ["ai-ml"],
   },
   {
     name: "Power BI",
@@ -520,7 +520,7 @@ export const technicalSkills = [
       "Business Intelligence",
       "Analytics & Reporting",
     ],
-    filterCategories: ["machine learning", "data", "analytics"],
+    filterCategories: ["data-science"],
   },
   {
     name: "NumPy",
@@ -533,7 +533,7 @@ export const technicalSkills = [
       "Array Processing",
       "Scientific Computing",
     ],
-    filterCategories: ["machine learning"],
+    filterCategories: ["ai-ml", "data-science"],
   },
   {
     name: "Pandas",
@@ -543,7 +543,7 @@ export const technicalSkills = [
     level: "Beginner",
     experienceStart: "2025-12",
     category: ["Data Analysis", "Data Manipulation", "ETL"],
-    filterCategories: ["machine learning"],
+    filterCategories: ["ai-ml", "data-science"],
   },
   {
     name: "Matplotlib",
@@ -552,7 +552,7 @@ export const technicalSkills = [
     level: "Beginner",
     experienceStart: "2025-12",
     category: ["Data Visualization", "Plotting", "Analytics"],
-    filterCategories: ["machine learning"],
+    filterCategories: ["ai-ml", "data-science"],
   },
   {
     name: "Seaborn",
@@ -565,7 +565,7 @@ export const technicalSkills = [
       "Exploratory Analysis",
       "Analytics",
     ],
-    filterCategories: ["machine learning"],
+    filterCategories: ["ai-ml", "data-science"],
   },
   {
     name: "Streamlit",
@@ -574,6 +574,7 @@ export const technicalSkills = [
     level: "Intermediate",
     experienceStart: "2025-12",
     category: ["ML Prototyping", "Model Visualization", "Data Apps"],
+    filterCategories: ["ai-ml", "frontend"],
   },
 ];
 
