@@ -472,6 +472,15 @@ export const technicalSkills = [
     filterCategories: ["database", "backend", "cloud"],
   },
   {
+    name: "Neon",
+    tier: "applied",
+    logo: "/skills/neon.png",
+    level: "Intermediate",
+    experienceStart: "2025-12",
+    category: ["Backend-as-a-Service", "Authentication", "Database Management"],
+    filterCategories: ["database", "backend", "cloud"],
+  },
+  {
     name: "Vercel",
     tier: "core",
     logo: "https://cdn.simpleicons.org/vercel/000000",
