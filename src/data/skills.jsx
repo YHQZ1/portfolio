@@ -285,7 +285,7 @@ export const technicalSkills = [
   },
   {
     name: "RabbitMQ",
-    tier: "exploration",
+    tier: "applied",
     logo: "https://cdn.simpleicons.org/rabbitmq/FF6600",
     level: "Beginner",
     experienceStart: "2025-12",

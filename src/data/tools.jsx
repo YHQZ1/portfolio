@@ -47,6 +47,16 @@ export const toolsAndWorkflow = [
     category: ["Project Boards", "Team Collaboration", "Issue Tracking"],
   },
   {
+    name: "Slack",
+    logo: "/skills/slack.png",
+    category: [
+      "Team Communication",
+      "Async Collaboration",
+      "Workflow Notifications",
+      "Dev Tool Integrations",
+    ],
+  },
+  {
     name: "Jira",
     logo: "https://cdn.simpleicons.org/jira/0052CC",
     category: ["Project Management", "Issue Tracking", "Sprint Planning"],
