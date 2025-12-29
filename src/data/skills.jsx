@@ -88,7 +88,7 @@ export const technicalSkills = [
   {
     name: "Go",
     tier: "applied",
-    logo: "https://cdn.simpleicons.org/go/00ADD8",
+    logo: "https://devopedia.org/images/article/135/5996.1544439861.png",
     level: "Beginner",
     experienceStart: "2025-12",
     category: ["System Programming", "Backend Services", "Concurrency"],
@@ -185,6 +185,20 @@ export const technicalSkills = [
       "Frontend Development",
     ],
     filterCategories: ["frontend", "backend"],
+  },
+  {
+    name: "Astro",
+    tier: "applied",
+    logo: "https://cdn.simpleicons.org/astro/FF5D01",
+    level: "Intermediate",
+    experienceStart: "2025-12",
+    category: [
+      "Static Site Generation",
+      "Performance-first Web",
+      "Islands Architecture",
+      "Content-focused Frontends",
+    ],
+    filterCategories: ["frontend"],
   },
   {
     name: "Tailwind CSS",
@@ -394,7 +408,7 @@ export const technicalSkills = [
   {
     name: "PM2",
     tier: "applied",
-    logo: "https://cdn.simpleicons.org/pm2/2B037A",
+    logo: "skills/pm2.png",
     level: "Intermediate",
     experienceStart: "2025-12",
     category: [
