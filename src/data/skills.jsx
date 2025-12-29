@@ -294,7 +294,7 @@ export const technicalSkills = [
   },
   {
     name: "BullMQ",
-    tier: "exploration",
+    tier: "applied",
     logo: "/skills/bullmq-light.png",
     darkLogo: "/skills/bullmq-dark.png",
     level: "Beginner",
