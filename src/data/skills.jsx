@@ -88,7 +88,7 @@ export const technicalSkills = [
   {
     name: "Go",
     tier: "applied",
-    logo: "https://devopedia.org/images/article/135/5996.1544439861.png",
+    logo: "/skills/go.png",
     level: "Beginner",
     experienceStart: "2025-12",
     category: ["System Programming", "Backend Services", "Concurrency"],
