@@ -84,7 +84,7 @@ export const technicalSkills = [
   {
     name: "Go",
     tier: "applied",
-    logo: "/skills/go.png",
+    logo: "https://cdn.simpleicons.org/go/00ADD8",
     level: "Beginner",
     experienceStart: "2025-12",
     category: ["System Programming", "Backend Services", "Concurrency"],
