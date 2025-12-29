@@ -31,6 +31,16 @@ export const toolsAndWorkflow = [
     ],
   },
   {
+    name: "Upstash",
+    logo: "https://cdn.simpleicons.org/upstash/00E9A3",
+    category: [
+      "Serverless Datastores",
+      "Redis & Kafka as a Service",
+      "Low-latency Caching",
+      "Event-driven Backends",
+    ],
+  },
+  {
     name: "GitHub",
     logo: "https://cdn.simpleicons.org/github/181717",
     darkLogo: "https://cdn.simpleicons.org/github/FFFFFF",
@@ -55,5 +65,15 @@ export const toolsAndWorkflow = [
     name: "Jupyter Notebook",
     logo: "https://cdn.simpleicons.org/jupyter/F37626",
     category: ["Data Exploration", "Prototyping", "Machine Learning Workflow"],
+  },
+  {
+    name: "Google Colab",
+    logo: "https://cdn.simpleicons.org/googlecolab/F9AB00",
+    category: [
+      "Interactive Notebooks",
+      "Rapid Prototyping",
+      "GPU-accelerated Experiments",
+      "ML & Data Exploration",
+    ],
   },
 ];
