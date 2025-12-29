@@ -78,11 +78,7 @@ export const technicalSkills = [
     logo: "/skills/c-sharp.png",
     level: "Intermediate",
     experienceStart: "2024-01",
-    category: [
-      "Object-Oriented Programming",
-      "Strongly Typed Languages",
-      "Application Development",
-    ],
+    category: ["Object-Oriented Programming", "Strongly Typed Languages"],
     filterCategories: ["languages"],
   },
   {
@@ -141,6 +137,19 @@ export const technicalSkills = [
     filterCategories: ["backend"],
   },
   {
+    name: "Django",
+    tier: "applied",
+    logo: "https://cdn.simpleicons.org/django/092E20",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: [
+      "Full-stack Backend Framework",
+      "REST APIs",
+      "ORM-based Data Modeling",
+    ],
+    filterCategories: ["backend"],
+  },
+  {
     name: "Flask",
     tier: "applied",
     logo: "https://cdn.simpleicons.org/flask/000000",
@@ -194,7 +203,6 @@ export const technicalSkills = [
     experienceStart: "2025-12",
     category: [
       "Static Site Generation",
-      "Performance-first Web",
       "Islands Architecture",
       "Content-focused Frontends",
     ],
@@ -412,8 +420,7 @@ export const technicalSkills = [
     level: "Intermediate",
     experienceStart: "2025-12",
     category: [
-      "Node.js Process Management",
-      "Zero-downtime Deployments",
+      "Process Management",
       "Cluster Mode Scaling",
       "Production Monitoring & Recovery",
     ],
@@ -526,7 +533,6 @@ export const technicalSkills = [
     experienceStart: "2025-12",
     category: [
       "Image Preprocessing",
-      "Noise Reduction",
       "Thresholding & Binarization",
       "Layout & Contour Detection",
     ],
