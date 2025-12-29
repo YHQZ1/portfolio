@@ -535,6 +535,33 @@ export const technicalSkills = [
     filterCategories: ["testing", "frontend"],
   },
   {
+    name: "TensorFlow",
+    tier: "exploration",
+    logo: "/skills/tensorflow.png",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: [
+      "Machine Learning",
+      "Deep Learning",
+      "Neural Network Training",
+      "Model Deployment Basics",
+    ],
+    filterCategories: ["ai-ml", "data-science"],
+  },
+  {
+    name: "Keras",
+    tier: "exploration",
+    logo: "https://cdn.simpleicons.org/keras/D00000",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: [
+      "High-level Neural Networks",
+      "Rapid ML Prototyping",
+      "Model Experimentation",
+    ],
+    filterCategories: ["ai-ml", "data-science"],
+  },
+  {
     name: "OpenCV",
     tier: "exploration",
     logo: "skills/opencv.png",
