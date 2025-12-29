@@ -367,7 +367,7 @@ export const technicalSkills = [
       "Dynamic Content Handling",
       "Web Scraping",
     ],
-    filterCategories: ["backend"],
+    filterCategories: ["frontend", "devops"],
   },
   {
     name: "Cypress",
@@ -569,7 +569,7 @@ export const technicalSkills = [
     level: "Intermediate",
     experienceStart: "2025-12",
     category: ["ML Prototyping", "Model Visualization", "Data Apps"],
-    filterCategories: ["ai-ml", "frontend"],
+    filterCategories: ["ai-ml", "frontend", "data-science"],
   },
 ];
 
