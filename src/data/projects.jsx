@@ -1,14 +1,5 @@
 export const projects = [
   {
-    title: "Anchor",
-    description:
-      "A unified productivity platform that integrates directly with college systems to automate academic workflows. It syncs assignments, tracks attendance thresholds, and surfaces actionable insights—all designed to reduce manual effort and keep students consistently ahead of deadlines.",
-    tags: ["EdTech", "Automation", "Productivity", "System Integration"],
-    github: "https://github.com/YHQZ1/Anchor",
-    live: "https://anchor-dev.vercel.app/",
-    image: "/projects/anchor.png",
-  },
-  {
     title: "BitLink",
     description:
       "A modern link-management platform that enables fast URL shortening, dynamic QR generation, and real-time analytics. Built with an intuitive UI and optimized backend, it provides creators and teams with actionable insights around link performance.",
@@ -16,6 +7,15 @@ export const projects = [
     github: "https://github.com/YHQZ1/BitLink",
     live: "https://btlink.vercel.app/",
     image: "/projects/bitlink.png",
+  },
+  {
+    title: "Anchor",
+    description:
+      "A unified productivity platform that integrates directly with college systems to automate academic workflows. It syncs assignments, tracks attendance thresholds, and surfaces actionable insights—all designed to reduce manual effort and keep students consistently ahead of deadlines.",
+    tags: ["EdTech", "Automation", "Productivity", "System Integration"],
+    github: "https://github.com/YHQZ1/Anchor",
+    live: "https://anchor-dev.vercel.app/",
+    image: "/projects/anchor.png",
   },
   {
     title: "VerQ",
