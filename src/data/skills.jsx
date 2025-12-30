@@ -284,6 +284,19 @@ export const technicalSkills = [
     filterCategories: ["backend", "devops"],
   },
   {
+    name: "ZooKeeper",
+    tier: "exploration",
+    logo: "/skills/zookeeper.png",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: [
+      "Distributed Coordination",
+      "Leader Election",
+      "Kafka Broker Management",
+    ],
+    filterCategories: ["backend", "devops"],
+  },
+  {
     name: "RabbitMQ",
     tier: "applied",
     logo: "https://cdn.simpleicons.org/rabbitmq/FF6600",
@@ -551,7 +564,7 @@ export const technicalSkills = [
   {
     name: "Keras",
     tier: "exploration",
-    logo: "https://cdn.simpleicons.org/keras/D00000",
+    logo: "https://cdn.simpleicons.org/keras/B71C1C",
     level: "Beginner",
     experienceStart: "2025-12",
     category: [
