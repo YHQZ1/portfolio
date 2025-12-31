@@ -5,7 +5,7 @@ export const projects = [
       "A modern link-management platform that enables fast URL shortening, dynamic QR generation, and real-time analytics. Built with an intuitive UI and optimized backend, it provides creators and teams with actionable insights around link performance.",
     tags: ["URL Shortener", "Analytics", "QR Codes", "Real-time"],
     github: "https://github.com/YHQZ1/BitLink",
-    live: "https://btlink.vercel.app/",
+    live: "https://www.bitlk.in/",
     image: "/projects/bitlink.png",
   },
   {
