@@ -24,7 +24,7 @@ export default function About() {
   const { darkMode } = useTheme();
   const commands = [
     { label: "Core Competencies", id: "core-competencies" },
-    { label: "Leadership Journey", id: "leadership-journey" },
+    { label: "Roles & Contributions", id: "roles-and-contributions" },
     { label: "Key Achievements", id: "key-achievements" },
     { label: "Work Experience", id: "work-experience" },
   ];
@@ -298,13 +298,13 @@ export default function About() {
             darkMode ? "bg-[#2a2a2a]" : "bg-[#e8e8e8]"
           } my-8 sm:my-10`}
         ></div>
-        <section id="leadership-journey" className="mb-16 sm:mb-20">
+        <section id="roles-and-contributions" className="mb-16 sm:mb-20">
           <h2
             className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-12 sm:mb-16 relative inline-block group ${
               darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
             } tracking-tight leading-[1.2]`}
           >
-            Leadership Journey
+            Roles & Contributions
             <span
               className={`absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300 group-hover:w-full`}
             ></span>
@@ -545,13 +545,60 @@ export default function About() {
             ></span>
           </h2>
 
-          <div className="text-center">
+          <div
+            className={`border-l-4 ${
+              darkMode ? "border-[#8ab4f8]" : "border-[#4285f4]"
+            } pl-4 sm:pl-6 md:pl-8`}
+          >
+            <div className="flex items-start sm:items-center gap-3 mb-3">
+              <img
+                src="https://iskconnyc.com/wp-content/uploads/2022/01/LOGO-Final_GLD-MED.png"
+                alt="ISKCON logo"
+                className="w-6 h-6 object-contain"
+              />
+
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-4">
+                <h3
+                  className={`text-xl sm:text-2xl md:text-3xl font-light tracking-tight ${
+                    darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+                  }`}
+                >
+                  Full Stack Developer
+                </h3>
+
+                <span
+                  className={`text-sm italic ${
+                    darkMode ? "text-[#666]" : "text-[#999]"
+                  }`}
+                >
+                  2025
+                </span>
+              </div>
+            </div>
+
+            <p
+              className={`text-sm italic mb-3 ${
+                darkMode ? "text-[#666]" : "text-[#999]"
+              }`}
+            >
+              ISKCON · Grad Circle
+            </p>
+
             <p
               className={`text-lg sm:text-xl leading-[1.6] ${
                 darkMode ? "text-[#888]" : "text-[#666]"
               }`}
             >
-              Building experience along the way.
+              Built <span className="font-medium">Grad Circle</span>, a
+              full-stack fundraising platform designed to support government
+              schools through alumni-driven and public donation campaigns.
+              Implemented the complete frontend experience, role-based access
+              control, and a voice-enabled bot for guided interactions.
+              Integrated secure payments using the Cashfree payment gateway,
+              supporting both monetary and in-kind donations. Dockerized the
+              application and deployed the frontend and backend to production
+              environments, focusing on reliability, security, and ease of use
+              for real-world fundraising campaigns.
             </p>
           </div>
         </section>
