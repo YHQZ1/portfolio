@@ -274,7 +274,7 @@ export const technicalSkills = [
     filterCategories: ["database", "backend"],
   },
   {
-    name: "Apache Cassandra",
+    name: "Cassandra",
     tier: "exploration",
     logo: "https://cdn.simpleicons.org/apachecassandra/1287B1",
     level: "Beginner",
