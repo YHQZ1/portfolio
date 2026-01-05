@@ -274,6 +274,20 @@ export const technicalSkills = [
     filterCategories: ["database", "backend"],
   },
   {
+    name: "Apache Cassandra",
+    tier: "exploration",
+    logo: "https://cdn.simpleicons.org/apachecassandra/1287B1",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: [
+      "Distributed Databases",
+      "Write-heavy Data Modeling",
+      "Partitioning & Replication",
+      "Consistency & Availability Tradeoffs",
+    ],
+    filterCategories: ["database", "backend", "devops"],
+  },
+  {
     name: "Kafka",
     tier: "exploration",
     logo: "https://cdn.simpleicons.org/apachekafka/231F20",
