@@ -400,6 +400,15 @@ export const technicalSkills = [
     filterCategories: ["devops", "backend"],
   },
   {
+    name: "Terraform",
+    tier: "applied",
+    logo: "https://cdn.simpleicons.org/terraform/844FBA",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: ["Infrastructure as Code", "Provisioning", "Cloud Automation"],
+    filterCategories: ["devops", "cloud"],
+  },
+  {
     name: "Prometheus",
     tier: "applied",
     logo: "https://cdn.simpleicons.org/prometheus/E6522C",
@@ -418,13 +427,17 @@ export const technicalSkills = [
     filterCategories: ["devops"],
   },
   {
-    name: "Terraform",
+    name: "k6",
     tier: "applied",
-    logo: "https://cdn.simpleicons.org/terraform/844FBA",
-    level: "Beginner",
+    logo: "https://cdn.simpleicons.org/k6/7D64FF",
+    level: "Intermediate",
     experienceStart: "2025-12",
-    category: ["Infrastructure as Code", "Provisioning", "Cloud Automation"],
-    filterCategories: ["devops", "cloud"],
+    category: [
+      "Load Testing",
+      "Latency & Throughput Analysis",
+      "Backend Reliability Validation",
+    ],
+    filterCategories: ["devops", "backend", "testing"],
   },
   {
     name: "PM2",
