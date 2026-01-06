@@ -184,114 +184,157 @@ export default function About() {
             darkMode ? "bg-[#2a2a2a]" : "bg-[#e8e8e8]"
           } my-8 sm:my-10`}
         ></div>
-        <section id="core-competencies" className="mb-16 sm:mb-20">
-          <h2
-            className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-12 sm:mb-16 relative inline-block group ${
-              darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-            } tracking-tight leading-[1.2]`}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
+          {/* 1. Competitive Programming */}
+          <div
+            className={`border-l-4 pl-4 sm:pl-6 md:pl-8 ${
+              darkMode ? "border-[#f28b82]" : "border-[#ea4335]"
+            }`}
           >
-            Core Competencies
-            <span
-              className={`absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300 group-hover:w-full`}
-            ></span>
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
-            <div
-              className={`border-l-4 pl-4 sm:pl-6 md:pl-8 ${
-                darkMode ? "border-[#81c995]" : "border-[#34a853]"
+            <h3
+              className={`text-2xl sm:text-3xl md:text-4xl font-light mb-4 sm:mb-6 ${
+                darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+              } tracking-tight leading-[1.3]`}
+            >
+              Competitive Programming
+            </h3>
+            <p
+              className={`text-lg sm:text-xl leading-[1.6] ${
+                darkMode ? "text-[#888]" : "text-[#666]"
               }`}
             >
-              <h3
-                className={`text-2xl sm:text-3xl md:text-4xl font-light mb-4 sm:mb-6 ${
-                  darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-                } tracking-tight leading-[1.3]`}
-              >
-                Full-Stack Development
-              </h3>
-              <p
-                className={`text-lg sm:text-xl leading-[1.6] ${
-                  darkMode ? "text-[#888]" : "text-[#666]"
-                }`}
-              >
-                Building end-to-end solutions with modern frameworks and tools.
-                From designing intuitive user interfaces to architecting robust
-                backend systems, I enjoy the entire journey of bringing ideas to
-                production.
-              </p>
-            </div>
-
-            <div
-              className={`border-l-4 pl-4 sm:pl-6 md:pl-8 ${
-                darkMode ? "border-[#f28b82]" : "border-[#ea4335]"
-              }`}
-            >
-              <h3
-                className={`text-2xl sm:text-3xl md:text-4xl font-light mb-4 sm:mb-6 ${
-                  darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-                } tracking-tight leading-[1.3]`}
-              >
-                Competitive Programming
-              </h3>
-              <p
-                className={`text-lg sm:text-xl leading-[1.6] ${
-                  darkMode ? "text-[#888]" : "text-[#666]"
-                }`}
-              >
-                Solving complex algorithmic challenges to master efficient
-                problem-solving. Competitive programming hones my ability to
-                write high-performance code and think critically under time
-                constraints.
-              </p>
-            </div>
-
-            <div
-              className={`border-l-4 pl-4 sm:pl-6 md:pl-8 ${
-                darkMode ? "border-[#fdd663]" : "border-[#fbbc04]"
-              }`}
-            >
-              <h3
-                className={`text-2xl sm:text-3xl md:text-4xl font-light mb-4 sm:mb-6 ${
-                  darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-                } tracking-tight leading-[1.3]`}
-              >
-                DevOps & Cloud
-              </h3>
-              <p
-                className={`text-lg sm:text-xl leading-[1.6] ${
-                  darkMode ? "text-[#888]" : "text-[#666]"
-                }`}
-              >
-                Building infrastructure that moves as fast as the code. From
-                container orchestration to seamless CI/CD pipelines, I engineer
-                systems that deploy reliably and scale effortlessly.
-              </p>
-            </div>
-
-            <div
-              className={`border-l-4 pl-4 sm:pl-6 md:pl-8 ${
-                darkMode ? "border-[#8ab4f8]" : "border-[#4285f4]"
-              }`}
-            >
-              <h3
-                className={`text-2xl sm:text-3xl md:text-4xl font-light mb-4 sm:mb-6 ${
-                  darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-                } tracking-tight leading-[1.3]`}
-              >
-                System Design
-              </h3>
-              <p
-                className={`text-lg sm:text-xl leading-[1.6] ${
-                  darkMode ? "text-[#888]" : "text-[#666]"
-                }`}
-              >
-                Building architectures that scale with user demand, not excuses.
-                I design systems where every component serves a purpose and
-                every trade-off is calculated for long-term impact.
-              </p>
-            </div>
+              Solving algorithmic problems to build strong fundamentals in data
+              structures, complexity analysis, and problem decomposition. This
+              discipline sharpens my ability to reason precisely and write
+              efficient, correct code under constraints.
+            </p>
           </div>
-        </section>
+
+          {/* 2. System Design */}
+          <div
+            className={`border-l-4 pl-4 sm:pl-6 md:pl-8 ${
+              darkMode ? "border-[#8ab4f8]" : "border-[#4285f4]"
+            }`}
+          >
+            <h3
+              className={`text-2xl sm:text-3xl md:text-4xl font-light mb-4 sm:mb-6 ${
+                darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+              } tracking-tight leading-[1.3]`}
+            >
+              System Design
+            </h3>
+            <p
+              className={`text-lg sm:text-xl leading-[1.6] ${
+                darkMode ? "text-[#888]" : "text-[#666]"
+              }`}
+            >
+              Designing scalable architectures by balancing performance,
+              reliability, and cost. I focus on clear component boundaries,
+              well-understood trade-offs, and designs that evolve gracefully as
+              requirements change.
+            </p>
+          </div>
+
+          {/* 3. Distributed Systems & Reliability */}
+          <div
+            className={`border-l-4 pl-4 sm:pl-6 md:pl-8 ${
+              darkMode ? "border-[#9aa0a6]" : "border-[#5f6368]"
+            }`}
+          >
+            <h3
+              className={`text-2xl sm:text-3xl md:text-4xl font-light mb-4 sm:mb-6 ${
+                darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+              } tracking-tight leading-[1.3]`}
+            >
+              Distributed Systems & Reliability
+            </h3>
+            <p
+              className={`text-lg sm:text-xl leading-[1.6] ${
+                darkMode ? "text-[#888]" : "text-[#666]"
+              }`}
+            >
+              Building systems that behave predictably under scale, latency, and
+              failure. I think deeply about consistency models, fault tolerance,
+              load distribution, and observability to ensure correctness beyond
+              the happy path.
+            </p>
+          </div>
+
+          {/* 4. DevOps & Cloud */}
+          <div
+            className={`border-l-4 pl-4 sm:pl-6 md:pl-8 ${
+              darkMode ? "border-[#fdd663]" : "border-[#fbbc04]"
+            }`}
+          >
+            <h3
+              className={`text-2xl sm:text-3xl md:text-4xl font-light mb-4 sm:mb-6 ${
+                darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+              } tracking-tight leading-[1.3]`}
+            >
+              DevOps & Cloud
+            </h3>
+            <p
+              className={`text-lg sm:text-xl leading-[1.6] ${
+                darkMode ? "text-[#888]" : "text-[#666]"
+              }`}
+            >
+              Translating system designs into production-ready infrastructure.
+              From containerization and CI/CD to observability and secure
+              deployments, I engineer environments that are repeatable,
+              resilient, and scalable.
+            </p>
+          </div>
+
+          {/* 5. Full-Stack Development */}
+          <div
+            className={`border-l-4 pl-4 sm:pl-6 md:pl-8 ${
+              darkMode ? "border-[#81c995]" : "border-[#34a853]"
+            }`}
+          >
+            <h3
+              className={`text-2xl sm:text-3xl md:text-4xl font-light mb-4 sm:mb-6 ${
+                darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+              } tracking-tight leading-[1.3]`}
+            >
+              Full-Stack Development
+            </h3>
+            <p
+              className={`text-lg sm:text-xl leading-[1.6] ${
+                darkMode ? "text-[#888]" : "text-[#666]"
+              }`}
+            >
+              Building end-to-end applications with a strong emphasis on backend
+              correctness and clean interfaces. I enjoy turning system designs
+              into intuitive user-facing products that feel fast, reliable, and
+              cohesive.
+            </p>
+          </div>
+
+          {/* 6. Applied Machine Learning */}
+          <div
+            className={`border-l-4 pl-4 sm:pl-6 md:pl-8 ${
+              darkMode ? "border-[#c58af9]" : "border-[#a142f4]"
+            }`}
+          >
+            <h3
+              className={`text-2xl sm:text-3xl md:text-4xl font-light mb-4 sm:mb-6 ${
+                darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+              } tracking-tight leading-[1.3]`}
+            >
+              Applied Machine Learning
+            </h3>
+            <p
+              className={`text-lg sm:text-xl leading-[1.6] ${
+                darkMode ? "text-[#888]" : "text-[#666]"
+              }`}
+            >
+              Applying machine learning where it meaningfully augments systems.
+              From data preprocessing and model training to evaluation and
+              deployment, I focus on ML workflows that are reproducible,
+              interpretable, and production-aware.
+            </p>
+          </div>
+        </div>
 
         <div
           className={`w-full h-px ${
