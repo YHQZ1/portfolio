@@ -156,6 +156,20 @@ export const technicalSkills = [
     filterCategories: ["backend"],
   },
   {
+    name: "Socket.IO",
+    tier: "applied",
+    logo: "https://cdn.simpleicons.org/socketdotio/010101",
+    darkLogo: "https://cdn.simpleicons.org/socketdotio/FFFFFF",
+    level: "Intermediate",
+    experienceStart: "2025-11",
+    category: [
+      "Real-time Communication",
+      "Event-driven Systems",
+      "WebSocket Abstractions",
+    ],
+    filterCategories: ["backend"],
+  },
+  {
     name: "ReactJS",
     tier: "core",
     logo: "https://cdn.simpleicons.org/react/61DAFB",
@@ -589,7 +603,7 @@ export const technicalSkills = [
       "Neural Network Training",
       "Model Deployment Basics",
     ],
-    filterCategories: ["ai-ml", "data-science"],
+    filterCategories: ["ai-ml"],
   },
   {
     name: "Keras",
@@ -602,7 +616,7 @@ export const technicalSkills = [
       "Rapid ML Prototyping",
       "Model Experimentation",
     ],
-    filterCategories: ["ai-ml", "data-science"],
+    filterCategories: ["ai-ml"],
   },
   {
     name: "OpenCV",
@@ -718,7 +732,7 @@ export const technicalSkills = [
     level: "Intermediate",
     experienceStart: "2025-12",
     category: ["ML Prototyping", "Model Visualization", "Data Apps"],
-    filterCategories: ["ai-ml", "frontend", "data-science"],
+    filterCategories: ["ai-ml", "frontend"],
   },
 ];
 
