@@ -726,6 +726,20 @@ export const technicalSkills = [
     filterCategories: ["data-science"],
   },
   {
+    name: "Tableau",
+    tier: "applied",
+    logo: "/skills/tableau.png",
+    level: "Beginner",
+    experienceStart: "2026-01",
+    category: [
+      "Data Visualization",
+      "Business Intelligence",
+      "Interactive Dashboards",
+      "Analytics & Reporting",
+    ],
+    filterCategories: ["data-science"],
+  },
+  {
     name: "Streamlit",
     tier: "applied",
     logo: "/skills/streamlit.png",
