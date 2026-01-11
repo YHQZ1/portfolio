@@ -458,6 +458,19 @@ export const technicalSkills = [
     filterCategories: ["devops"],
   },
   {
+    name: "OpenTelemetry",
+    tier: "applied",
+    logo: "https://cdn.simpleicons.org/opentelemetry/000000",
+    level: "Beginner",
+    experienceStart: "2025-12",
+    category: [
+      "Distributed Tracing",
+      "Metrics Instrumentation",
+      "Observability Pipelines",
+    ],
+    filterCategories: ["devops"],
+  },
+  {
     name: "k6",
     tier: "applied",
     logo: "https://cdn.simpleicons.org/k6/7D64FF",
