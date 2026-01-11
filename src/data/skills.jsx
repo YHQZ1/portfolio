@@ -460,7 +460,7 @@ export const technicalSkills = [
   {
     name: "OpenTelemetry",
     tier: "applied",
-    logo: "https://cdn.simpleicons.org/opentelemetry/000000",
+    logo: "/skills/open-telemetry.png",
     level: "Beginner",
     experienceStart: "2025-12",
     category: [
