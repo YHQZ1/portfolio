@@ -22,7 +22,7 @@ export const projects = [
     description:
       "A complete placement automation suite that streamlines the student hiring workflow. Featuring an AI-powered ATS resume scanner, personalized job tracking, and unified outreach, it reduces friction and empowers students through every stage of the placement journey.",
     tags: ["AI-Driven", "ATS Scanner", "Real-time", "Job Tracking"],
-    github: "https://github.com/About-Rudra/Verq",
+    github: "https://github.com/YHQZ1/Verq",
     live: "https://verq-pi.vercel.app",
     image: "/projects/verq.png",
   },
