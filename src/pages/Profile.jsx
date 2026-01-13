@@ -32,7 +32,6 @@ const FILTERS = [
   { label: "Devops", key: "devops" },
   { label: "Data Science", key: "data-science" },
   { label: "AI / ML", key: "ai-ml" },
-  { label: "Mobile Development", key: "mobile development" },
   { label: "Testing", key: "testing" },
 ];
 

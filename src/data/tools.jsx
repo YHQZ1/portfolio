@@ -21,16 +21,6 @@ export const toolsAndWorkflow = [
     category: ["Code Editor", "Extensions", "Debugging"],
   },
   {
-    name: "n8n",
-    logo: "https://cdn.simpleicons.org/n8n/E74243",
-    category: [
-      "Workflow Automation",
-      "API Integrations",
-      "Background Jobs",
-      "Process Orchestration",
-    ],
-  },
-  {
     name: "Upstash",
     logo: "https://cdn.simpleicons.org/upstash/00E9A3",
     category: [
