@@ -459,38 +459,6 @@ export default function About() {
                 presence across platforms, reaching over 5,000+ students.
               </p>
             </div>
-
-            <div
-              className={`border-l-4 ${
-                darkMode ? "border-[#fdd663]" : "border-[#fbbc04]"
-              } pl-4 sm:pl-6 md:pl-8`}
-            >
-              <h3
-                className={`text-xl sm:text-2xl md:text-3xl font-light mb-2 leading-[1.3] ${
-                  darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-                } tracking-tight`}
-              >
-                Media & Documentation Head
-              </h3>
-              <p
-                className={`text-sm italic mb-3 sm:mb-4 ${
-                  darkMode ? "text-[#666]" : "text-[#999]"
-                }`}
-              >
-                National level Hackathon by Google Developer Students Club, SIT
-                Pune
-              </p>
-              <p
-                className={`text-lg sm:text-xl leading-[1.6] ${
-                  darkMode ? "text-[#888]" : "text-[#666]"
-                }`}
-              >
-                Captured and organized event documentation with a professional
-                touch, ensuring every session, workshop, and outcome was
-                showcased effectively to participants and the wider community.
-                Managed a team to create comprehensive event coverage.
-              </p>
-            </div>
           </div>
         </section>
 

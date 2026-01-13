@@ -29,7 +29,7 @@ const FILTERS = [
   { label: "Backend", key: "backend" },
   { label: "Database", key: "database" },
   { label: "Cloud", key: "cloud" },
-  { label: "Devops", key: "devops" },
+  { label: "DevOps", key: "devops" },
   { label: "Data Science", key: "data-science" },
   { label: "AI / ML", key: "ai-ml" },
   { label: "Testing", key: "testing" },
