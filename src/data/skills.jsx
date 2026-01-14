@@ -519,8 +519,8 @@ export const technicalSkills = [
   {
     name: "Pandas",
     tier: "applied",
-    logo: "https://cdn.simpleicons.org/pandas/150458",
-    darkLogo: "https://cdn.simpleicons.org/pandas/FFFFFF",
+    logo: "/skills/pandas-light.png",
+    darkLogo: "/skills/pandas-dark.png",
     level: "Advanced",
     experienceStart: "2025-12",
     category: ["Data Analysis", "Data Manipulation", "ETL Pipelines"],
