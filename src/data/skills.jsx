@@ -60,7 +60,7 @@ export const technicalSkills = [
     filterCategories: ["languages", "backend", "ai-ml", "data-science"],
   },
   {
-    name: "C/C++",
+    name: "C++",
     tier: "applied",
     logo: "https://cdn.simpleicons.org/cplusplus/00599C",
     level: "Intermediate",
@@ -404,20 +404,6 @@ export const technicalSkills = [
     filterCategories: ["devops"],
   },
   {
-    name: "OpenTelemetry",
-    tier: "applied",
-    logo: "https://cdn.simpleicons.org/opentelemetry/000000",
-    darkLogo: "https://cdn.simpleicons.org/opentelemetry/FFFFFF",
-    level: "Beginner",
-    experienceStart: "2025-12",
-    category: [
-      "Distributed Tracing",
-      "Metrics Instrumentation",
-      "Observability Pipelines",
-    ],
-    filterCategories: ["devops"],
-  },
-  {
     name: "k6",
     tier: "applied",
     logo: "https://cdn.simpleicons.org/k6/FF6A00",
@@ -592,15 +578,6 @@ export const technicalSkills = [
     experienceStart: "2025-12",
     category: ["Neural Networks", "Deep Learning", "Model Training"],
     filterCategories: ["ai-ml"],
-  },
-  {
-    name: "OpenCV",
-    tier: "exploration",
-    logo: "skills/opencv.png",
-    level: "Beginner",
-    experienceStart: "2025-12",
-    category: ["Image Processing", "Computer Vision", "Feature Detection"],
-    filterCategories: ["backend", "ai-ml"],
   },
   {
     name: "Streamlit",
