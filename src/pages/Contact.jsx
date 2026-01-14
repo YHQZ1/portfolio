@@ -113,7 +113,9 @@ export default function Contact() {
               email me directly at{" "}
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=rupareluttkarsh2309@gmail.com"
-                className={`underline underline-offset-4 transition-colors ${
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`underline underline-offset-4 transition-none ${
                   darkMode
                     ? "text-[#8ab4f8] hover:text-[#a5c7ff]"
                     : "text-[#4285f4] hover:text-[#3367d6]"
