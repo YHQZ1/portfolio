@@ -2,14 +2,10 @@ import {
   FaLinkedin,
   FaGithub,
   FaEnvelope,
-  FaInstagram,
   FaDiscord,
-  FaReddit,
   FaStackOverflow,
 } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { SiLeetcode } from "react-icons/si";
-import { SiCodeforces } from "react-icons/si";
+import { SiLeetcode, SiCodeforces, SiHackerrank } from "react-icons/si";
 
 export const socialLinks = [
   {
@@ -33,24 +29,14 @@ export const socialLinks = [
     url: "https://codeforces.com/profile/uttkarsh09",
   },
   {
+    name: "HackerRank",
+    icon: SiHackerrank,
+    url: "https://www.hackerrank.com/profile/rupareluttkarsh1",
+  },
+  {
     name: "Stack Overflow",
     icon: FaStackOverflow,
     url: "https://stackoverflow.com/users/29559883/uttkarsh-ruparel",
-  },
-  {
-    name: "Instagram",
-    icon: FaInstagram,
-    url: "https://www.instagram.com/uttkarsh09_",
-  },
-  {
-    name: "X (Twitter)",
-    icon: FaXTwitter,
-    url: "https://x.com/uttkarsh09_",
-  },
-  {
-    name: "Reddit",
-    icon: FaReddit,
-    url: "https://www.reddit.com/user/yhqz1/",
   },
 ];
 

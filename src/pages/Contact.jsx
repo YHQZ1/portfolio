@@ -109,7 +109,19 @@ export default function Contact() {
                 darkMode ? "text-[#888]" : "text-[#666]"
               }`}
             >
-              Have a question or want to work together? Send me a message.
+              Have a question or want to work together? Send me a message. Or
+              email me directly at{" "}
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=rupareluttkarsh2309@gmail.com"
+                className={`underline underline-offset-4 transition-colors ${
+                  darkMode
+                    ? "text-[#8ab4f8] hover:text-[#a5c7ff]"
+                    : "text-[#4285f4] hover:text-[#3367d6]"
+                }`}
+              >
+                rupareluttkarsh2309@gmail.com
+              </a>
+              .
             </p>
           </div>
 
@@ -160,7 +172,7 @@ export default function Contact() {
                     : "border-[#e0e0e0] bg-white text-[#1a1a1a] placeholder-[#666] hover:border-[#d0d0d0] focus:border-[#4285f4] focus:ring-[#4285f4] focus:ring-opacity-20"
                 }`}
                 required
-                placeholder="your.email@example.com"
+                placeholder="Enter your email"
               />
             </div>
 
