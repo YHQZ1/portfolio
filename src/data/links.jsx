@@ -31,7 +31,7 @@ export const socialLinks = [
   {
     name: "HackerRank",
     icon: SiHackerrank,
-    url: "https://www.hackerrank.com/profile/rupareluttkarsh1",
+    url: "https://www.hackerrank.com/profile/yhqz1",
   },
   {
     name: "Stack Overflow",
