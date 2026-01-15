@@ -26,7 +26,7 @@ export const socialLinks = [
   {
     name: "Codeforces",
     icon: SiCodeforces,
-    url: "https://codeforces.com/profile/uttkarsh09",
+    url: "https://codeforces.com/profile/yhqz",
   },
   {
     name: "HackerRank",
