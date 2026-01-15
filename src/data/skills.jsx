@@ -327,6 +327,15 @@ export const technicalSkills = [
     filterCategories: ["devops", "cloud"],
   },
   {
+    name: "Jenkins",
+    tier: "applied",
+    logo: "/skills/jenkins.png",
+    level: "Intermediate",
+    experienceStart: "2026-01",
+    category: ["CI/CD Pipelines", "Build Automation", "Release Engineering"],
+    filterCategories: ["devops"],
+  },
+  {
     name: "Kubernetes",
     tier: "exploration",
     logo: "https://cdn.simpleicons.org/kubernetes/326CE5",
