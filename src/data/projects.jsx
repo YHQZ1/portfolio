@@ -65,6 +65,15 @@ export const projects = [
     image: "/projects/quickstream.png",
   },
   {
+    title: "CFHub",
+    description:
+      "A Chrome extension that automatically syncs Accepted Codeforces submissions to GitHub. Built using Manifest V3, it observes Codeforces activity in real time, extracts submission source code, and commits solutions to a structured repository with secure token handling and multi-language support.",
+    tags: ["Chrome Extension", "Automation", "GitHub API", "Manifest V3"],
+    github: "https://github.com/YHQZ1/CFHub",
+    live: "#",
+    image: "/projects/cfhub.png",
+  },
+  {
     title: "Order Management System",
     description:
       "A feature-rich desktop application for managing customers, orders, inventory, and vendors. Designed for operational efficiency, it provides centralized data control, real-time status updates, and a robust workflow for business operations.",
