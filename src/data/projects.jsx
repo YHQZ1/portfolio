@@ -46,7 +46,7 @@ export const projects = [
       "Integrated Services",
     ],
     github: "https://github.com/YHQZ1/OneGov",
-    live: "https://one-gov.vercel.app/",
+    live: "#",
     image: "/projects/onegov.png",
   },
   {
