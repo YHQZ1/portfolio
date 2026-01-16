@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "BitLink",
     description:
-      "A high-throughput distributed URL redirection and analytics platform engineered for low-latency performance under burst traffic. BitLink optimizes the redirect hot path through aggressive caching and asynchronous analytics pipelines, enabling real-time insights while sustaining consistent performance at scale.",
+      "A link management and analytics platform built to handle real-world traffic at scale. BitLink enables fast URL redirection, short links, and detailed performance insights, making it suitable for high-volume sharing, campaigns, and analytics-driven workflows.",
     tags: ["Distributed Systems", "High Performance", "Analytics"],
     github: "https://github.com/YHQZ1/BitLink",
     live: "https://www.bitlk.in/",
@@ -11,7 +11,7 @@ export const projects = [
   {
     title: "Anchor",
     description:
-      "An automated student productivity platform that consolidates academic data, attendance tracking, and scheduling into a unified backend system. Anchor emphasizes workflow automation and backend efficiency, significantly reducing request latency while ensuring reliability during peak academic usage.",
+      "A student productivity platform that brings assignments, attendance tracking, and scheduling into a single system. Anchor reduces manual effort in academic planning by automating routine workflows and presenting clear, actionable information to students.",
     tags: [
       "Backend Systems",
       "Workflow Automation",
@@ -24,7 +24,7 @@ export const projects = [
   {
     title: "Raveline",
     description:
-      "A distributed Trust & Safety platform designed as a pre-publish moderation layer for user-generated content systems. Raveline evaluates content asynchronously using multiple independent signals and produces explainable moderation decisions, enabling apps to decouple policy enforcement from message delivery at scale.",
+      "A Trust & Safety platform designed to evaluate user-generated content before it is shared. Raveline acts as a moderation decision layer, helping applications determine whether content should be allowed, reviewed, or blocked while keeping safety logic separate from core product features.",
     tags: ["Distributed Systems", "Event-driven Architecture", "System Design"],
     github: "https://github.com/YHQZ1/Raveline",
     live: "#",
@@ -33,7 +33,7 @@ export const projects = [
   {
     title: "VerQ",
     description:
-      "An end-to-end placement automation platform that streamlines student hiring workflows through intelligent resume screening, personalized job tracking, and centralized outreach. VerQ reduces operational complexity by unifying discovery, evaluation, and application management into a single cohesive system.",
+      "A placement and hiring support platform that simplifies how students discover opportunities, track applications, and prepare for recruitment. VerQ centralizes key steps of the placement process into a single, structured experience.",
     tags: ["Applied AI", "Workflow Automation", "Product Systems"],
     github: "https://github.com/YHQZ1/Verq",
     live: "https://verq-pi.vercel.app",
@@ -42,8 +42,8 @@ export const projects = [
   {
     title: "GradCircle",
     description:
-      "A secure alumni engagement and fundraising platform built to manage donation campaigns and alumni interactions at scale. GradCircle focuses on robust backend workflows, role-based access control, and reliable transaction handling for real-world contribution flows.",
-    tags: ["Backend Development", "Access Control", "Transactional Systems"],
+      "An alumni engagement and fundraising platform that helps institutions manage donation campaigns and maintain long-term alumni relationships. GradCircle provides a structured way to track contributions, campaigns, and outreach activities.",
+    tags: ["Secure Donations", "Access Control", "Transactional Systems"],
     github: "https://github.com/YHQZ1/ISCKON-Alumni-Connect",
     live: "https://gradcircle.vercel.app/",
     image: "/projects/gradcircle.png",
@@ -51,8 +51,8 @@ export const projects = [
   {
     title: "OneGov",
     description:
-      "A multi-tenant digital governance platform that unifies civic, transport, commerce, and administrative services into a single system. OneGov emphasizes tenant isolation, role-based access, and scalable platform architecture to deliver personalized experiences across diverse user types.",
-    tags: ["Multi-tenant Systems", "Platform Architecture", "Access Control"],
+      "A unified digital platform that brings multiple government and civic services into one system. OneGov focuses on reducing fragmentation by allowing different user roles to access relevant services through a single, consistent interface.",
+    tags: ["Multi-tenant Systems", "Platform Architecture", "Gov-Tech"],
     github: "https://github.com/YHQZ1/OneGov",
     live: "#",
     image: "/projects/onegov.png",
@@ -60,7 +60,7 @@ export const projects = [
   {
     title: "Matchmaking Engine",
     description:
-      "A Java-based matchmaking system inspired by competitive multiplayer games. It applies rating algorithms, dynamic skill-window expansion, and team-balancing logic to produce fair match outcomes, visualized through a responsive real-time queue interface.",
+      "A game-inspired matchmaking system that pairs players based on skill and queue conditions. The project explores how fair matches can be formed dynamically while adapting to changing player availability.",
     tags: ["Algorithms", "System Simulation", "Java"],
     github: "https://github.com/YHQZ1/Matchmaking-Engine",
     live: "#",
@@ -69,7 +69,7 @@ export const projects = [
   {
     title: "Order Management System",
     description:
-      "A desktop-based business operations system for managing customers, inventory, vendors, and orders through a centralized workflow. The system emphasizes data consistency, real-time status tracking, and efficient CRUD operations for operational reliability.",
+      "A desktop application designed to help businesses manage customers, inventory, vendors, and orders from a single place. The system focuses on keeping operational data organized and easy to track across daily business workflows.",
     tags: ["Business Systems", "Data Management", "Desktop Applications"],
     github: "https://github.com/YHQZ1/Order-Management-System",
     live: "#",
@@ -78,7 +78,7 @@ export const projects = [
   {
     title: "CFHub",
     description:
-      "A developer-focused Chrome extension that automatically syncs accepted Codeforces submissions to GitHub. CFHub observes competitive programming activity in real time, extracts source code, and commits solutions into a structured repository with secure authentication and multi-language support.",
+      "A developer utility that automatically saves accepted competitive programming solutions to GitHub. CFHub helps programmers maintain a clean and up-to-date archive of their work without manual effort.",
     tags: ["Developer Tooling", "Automation", "Browser Extensions"],
     github: "https://github.com/YHQZ1/CFHub",
     live: "#",
@@ -87,7 +87,7 @@ export const projects = [
   {
     title: "QuickStream",
     description:
-      "A lightweight Chrome extension that enables fast, keyboard-driven video speed control across supported platforms. Built on Manifest V3, QuickStream prioritizes minimal UI overhead and seamless playback enhancement without disrupting the viewing experience.",
+      "A lightweight browser extension that allows users to control video playback speed using simple keyboard shortcuts. QuickStream is designed to make video consumption faster without cluttering the viewing experience.",
     tags: ["Browser Extensions", "User Experience", "Web APIs"],
     github: "https://github.com/YHQZ1/quickstream",
     live: "#",
@@ -96,7 +96,7 @@ export const projects = [
   {
     title: "F1 Performance Analysis (1950–2024)",
     description:
-      "An exploratory analysis of over seven decades of Formula 1 race data, examining driver participation, team dominance, and performance consistency across eras. The project emphasizes rigorous data validation, historical context, and analytical reasoning over predictive modeling.",
+      "An analysis of Formula 1 history that examines how drivers, teams, and performance trends have evolved across different eras. The project focuses on understanding long-term patterns in the sport rather than making predictions.",
     tags: ["Data Analysis", "Python", "Data Visualization"],
     github: "https://github.com/YHQZ1/F1-EDA",
     live: "#",
