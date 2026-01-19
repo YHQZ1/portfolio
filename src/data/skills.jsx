@@ -532,6 +532,15 @@ export const technicalSkills = [
     filterCategories: ["testing", "backend", "frontend", "devops"],
   },
   {
+    name: "Playwright",
+    tier: "applied",
+    logo: "/skills/playwright.png",
+    level: "Intermediate",
+    experienceStart: "2025-12",
+    category: ["End-to-end Testing", "Browser Automation", "UI Testing"],
+    filterCategories: ["testing", "frontend", "devops"],
+  },
+  {
     name: "Selenium",
     tier: "applied",
     logo: "https://cdn.simpleicons.org/selenium/43B02A",
