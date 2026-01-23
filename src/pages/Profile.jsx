@@ -11,6 +11,11 @@ function useTypewriter(text, speed = 80) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
+    setDisplayText("");
+    setCurrentIndex(0);
+  }, [text]);
+
+  useEffect(() => {
     if (currentIndex < text.length) {
       const timeout = setTimeout(() => {
         setDisplayText((prev) => prev + text[currentIndex]);
@@ -38,7 +43,7 @@ const FILTERS = [
 function SkillFilters({ darkMode, activeFilters, setActiveFilters }) {
   const toggleFilter = (key) => {
     setActiveFilters((prev) =>
-      prev.includes(key) ? prev.filter((f) => f !== key) : [...prev, key]
+      prev.includes(key) ? prev.filter((f) => f !== key) : [...prev, key],
     );
   };
 
@@ -60,8 +65,8 @@ function SkillFilters({ darkMode, activeFilters, setActiveFilters }) {
               ? "bg-[#f5f5f5] text-black border-[#f5f5f5]"
               : "border-[#2a2a2a] text-[#aaa] bg-[#111]"
             : isActive
-            ? "bg-[#0a0a0a] text-white border-[#0a0a0a]"
-            : "border-[#ddd] text-[#444] bg-white"
+              ? "bg-[#0a0a0a] text-white border-[#0a0a0a]"
+              : "border-[#ddd] text-[#444] bg-white"
         }
         hover:scale-[1.04]
         hover:shadow-[0_2px_6px_rgba(0,0,0,0.15)]
@@ -100,7 +105,7 @@ function SkillsGridSection({
     activeFilters.length === 0
       ? skills
       : skills.filter((skill) =>
-          activeFilters.every((tag) => skill.filterCategories.includes(tag))
+          activeFilters.every((tag) => skill.filterCategories.includes(tag)),
         );
 
   if (filteredSkills.length === 0) return null;
@@ -256,7 +261,7 @@ export default function Profile() {
   const hasAnyFilteredSkills =
     activeFilters.length === 0 ||
     skills.some((skill) =>
-      activeFilters.every((tag) => skill.filterCategories.includes(tag))
+      activeFilters.every((tag) => skill.filterCategories.includes(tag)),
     );
 
   return (
@@ -280,7 +285,7 @@ export default function Profile() {
 
       <CommandPalette darkMode={darkMode} commands={commands} />
       <div className="max-w-8xl mx-auto px-2 sm:px-4 md:px-6 lg:px-12 xl:px-16 pt-24 sm:pt-28 md:pt-32 pb-10">
-        <div className="mb-20 sm:mb-24 md:mb-32">
+        <div className="mb-16 sm:mb-20 md:mb-24">
           <h1
             className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extralight mb-6 sm:mb-8 ${
               darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
@@ -301,52 +306,165 @@ export default function Profile() {
 
         <section id="my-work" className="mb-10 sm:mb-16 md:mb-20">
           <div>
+            {/* MAIN SECTION TITLE */}
             <h2
-              className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 relative inline-block group ${
+              className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-3 relative inline-block group ${
                 darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
               } tracking-tight leading-[1.2]`}
             >
               My Work
-              <span
-                className={`absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300 group-hover:w-full`}
-              ></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300 group-hover:w-full"></span>
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-4 md:gap-4">
-              {projects.map((project, index) => (
-                <div
-                  key={index}
-                  className={`border ${
-                    darkMode
-                      ? "border-[#1a1a1a] bg-[#0f0f0f]"
-                      : "border-[#e8e8e8] bg-white"
-                  } rounded-sm overflow-hidden flex flex-col`}
-                >
-                  <div className="relative h-40 sm:h-48 overflow-hidden">
-                    <div
-                      className="w-full h-full bg-cover bg-center"
-                      style={{ backgroundImage: `url(${project.image})` }}
-                    />
+
+            {/* SECTION DESCRIPTION (LIKE SKILLS SECTION) */}
+            <p
+              className={`text-sm max-w-3xl mb-10 ${
+                darkMode ? "text-[#888]" : "text-[#666]"
+              }`}
+            >
+              A curated selection of projects ranging from long-running,
+              system-focused builds to smaller, tightly scoped experiments and
+              tools.
+            </p>
+
+            {/* SELECTED WORK */}
+            <h3
+              className={`text-2xl sm:text-3xl font-extralight mb-6 ${
+                darkMode ? "text-[#ddd]" : "text-[#333]"
+              }`}
+            >
+              Selected Work
+            </h3>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-4 md:gap-4 mb-16">
+              {projects
+                .filter((project) => project.category === "primary")
+                .map((project, index) => (
+                  <div
+                    key={index}
+                    className={`border ${
+                      darkMode
+                        ? "border-[#1a1a1a] bg-[#0f0f0f]"
+                        : "border-[#e8e8e8] bg-white"
+                    } rounded-sm overflow-hidden flex flex-col`}
+                  >
+                    <div className="relative h-40 sm:h-48 overflow-hidden">
+                      <div
+                        className="w-full h-full bg-cover bg-center"
+                        style={{ backgroundImage: `url(${project.image})` }}
+                      />
+                    </div>
+
+                    <div className="p-4 sm:p-6 flex flex-col flex-1">
+                      <h4
+                        className={`text-xl sm:text-2xl font-light mb-2 sm:mb-3 ${
+                          darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+                        }`}
+                      >
+                        {project.title}
+                      </h4>
+
+                      <p
+                        className={`text-sm leading-[1.6] mb-4 sm:mb-6 flex-1 ${
+                          darkMode ? "text-[#888]" : "text-[#666]"
+                        }`}
+                      >
+                        {project.description}
+                      </p>
+
+                      <div className="flex flex-wrap gap-1 sm:gap-2 mb-4 sm:mb-6">
+                        {project.tags.map((tag, idx) => (
+                          <span
+                            key={idx}
+                            className={`text-xs px-2 py-1 rounded border ${
+                              darkMode
+                                ? "border-[#2a2a2a] bg-[#1a1a1a] text-[#888]"
+                                : "border-[#e0e0e0] bg-[#f5f5f5] text-[#666]"
+                            }`}
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+
+                      <div className="flex gap-4 sm:gap-6 mt-auto">
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`flex items-center gap-2 text-sm font-light ${
+                            darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+                          }`}
+                        >
+                          <FaGithub className="text-base sm:text-lg" />
+                          <span className="relative after:absolute after:left-0 after:bottom-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
+                            Code
+                          </span>
+                        </a>
+
+                        {project.live && (
+                          <a
+                            href={project.live}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`flex items-center gap-2 text-sm font-light ${
+                              darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+                            }`}
+                          >
+                            <FaExternalLinkAlt className="text-sm sm:text-base" />
+                            <span className="relative after:absolute after:left-0 after:bottom-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
+                              Live
+                            </span>
+                          </a>
+                        )}
+                      </div>
+                    </div>
                   </div>
-                  <div className="p-4 sm:p-6 flex flex-col flex-1">
-                    <h3
-                      className={`text-xl sm:text-2xl font-light mb-2 sm:mb-3 ${
+                ))}
+            </div>
+
+            {/* FOCUSED PROJECTS */}
+            <h3
+              className={`text-2xl sm:text-3xl font-extralight mb-6 ${
+                darkMode ? "text-[#ddd]" : "text-[#333]"
+              }`}
+            >
+              Focused Projects & Tools
+            </h3>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-4 md:gap-4">
+              {projects
+                .filter((project) => project.category === "focused")
+                .map((project, index) => (
+                  <div
+                    key={index}
+                    className={`border ${
+                      darkMode
+                        ? "border-[#1a1a1a] bg-[#0f0f0f]"
+                        : "border-[#e8e8e8] bg-white"
+                    } rounded-sm p-4 sm:p-6`}
+                  >
+                    <h4
+                      className={`text-lg sm:text-xl font-light mb-2 ${
                         darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-                      } tracking-tight leading-[1.3]`}
+                      }`}
                     >
                       {project.title}
-                    </h3>
+                    </h4>
+
                     <p
-                      className={`text-sm leading-[1.6] mb-4 sm:mb-6 flex-1 ${
+                      className={`text-sm leading-[1.6] mb-4 ${
                         darkMode ? "text-[#888]" : "text-[#666]"
                       }`}
                     >
                       {project.description}
                     </p>
-                    <div className="flex flex-wrap gap-1 sm:gap-2 mb-4 sm:mb-6">
-                      {project.tags.map((tag, tagIndex) => (
+
+                    <div className="flex flex-wrap gap-1 mb-4">
+                      {project.tags.map((tag, idx) => (
                         <span
-                          key={tagIndex}
-                          className={`text-xs px-2 py-1 rounded border leading-[1.4] ${
+                          key={idx}
+                          className={`text-xs px-2 py-1 rounded border ${
                             darkMode
                               ? "border-[#2a2a2a] bg-[#1a1a1a] text-[#888]"
                               : "border-[#e0e0e0] bg-[#f5f5f5] text-[#666]"
@@ -356,39 +474,22 @@ export default function Profile() {
                         </span>
                       ))}
                     </div>
-                    <div className="flex gap-4 sm:gap-6 mt-auto">
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`flex items-center gap-1 sm:gap-2 text-sm font-light ${
-                          darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-                        }`}
-                      >
-                        <FaGithub className="text-base sm:text-lg" />
-                        <span className="relative after:absolute after:left-0 after:bottom-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
-                          Code
-                        </span>
-                      </a>
-                      {project.live !== "#" && (
-                        <a
-                          href={project.live}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className={`flex items-center gap-1 sm:gap-2 text-sm font-light ${
-                            darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-                          }`}
-                        >
-                          <FaExternalLinkAlt className="text-sm sm:text-base" />
-                          <span className="relative after:absolute after:left-0 after:bottom-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
-                            Live
-                          </span>
-                        </a>
-                      )}
-                    </div>
+
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`flex items-center gap-2 text-sm font-light ${
+                        darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+                      }`}
+                    >
+                      <FaGithub className="text-base" />
+                      <span className="relative after:absolute after:left-0 after:bottom-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
+                        Code
+                      </span>
+                    </a>
                   </div>
-                </div>
-              ))}
+                ))}
             </div>
           </div>
         </section>
