@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: "BitLink",
-    category: "primary",
+    category: "selected",
     description:
       "A link management and analytics platform built to handle real-world traffic at scale. BitLink enables fast URL redirection, short links, and detailed performance insights, making it suitable for high-volume sharing, campaigns, and analytics-driven workflows.",
     tags: ["Distributed Systems", "High Performance", "Analytics"],
@@ -11,7 +11,7 @@ export const projects = [
   },
   {
     title: "Raveline",
-    category: "primary",
+    category: "selected",
     description:
       "A Trust & Safety platform designed to evaluate user-generated content before it is shared. Raveline acts as a moderation decision layer, helping applications determine whether content should be allowed, reviewed, or blocked while keeping safety logic separate from core product features.",
     tags: ["Distributed Systems", "Event-driven Architecture", "System Design"],
@@ -20,28 +20,8 @@ export const projects = [
     image: "/projects/raveline.png",
   },
   {
-    title: "OneGov",
-    category: "primary",
-    description:
-      "A unified digital platform that brings multiple government and civic services into one system. OneGov focuses on reducing fragmentation by allowing different user roles to access relevant services through a single, consistent interface.",
-    tags: ["Multi-tenant Systems", "Platform Architecture", "Gov-Tech"],
-    github: "https://github.com/YHQZ1/OneGov",
-    live: null,
-    image: "/projects/onegov.png",
-  },
-  {
-    title: "Matchmaking Engine",
-    category: "primary",
-    description:
-      "A game-inspired matchmaking system that pairs players based on skill and queue conditions. The project explores how fair matches can be formed dynamically while adapting to changing player availability.",
-    tags: ["Algorithms", "System Simulation", "Java"],
-    github: "https://github.com/YHQZ1/Matchmaking-Engine",
-    live: null,
-    image: "/projects/matchmaking-engine.png",
-  },
-  {
     title: "Anchor",
-    category: "primary",
+    category: "selected",
     description:
       "A student productivity platform that brings assignments, attendance tracking, and scheduling into a single system. Anchor reduces manual effort in academic planning by automating routine workflows and presenting clear, actionable information to students.",
     tags: [
@@ -54,8 +34,18 @@ export const projects = [
     image: "/projects/anchor.png",
   },
   {
+    title: "OneGov",
+    category: "selected",
+    description:
+      "A unified digital platform that brings multiple government and civic services into one system. OneGov focuses on reducing fragmentation by allowing different user roles to access relevant services through a single, consistent interface.",
+    tags: ["Multi-tenant Systems", "Platform Architecture", "Gov-Tech"],
+    github: "https://github.com/YHQZ1/OneGov",
+    live: "https://one-gov.vercel.app/",
+    image: "/projects/onegov.png",
+  },
+  {
     title: "VerQ",
-    category: "primary",
+    category: "selected",
     description:
       "A placement and hiring support platform that simplifies how students discover opportunities, track applications, and prepare for recruitment. VerQ centralizes key steps of the placement process into a single, structured experience.",
     tags: ["Applied AI", "Workflow Automation", "Product Systems"],
@@ -65,13 +55,33 @@ export const projects = [
   },
   {
     title: "GradCircle",
-    category: "primary",
+    category: "selected",
     description:
       "An alumni engagement and fundraising platform that helps institutions manage donation campaigns and maintain long-term alumni relationships. GradCircle provides a structured way to track contributions, campaigns, and outreach activities.",
     tags: ["Secure Donations", "Access Control", "Transactional Systems"],
     github: "https://github.com/YHQZ1/ISCKON-Alumni-Connect",
     live: "https://gradcircle.vercel.app/",
     image: "/projects/gradcircle.png",
+  },
+  {
+    title: "Matchmaking Engine",
+    category: "focused",
+    description:
+      "A game-inspired matchmaking system that pairs players based on skill and queue conditions. The project explores how fair matches can be formed dynamically while adapting to changing player availability.",
+    tags: ["Algorithms", "System Simulation", "Java"],
+    github: "https://github.com/YHQZ1/Matchmaking-Engine",
+    live: null,
+    image: "/projects/matchmaking-engine.png",
+  },
+  {
+    title: "Order Management System",
+    category: "focused",
+    description:
+      "A desktop application designed to manage customers, inventory, vendors, and orders from a single interface, focusing on structured data handling and operational workflows.",
+    tags: ["Business Systems", "Data Management", "Desktop Applications"],
+    github: "https://github.com/YHQZ1/Order-Management-System",
+    live: null,
+    image: "/projects/oms.png",
   },
   {
     title: "F1 Performance Analysis (1950–2024)",
@@ -102,15 +112,5 @@ export const projects = [
     github: "https://github.com/YHQZ1/quickstream",
     live: null,
     image: "/projects/quickstream.png",
-  },
-  {
-    title: "Order Management System",
-    category: "focused",
-    description:
-      "A desktop application designed to manage customers, inventory, vendors, and orders from a single interface, focusing on structured data handling and operational workflows.",
-    tags: ["Business Systems", "Data Management", "Desktop Applications"],
-    github: "https://github.com/YHQZ1/Order-Management-System",
-    live: null,
-    image: "/projects/oms.png",
   },
 ];

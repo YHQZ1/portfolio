@@ -338,7 +338,7 @@ export default function Profile() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-4 md:gap-4 mb-16">
               {projects
-                .filter((project) => project.category === "primary")
+                .filter((project) => project.category === "selected")
                 .map((project, index) => (
                   <div
                     key={index}
@@ -442,7 +442,7 @@ export default function Profile() {
                       darkMode
                         ? "border-[#1a1a1a] bg-[#0f0f0f]"
                         : "border-[#e8e8e8] bg-white"
-                    } rounded-sm p-4 sm:p-6`}
+                    } rounded-sm p-4 sm:p-6 flex flex-col`}
                   >
                     <h4
                       className={`text-lg sm:text-xl font-light mb-2 ${
@@ -453,7 +453,7 @@ export default function Profile() {
                     </h4>
 
                     <p
-                      className={`text-sm leading-[1.6] mb-4 ${
+                      className={`text-sm leading-[1.6] mb-4 flex-1 ${
                         darkMode ? "text-[#888]" : "text-[#666]"
                       }`}
                     >
@@ -475,19 +475,21 @@ export default function Profile() {
                       ))}
                     </div>
 
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`flex items-center gap-2 text-sm font-light ${
-                        darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-                      }`}
-                    >
-                      <FaGithub className="text-base" />
-                      <span className="relative after:absolute after:left-0 after:bottom-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
-                        Code
-                      </span>
-                    </a>
+                    <div className="mt-auto">
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`flex items-center gap-2 text-sm font-light ${
+                          darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+                        }`}
+                      >
+                        <FaGithub className="text-base" />
+                        <span className="relative after:absolute after:left-0 after:bottom-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
+                          Code
+                        </span>
+                      </a>
+                    </div>
                   </div>
                 ))}
             </div>

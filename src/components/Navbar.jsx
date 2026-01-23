@@ -29,7 +29,9 @@ export default function Navbar() {
         <Link
           to="/"
           className={`${
-            isActive("/") ? "font-semibold" : "font-medium"
+            isActive("/")
+              ? "font-semibold tracking-tight"
+              : "font-normal opacity-80"
           } text-base sm:text-lg md:text-base lg:text-lg py-1 relative group`}
         >
           Profile
@@ -39,7 +41,9 @@ export default function Navbar() {
         <Link
           to="/about"
           className={`${
-            isActive("/about") ? "font-semibold" : "font-medium"
+            isActive("/about")
+              ? "font-semibold tracking-tight"
+              : "font-normal opacity-80"
           } text-base sm:text-lg md:text-base lg:text-lg py-1 relative group`}
         >
           About
@@ -51,7 +55,9 @@ export default function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
           className={`${
-            isActive("/resume") ? "font-semibold" : "font-medium"
+            isActive("/resume")
+              ? "font-semibold tracking-tight"
+              : "font-normal opacity-80"
           } text-base sm:text-lg md:text-base lg:text-lg py-1 relative group`}
         >
           Resume
