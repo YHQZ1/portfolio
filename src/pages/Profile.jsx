@@ -5,6 +5,7 @@ import { skills } from "../data/skills";
 import { toolsAndWorkflow } from "../data/tools";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import CommandPalette from "../components/CommandPalette";
+import GitHubActivity from "../components/GitHubActivity";
 
 function useTypewriter(text, speed = 80) {
   const [displayText, setDisplayText] = useState("");
@@ -221,6 +222,7 @@ export default function Profile() {
   const commands = [
     { label: "My Work", id: "my-work" },
     { label: "Technical Skills", id: "technical-skills" },
+    { label: "Activity", id: "activity" },
     { label: "Tools & Workflow", id: "tools-and-workflow" },
   ];
 
@@ -560,6 +562,65 @@ export default function Profile() {
             darkMode={darkMode}
             activeFilters={activeFilters}
           />
+        </section>
+
+        <div
+          className={`w-full h-px ${
+            darkMode ? "bg-[#2a2a2a]" : "bg-[#e8e8e8]"
+          } my-8 sm:my-10`}
+        />
+
+        <section id="activity" className="mb-16 sm:mb-20">
+          <h2
+            className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-3 relative inline-block group ${
+              darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
+            } tracking-tight leading-[1.2]`}
+          >
+            Activity
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300 group-hover:w-full" />
+          </h2>
+
+          <p
+            className={`text-sm max-w-3xl mb-6 ${
+              darkMode ? "text-[#888]" : "text-[#666]"
+            }`}
+          >
+            An overview of ongoing development cycles, active experimentation,
+            and production-oriented work.
+          </p>
+
+          <div
+            className="
+    grid
+    grid-cols-1
+    lg:grid-cols-[auto_1fr]
+    gap-6
+    lg:gap-8
+    items-stretch
+    overflow-hidden
+  "
+          >
+            {/* GitHub card — original size */}
+            <GitHubActivity darkMode={darkMode} />
+
+            {/* Editorial text — desktop only */}
+            <div className="hidden lg:flex h-full items-center overflow-hidden pr-2">
+              <h3
+                className={`w-full
+        text-[4rem] lg:text-[4.75rem] xl:text-[5.5rem]
+        font-extralight tracking-[-0.04em] leading-[1.05]
+        break-words
+        ${darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"}
+      `}
+              >
+                Shipping.
+                <br />
+                Iterating.
+                <br />
+                Refining.
+              </h3>
+            </div>
+          </div>
         </section>
 
         <div
