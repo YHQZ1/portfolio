@@ -593,23 +593,23 @@ export default function Profile() {
             className="
     grid
     grid-cols-1
-    lg:grid-cols-[auto_1fr]
+    lg:grid-cols-[minmax(0,1fr)_420px]
     gap-6
-    lg:gap-8
+    lg:gap-12
     items-stretch
-    overflow-hidden
   "
           >
-            {/* GitHub card — original size */}
+            {/* GitHub Activity */}
             <GitHubActivity darkMode={darkMode} />
 
             {/* Editorial text — desktop only */}
-            <div className="hidden lg:flex h-full items-center overflow-hidden pr-2">
+            <div className="hidden lg:flex items-center pl-6">
               <h3
-                className={`w-full
-        text-[4rem] lg:text-[4.75rem] xl:text-[5.5rem]
-        font-extralight tracking-[-0.04em] leading-[1.05]
-        break-words
+                className={`
+        text-[4.5rem] xl:text-[5.5rem]
+        font-extralight
+        tracking-[-0.04em]
+        leading-[1.05]
         ${darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"}
       `}
               >
