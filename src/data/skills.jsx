@@ -227,7 +227,7 @@ export const technicalSkills = [
     filterCategories: ["frontend"],
   },
   {
-    name: "ShadCN/ui",
+    name: "ShadCN",
     tier: "applied",
     logo: "https://cdn.simpleicons.org/shadcnui/000000",
     darkLogo: "https://cdn.simpleicons.org/shadcnui/FFFFFF",
@@ -288,7 +288,7 @@ export const technicalSkills = [
     filterCategories: ["database", "backend"],
   },
   {
-    name: "Drizzle ORM",
+    name: "Drizzle",
     tier: "applied",
     logo: "https://cdn.simpleicons.org/drizzle/C5F74F",
     level: "Intermediate",
