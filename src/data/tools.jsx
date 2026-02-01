@@ -20,11 +20,11 @@ export const toolsAndWorkflow = [
     logo: "/skills/pnpm.png",
     category: ["Package Management", "Dependency Resolution", "Monorepos"],
   },
-  // {
-  //   name: "VS Code",
-  //   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png",
-  //   category: ["Code Editor", "Extensions", "Debugging"],
-  // },
+  {
+    name: "VS Code",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png",
+    category: ["Code Editor", "Extensions", "Debugging"],
+  },
   {
     name: "Upstash",
     logo: "https://cdn.simpleicons.org/upstash/00E9A3",
@@ -56,29 +56,28 @@ export const toolsAndWorkflow = [
     logo: "https://cdn.simpleicons.org/jira/0052CC",
     category: ["Project Management", "Issue Tracking", "Sprint Planning"],
   },
-  // {
-  //   name: "Notion",
-  //   logo: "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png",
-  //   category: ["Documentation", "Planning", "Knowledge Base"],
-  // },
+  {
+    name: "Notion",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png",
+    category: ["Documentation", "Planning", "Knowledge Base"],
+  },
   {
     name: "Figma",
     logo: "https://cdn.simpleicons.org/figma/F24E1E",
     category: ["UI Collaboration", "Prototyping", "Design Handoff"],
   },
-  // {
-  //   name: "Jupyter Notebook",
-  //   logo: "https://cdn.simpleicons.org/jupyter/F37626",
-  //   category: ["Data Exploration", "Prototyping", "Machine Learning Workflow"],
-  // },
-  // {
-  //   name: "Google Colab",
-  //   logo: "https://cdn.simpleicons.org/googlecolab/F9AB00",
-  //   category: [
-  //     "Interactive Notebooks",
-  //     "Rapid Prototyping",
-  //     "GPU-accelerated Experiments",
-  //     "ML & Data Exploration",
-  //   ],
-  // },
+  {
+    name: "Jupyter Notebook",
+    logo: "https://cdn.simpleicons.org/jupyter/F37626",
+    category: ["Data Exploration", "Prototyping", "Machine Learning Workflow"],
+  },
+  {
+    name: "Google Colab",
+    logo: "https://cdn.simpleicons.org/googlecolab/F9AB00",
+    category: [
+      "Interactive Notebooks",
+      "Rapid Prototyping",
+      "ML & Data Exploration",
+    ],
+  },
 ];

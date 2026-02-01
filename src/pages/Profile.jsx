@@ -36,8 +36,8 @@ const FILTERS = [
   { label: "Database", key: "database" },
   { label: "Cloud", key: "cloud" },
   { label: "DevOps", key: "devops" },
-  // { label: "Data Science", key: "data-science" },
-  // { label: "AI / ML", key: "ai-ml" },
+  { label: "Data Science", key: "data-science" },
+  { label: "AI / ML", key: "ai-ml" },
   { label: "Testing", key: "testing" },
 ];
 
