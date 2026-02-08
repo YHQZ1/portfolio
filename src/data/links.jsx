@@ -33,11 +33,6 @@ export const socialLinks = [
     icon: SiHackerrank,
     url: "https://www.hackerrank.com/profile/yhqz1",
   },
-  {
-    name: "Stack Overflow",
-    icon: FaStackOverflow,
-    url: "https://stackoverflow.com/users/29559883/uttkarsh-ruparel",
-  },
 ];
 
 export const specialLinks = [
