@@ -1,11 +1,10 @@
+import { FaLinkedin, FaGithub, FaDiscord } from "react-icons/fa";
 import {
-  FaLinkedin,
-  FaGithub,
-  FaEnvelope,
-  FaDiscord,
-  FaStackOverflow,
-} from "react-icons/fa";
-import { SiLeetcode, SiCodeforces, SiHackerrank } from "react-icons/si";
+  SiLeetcode,
+  SiCodeforces,
+  SiHackerrank,
+  SiGmail,
+} from "react-icons/si";
 
 export const socialLinks = [
   {
@@ -44,7 +43,7 @@ export const specialLinks = [
   },
   {
     name: "Email Me",
-    icon: FaEnvelope,
+    icon: SiGmail,
     type: "internal",
     to: "/contact",
   },

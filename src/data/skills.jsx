@@ -73,19 +73,6 @@ export const technicalSkills = [
     filterCategories: ["languages"],
   },
   {
-    name: "C#",
-    tier: "applied",
-    logo: "/skills/c-sharp.png",
-    level: "Intermediate",
-    experienceStart: "2024-01",
-    category: [
-      "Object-Oriented Design",
-      "Strong Typing",
-      "Application Development",
-    ],
-    filterCategories: ["languages"],
-  },
-  {
     name: "Go",
     tier: "exploration",
     logo: "https://cdn.simpleicons.org/go/00ADD8",
@@ -625,13 +612,22 @@ export const technicalSkills = [
     name: "Tesseract OCR",
     tier: "applied",
     logo: "/skills/tesseract.png",
-    level: "Intermediate",
+    level: "Beginner",
     experienceStart: "2025-12",
     category: [
       "Optical Character Recognition",
       "Document Parsing",
       "Data Extraction",
     ],
+    filterCategories: ["backend", "ai-ml"],
+  },
+  {
+    name: "OpenCV",
+    tier: "applied",
+    logo: "https://cdn.simpleicons.org/opencv/5C3EE8",
+    level: "Intermediate",
+    experienceStart: "2025-12",
+    category: ["Computer Vision", "Image Processing", "Object Detection"],
     filterCategories: ["backend", "ai-ml"],
   },
   {
