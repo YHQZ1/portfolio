@@ -500,7 +500,7 @@ export default function About() {
                     darkMode ? "text-[#666]" : "text-[#999]"
                   }`}
                 >
-                  2025
+                  September, 2025
                 </span>
               </div>
               <p
