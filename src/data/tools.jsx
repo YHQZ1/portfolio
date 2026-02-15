@@ -5,11 +5,6 @@ export const toolsAndWorkflow = [
     category: ["API Testing", "Documentation", "Development Workflow"],
   },
   {
-    name: "OpenAPI/Swagger",
-    logo: "https://cdn.simpleicons.org/swagger/85EA2D",
-    category: ["API Design", "API Documentation", "API Specification"],
-  },
-  {
     name: "cURL",
     logo: "https://cdn.simpleicons.org/curl/073551",
     darkLogo: "https://cdn.simpleicons.org/curl/FFFFFF",

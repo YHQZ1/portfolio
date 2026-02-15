@@ -456,7 +456,7 @@ export default function About() {
                 Brought events to life online through innovative digital
                 campaigns. Curated stories, visuals, and interactions that
                 sparked excitement and strengthened the tech community's
-                presence across platforms, reaching over 5,000+ students.
+                presence across platforms, reaching over 1,000+ students.
               </p>
             </div>
           </div>
@@ -514,39 +514,6 @@ export default function About() {
                 modern tech stack.
               </p>
             </div>
-
-            <div
-              className={`border-l-4 pl-4 sm:pl-6 md:pl-8 ${
-                darkMode ? "border-[#8ab4f8]" : "border-[#4285f4]"
-              }`}
-            >
-              <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-4 mb-3 sm:mb-4">
-                <h3
-                  className={`text-xl sm:text-2xl md:text-3xl font-light leading-[1.3] ${
-                    darkMode ? "text-[#f5f5f5]" : "text-[#1a1a1a]"
-                  } tracking-tight`}
-                >
-                  Open Source Contributor
-                </h3>
-                <span
-                  className={`text-sm mt-1 italic sm:mt-0 ${
-                    darkMode ? "text-[#666]" : "text-[#999]"
-                  }`}
-                >
-                  Ongoing
-                </span>
-              </div>
-              <p
-                className={`text-lg sm:text-xl leading-[1.6] ${
-                  darkMode ? "text-[#888]" : "text-[#666]"
-                }`}
-              >
-                Contributing to various open-source projects, collaborating with
-                developers worldwide, and giving back to the community that has
-                taught me so much. Passionate about learning through real-world
-                collaboration.
-              </p>
-            </div>
           </div>
         </section>
 
@@ -593,7 +560,7 @@ export default function About() {
                     darkMode ? "text-[#666]" : "text-[#999]"
                   }`}
                 >
-                  2025
+                  July, 2025 - November, 2025
                 </span>
               </div>
             </div>
@@ -611,16 +578,15 @@ export default function About() {
                 darkMode ? "text-[#888]" : "text-[#666]"
               }`}
             >
-              Built <span className="font-medium">Grad Circle</span>, a
-              full-stack fundraising platform designed to support government
-              schools through alumni-driven and public donation campaigns.
-              Implemented the complete frontend experience, role-based access
-              control, and a voice-enabled bot for guided interactions.
-              Integrated secure payments using the Cashfree payment gateway,
-              supporting both monetary and in-kind donations. Dockerized the
-              application and deployed the frontend and backend to production
-              environments, focusing on reliability, security, and ease of use
-              for real-world fundraising campaigns.
+              Built GradCircle, a full-stack fundraising platform designed to
+              support government schools through alumni-driven and public
+              donation campaigns. Implemented the complete frontend experience,
+              role-based access control, and a voice-enabled bot for guided
+              interactions. Integrated secure payments using the Cashfree
+              payment gateway, supporting both monetary and in-kind donations.
+              Dockerized the application and deployed the frontend and backend
+              to production environments, focusing on reliability, security, and
+              ease of use for real-world fundraising campaigns.
             </p>
           </div>
         </section>

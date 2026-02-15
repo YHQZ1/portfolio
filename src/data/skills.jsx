@@ -337,15 +337,6 @@ export const technicalSkills = [
     filterCategories: ["devops"],
   },
   {
-    name: "Jenkins",
-    tier: "applied",
-    logo: "/skills/jenkins.png",
-    level: "Intermediate",
-    experienceStart: "2026-01",
-    category: ["CI/CD Pipelines", "Build Automation", "Release Engineering"],
-    filterCategories: ["devops"],
-  },
-  {
     name: "Kubernetes",
     tier: "applied",
     logo: "https://cdn.simpleicons.org/kubernetes/326CE5",
@@ -391,7 +382,7 @@ export const technicalSkills = [
     filterCategories: ["devops", "backend"],
   },
   {
-    name: "Apache Server",
+    name: "Apache Web Server",
     tier: "applied",
     logo: "/skills/apache.png",
     level: "Intermediate",
