@@ -40,7 +40,7 @@ export const projects = [
       "A unified digital platform that brings multiple government and civic services into one system. OneGov focuses on reducing fragmentation by allowing different user roles to access relevant services through a single, consistent interface.",
     tags: ["Multi-tenant Systems", "Platform Architecture", "Gov-Tech"],
     github: "https://github.com/YHQZ1/OneGov",
-    live: "https://one-gov.vercel.app/",
+    live: null,
     image: "/projects/onegov.png",
   },
   {
@@ -50,7 +50,7 @@ export const projects = [
       "A placement and hiring support platform that simplifies how students discover opportunities, track applications, and prepare for recruitment. VerQ centralizes key steps of the placement process into a single, structured experience.",
     tags: ["Applied AI", "Workflow Automation", "Product Systems"],
     github: "https://github.com/YHQZ1/Verq",
-    live: "https://verq-pi.vercel.app",
+    live: null,
     image: "/projects/verq.png",
   },
   {
