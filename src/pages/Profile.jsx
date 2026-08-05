@@ -40,6 +40,7 @@ const FILTERS = [
   { label: "Cloud", key: "cloud" },
   { label: "DevOps", key: "devops" },
   { label: "Observability", key: "observability" },
+  { label: "Big Data", key: "big-data" },
   { label: "Data Science", key: "data-science" },
   { label: "AI / ML", key: "ai-ml" },
   { label: "Testing", key: "testing" },

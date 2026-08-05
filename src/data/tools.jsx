@@ -68,6 +68,15 @@ export const toolsAndWorkflow = [
     ],
   },
   {
+    name: "Yarn",
+    logo: "https://cdn.simpleicons.org/yarn/2C8EBB",
+    category: [
+      "Package Management",
+      "Dependency Resolution",
+      "Script Execution",
+    ],
+  },
+  {
     name: "pnpm",
     logo: "/skills/pnpm.png",
     category: [
