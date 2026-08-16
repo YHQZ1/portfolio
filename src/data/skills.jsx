@@ -569,6 +569,19 @@ export const technicalSkills = [
     filterCategories: ["devops"],
   },
   {
+    name: "Red Hat OpenShift",
+    tier: "exploration",
+    logo: "/skills/openshift.png",
+    level: "Beginner",
+    experienceStart: "2026-08",
+    category: [
+      "Enterprise Kubernetes",
+      "Container Orchestration",
+      "Application Deployment",
+    ],
+    filterCategories: ["devops", "cloud"],
+  },
+  {
     name: "Helm",
     tier: "applied",
     logo: "https://cdn.simpleicons.org/helm/0F1689",
@@ -597,6 +610,15 @@ export const technicalSkills = [
     filterCategories: ["devops"],
   },
   {
+    name: "Jenkins",
+    tier: "applied",
+    logo: "/skills/jenkins.png",
+    level: "Intermediate",
+    experienceStart: "2026-07",
+    category: ["CI/CD Pipelines", "Build Automation", "Pipeline Orchestration"],
+    filterCategories: ["devops"],
+  },
+  {
     name: "Terraform",
     tier: "applied",
     logo: "https://cdn.simpleicons.org/terraform/844FBA",
@@ -606,6 +628,20 @@ export const technicalSkills = [
       "Infrastructure as Code",
       "Cloud Provisioning",
       "State Management",
+    ],
+    filterCategories: ["devops", "cloud"],
+  },
+  {
+    name: "Ansible",
+    tier: "applied",
+    logo: "https://cdn.simpleicons.org/ansible/000000",
+    darkLogo: "https://cdn.simpleicons.org/ansible/FFFFFF",
+    level: "Beginner",
+    experienceStart: "2026-08",
+    category: [
+      "Configuration Management",
+      "Infrastructure Automation",
+      "Server Provisioning",
     ],
     filterCategories: ["devops", "cloud"],
   },
@@ -622,6 +658,7 @@ export const technicalSkills = [
     name: "Kong",
     tier: "applied",
     logo: "https://cdn.simpleicons.org/kong/003459",
+    darkLogo: "https://cdn.simpleicons.org/kong/FFFFFF",
     level: "Intermediate",
     experienceStart: "2026-03",
     category: ["API Gateway", "Traffic Routing", "Rate Limiting & Plugins"],
@@ -675,7 +712,7 @@ export const technicalSkills = [
   {
     name: "Jaeger",
     tier: "applied",
-    logo: "skills/jaeger.png",
+    logo: "/skills/jaeger.png",
     level: "Beginner",
     experienceStart: "2026-03",
     category: [
