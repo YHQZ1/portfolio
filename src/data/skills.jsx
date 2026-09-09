@@ -195,6 +195,15 @@ export const technicalSkills = [
     filterCategories: ["backend"],
   },
   {
+    name: "Fiber",
+    tier: "applied",
+    logo: "/skills/fiber.png",
+    level: "Intermediate",
+    experienceStart: "2026-03",
+    category: ["HTTP Routing", "Middleware", "High-performance APIs"],
+    filterCategories: ["backend"],
+  },
+  {
     name: "Fastify",
     tier: "applied",
     logo: "https://cdn.simpleicons.org/fastify/000000",
