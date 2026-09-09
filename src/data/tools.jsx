@@ -120,6 +120,15 @@ export const toolsAndWorkflow = [
     ],
   },
   {
+    name: "Bitbucket",
+    logo: "/skills/bitbucket.png",
+    category: [
+      "Version Control Hosting",
+      "Pull Request Workflow",
+      "CI/CD Integration",
+    ],
+  },
+  {
     name: "Jira",
     logo: "https://cdn.simpleicons.org/jira/0052CC",
     category: ["Issue Tracking", "Sprint Planning", "Agile Workflows"],
